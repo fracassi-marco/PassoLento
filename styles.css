@@ -338,7 +338,7 @@ h2::after {
     border-radius: 2px;
 }
 
-.about-intro, .services-intro, .calendar-intro {
+.about-intro, .services-intro, .calendar-intro, .blog-intro {
     text-align: center;
     max-width: 800px;
     margin: 0 auto 3rem auto;
@@ -354,7 +354,7 @@ h2::after {
     color: #ff6b35;
 }
 
-.services-intro p, .calendar-intro p {
+.services-intro p, .calendar-intro p, .blog-intro p {
     font-size: 1.1rem;
     color: #666;
     line-height: 1.6;

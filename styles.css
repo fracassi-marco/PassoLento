@@ -263,6 +263,16 @@ h2::after {
     line-height: 1.8;
 }
 
+/* About Section */
+#about {
+    background: linear-gradient(to bottom, rgba(255,255,255,0.95) 0%, white 20%, white 100%);
+    position: relative;
+    z-index: 10;
+    margin-top: -2rem;
+    padding-top: 6rem;
+    box-shadow: 0 -10px 20px rgba(0,0,0,0.1);
+}
+
 /* Services Section */
 .services {
     background: linear-gradient(135deg, #f8f9fa, #e9ecef);

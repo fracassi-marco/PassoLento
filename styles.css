@@ -18,7 +18,6 @@ body {
     background: url('./dolomiti-bellunesi.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -654,6 +653,55 @@ footer p {
 
 .footer-links a:hover {
     color: #ff6b35;
+}
+
+/* Critical CSS - Above the fold */
+.hero {
+    height: 100vh;
+    background: url('./dolomiti-bellunesi.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+/* Accessibility improvements */
+a:focus, button:focus {
+    outline: 2px solid #ff6b35;
+    outline-offset: 2px;
+}
+
+/* Skip to content link for accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #228b22;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 9999;
+    border-radius: 4px;
+}
+
+.skip-link:focus {
+    top: 6px;
+}
+
+/* Print styles */
+@media print {
+    .nav, .cookie-banner, .cta-button {
+        display: none;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+    }
 }
 
 /* Animations */

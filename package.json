@@ -1,0 +1,14 @@
+{
+  "name": "passolento-website",
+  "version": "1.0.0",
+  "description": "Sito web statico per PassoLento",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "npm run build && python3 -m http.server 8000",
+    "clean": "rm -f index.html blog.html",
+    "build-index": "node build.js index",
+    "build-blog": "node build.js blog"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

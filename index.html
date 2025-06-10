@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
+    <!-- Blocca indicizzazione temporaneamente -->
+    <meta name="robots" content="noindex, nofollow">
+    
     <!-- SEO Meta Tags -->
     <title>PassoLento - Marco Fracassi | Guida Hiking & Nordic Walking Dolomiti</title>
     <meta name="description"
@@ -12,7 +15,7 @@
     <meta name="keywords"
         content="hiking dolomiti, nordic walking trento, guida hiking, escursioni dolomiti, trekking belluno, PassoLento, Marco Fracassi, cammino lento">
     <meta name="author" content="Marco Fracassi">
-    <meta name="robots" content="index, follow">
+    <!--meta name="robots" content="index, follow"-->
 
     <!-- Open Graph (Facebook/Social) -->
     <meta property="og:title" content="PassoLento - Guida Hiking & Nordic Walking Dolomiti">
@@ -103,12 +106,13 @@
                     <span>PassoLento</span>
                 </div>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">Chi Sono</a></li>
-                    <li><a href="#services">Servizi</a></li>
-                    <li><a href="#calendar">Prossime Escursioni</a></li>
-                    <li><a href="#philosophy">Filosofia</a></li>
-                    <li><a href="#contact">Contatti</a></li>
+                    <li><a href="#home" aria-label="Vai alla sezione home">Home</a></li>
+                    <li><a href="#about" aria-label="Scopri chi sono">Chi Sono</a></li>
+                    <li><a href="#services" aria-label="Vedi i servizi">Servizi</a></li>
+                    <li><a href="#calendar" aria-label="Prossime escursioni">Prossime Escursioni</a></li>
+                    <li><a href="#philosophy" aria-label="La mia filosofia">Filosofia</a></li>
+                    <li><a href="./blog.html" aria-label="Leggi il blog">Blog</a></li>
+                    <li><a href="#contact" aria-label="Contattami">Contatti</a></li>
                 </ul>
             </div>
         </nav>
@@ -463,15 +467,86 @@
 
         <!-- Blog Section -->
         <section id="blog" class="blog fade-in">
-            <h2>Guide e Consigli</h2>
+            <h2>Guide e Consigli PassoLento</h2>
             <div class="blog-intro">
-                <p>Scopri guide utili per il trekking e nordic walking nelle Dolomiti</p>
+                <p>Scopri guide utili e consigli pratici per vivere al meglio le tue esperienze di trekking e nordic walking nelle Dolomiti con la filosofia <strong>PassoLento</strong></p>
             </div>
-            <article class="blog-post">
-                <h3>Come prepararsi per un'escursione nelle Dolomiti</h3>
-                <p>Consigli pratici per affrontare al meglio i sentieri dolomitioi...</p>
-                <time datetime="2025-06-10">10 Giugno 2025</time>
-            </article>
+            
+            <div class="blog-grid">
+                <article class="blog-post">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&h=200&fit=crop&crop=center" alt="Equipaggiamento per escursioni nelle Dolomiti" loading="lazy">
+                        <div class="blog-category">Preparazione</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Come prepararsi per un'escursione nelle Dolomiti</h3>
+                        <p>Tutto quello che devi sapere per affrontare al meglio i sentieri dolomitioi: equipaggiamento essenziale, abbigliamento a strati e preparazione fisica seguendo l'approccio PassoLento.</p>
+                        <div class="blog-meta">
+                            <time datetime="2025-06-10">10 Giugno 2025</time>
+                            <span class="reading-time">5 min di lettura</span>
+                        </div>
+                        <a href="#" class="blog-read-more">Leggi la guida completa</a>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=400&h=200&fit=crop&crop=center" alt="Tecnica Nordic Walking nelle Dolomiti" loading="lazy">
+                        <div class="blog-category">Nordic Walking</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Nordic Walking: la tecnica per camminare consapevolmente</h3>
+                        <p>Scopri i fondamenti del Nordic Walking applicati alla filosofia PassoLento. Come utilizzare correttamente i bastoncini per un'esperienza di camminata meditativa e benefica.</p>
+                        <div class="blog-meta">
+                            <time datetime="2025-06-08">8 Giugno 2025</time>
+                            <span class="reading-time">7 min di lettura</span>
+                        </div>
+                        <a href="#" class="blog-read-more">Scopri la tecnica</a>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=200&fit=crop&crop=center" alt="Mindfulness in montagna Dolomiti" loading="lazy">
+                        <div class="blog-category">Mindfulness</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Mindfulness in montagna: il cuore di PassoLento</h3>
+                        <p>Come integrare pratiche di consapevolezza durante le escursioni. Tecniche di respirazione, camminata barefoot e momenti di silenzio per connettersi con la natura.</p>
+                        <div class="blog-meta">
+                            <time datetime="2025-06-05">5 Giugno 2025</time>
+                            <span class="reading-time">6 min di lettura</span>
+                        </div>
+                        <a href="#" class="blog-read-more">Approfondisci</a>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1464822759844-d150ad6cfc6a?w=400&h=200&fit=crop&crop=center" alt="Sentieri facili nelle Dolomiti per principianti" loading="lazy">
+                        <div class="blog-category">Itinerari</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>5 sentieri facili nelle Dolomiti per iniziare</h3>
+                        <p>Una selezione di percorsi accessibili perfetti per chi si avvicina al trekking o vuole vivere l'esperienza PassoLento. Itinerari testati e adatti a tutti i livelli.</p>
+                        <div class="blog-meta">
+                            <time datetime="2025-06-03">3 Giugno 2025</time>
+                            <span class="reading-time">8 min di lettura</span>
+                        </div>
+                        <a href="#" class="blog-read-more">Esplora i sentieri</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Call to Action per vedere tutti gli articoli -->
+            <div class="blog-view-all">
+                <h3>🌲 Scopri tutti i nostri articoli</h3>
+                <p>Approfondisci la filosofia PassoLento con guide dettagliate, consigli pratici e storie dalle Dolomiti</p>
+                <a href="./blog.html" class="view-all-btn">
+                    <i class="fas fa-book-open" aria-hidden="true"></i>
+                    Vedi tutti gli articoli del blog
+                </a>
+            </div>
         </section>
     </main>
     <!-- Footer -->

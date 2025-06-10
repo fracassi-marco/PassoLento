@@ -489,7 +489,7 @@ h2::after {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
-    align-items: center;
+    align-items: start; /* Cambiato da center a start */
 }
 
 .contact-text {
@@ -559,6 +559,7 @@ h2::after {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
+    flex-wrap: wrap; /* Aggiunto per mobile */
 }
 
 .contact-icon {
@@ -572,12 +573,14 @@ h2::after {
     margin-right: 1rem;
     color: white;
     font-size: 1.2rem;
+    flex-shrink: 0; /* Previene il ridimensionamento */
 }
 
 .contact-card h3 {
     color: #2c5530;
     margin: 0;
     font-size: 1.1rem;
+    flex: 1; /* Occupa lo spazio rimanente */
 }
 
 .contact-details {
@@ -590,6 +593,7 @@ h2::after {
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
+    word-break: break-all; /* Previene overflow su mobile */
 }
 
 .contact-link:hover {
@@ -636,42 +640,126 @@ h2::after {
     color: #666;
     font-size: 0.9rem;
     margin: 0;
+    line-height: 1.5;
 }
 
 .social-links {
     display: flex;
     gap: 1rem;
     margin-top: 2rem;
-    justify-content: center;
+    justify-content: flex-start; /* Allineamento a sinistra su mobile */
+    flex-wrap: wrap; /* Permette il wrap su mobile */
 }
 
-.social-link {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    font-size: 1.2rem;
+/* Mobile Responsive - Contact Section */
+@media (max-width: 768px) {
+    .contact-content {
+        grid-template-columns: 1fr; /* Una sola colonna su mobile */
+        gap: 3rem;
+    }
+    
+    .contact-intro {
+        font-size: 1.1rem;
+    }
+    
+    .contact-highlight {
+        padding: 1.2rem;
+        margin: 1.5rem 0;
+    }
+    
+    .contact-card {
+        padding: 1.5rem;
+    }
+    
+    .contact-card-header {
+        margin-bottom: 1.2rem;
+    }
+    
+    .contact-icon {
+        width: 45px;
+        height: 45px;
+        margin-right: 0.8rem;
+        font-size: 1.1rem;
+    }
+    
+    .contact-card h3 {
+        font-size: 1rem;
+    }
+    
+    .contact-details {
+        font-size: 0.95rem;
+    }
+    
+    .whatsapp-cta {
+        padding: 0.9rem 1.8rem;
+        font-size: 1rem;
+        width: 100%; /* Larghezza piena su mobile */
+        justify-content: center; /* Centra il contenuto */
+        box-sizing: border-box;
+    }
+    
+    .emergency-note {
+        padding: 1.2rem;
+        margin-top: 1.5rem;
+    }
+    
+    .emergency-note h4 {
+        font-size: 0.95rem;
+    }
+    
+    .emergency-note p {
+        font-size: 0.85rem;
+    }
+    
+    .social-links {
+        justify-content: center; /* Centra i social su mobile */
+        margin-top: 1.5rem;
+    }
 }
 
-.social-link.instagram {
-    background: linear-gradient(135deg, #e4405f, #833ab4);
+/* Tablet Responsive - Contact Section */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .contact-content {
+        gap: 3rem;
+    }
+    
+    .contact-intro {
+        font-size: 1.15rem;
+    }
+    
+    .whatsapp-cta {
+        padding: 0.95rem 1.9rem;
+    }
 }
 
-.social-link.facebook {
-    background: #1877f2;
-}
-
-.social-link.telegram {
-    background: #0088cc;
-}
-
-.social-link:hover {
-    transform: translateY(-3px) scale(1.1);
+/* Large Mobile (iPhone Plus, etc.) */
+@media (max-width: 480px) {
+    .contact {
+        padding: 3rem 1rem; /* Riduce il padding laterale */
+    }
+    
+    .contact-card {
+        padding: 1.2rem;
+    }
+    
+    .contact-highlight {
+        padding: 1rem;
+    }
+    
+    .whatsapp-cta {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.95rem;
+    }
+    
+    .social-link {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+    
+    .contact-link {
+        font-size: 0.9rem;
+    }
 }
 
 /* Cookie Banner */

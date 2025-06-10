@@ -51,6 +51,8 @@
 
 <link rel="stylesheet" href="styles.css">
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+<meta http-equiv="content-language" content="it">
     
     <!-- SEO Meta Tags -->
     <title>Blog PassoLento - Guide e Consigli per Hiking e Nordic Walking nelle Dolomiti</title>
@@ -100,14 +102,37 @@
                 <i class="fas fa-mountain"></i>
                 <span>PassoLento</span>
             </div>
-            <ul>
-                <li><a href="#home" aria-label="Vai alla sezione home">Home</a></li>
-                <li><a href="#about" aria-label="Scopri chi sono">Chi Sono</a></li>
-                <li><a href="#services" aria-label="Vedi i servizi">Servizi</a></li>
-                <li><a href="#calendar" aria-label="Prossime escursioni">Prossime Escursioni</a></li>
-                <li><a href="#philosophy" aria-label="La mia filosofia">Filosofia</a></li>
-                <li><a href="./blog.html" aria-label="Leggi il blog">Blog</a></li>
-                <li><a href="#contact" aria-label="Contattami">Contatti</a></li>
+            
+            <!-- Hamburger Menu Button -->
+            <button class="nav-toggle" id="nav-toggle" aria-label="Apri menu di navigazione">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <!-- Navigation Menu -->
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" aria-label="Vai alla sezione home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" aria-label="Scopri chi sono">Chi Sono</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link" aria-label="Vedi i servizi">Servizi</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#calendar" class="nav-link" aria-label="Prossime escursioni">Prossime Escursioni</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#philosophy" class="nav-link" aria-label="La mia filosofia">Filosofia</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./blog.html" class="nav-link" aria-label="Leggi il blog">📝 Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" aria-label="Contattami">Contatti</a>
+                </li>
             </ul>
         </div>
     </nav>

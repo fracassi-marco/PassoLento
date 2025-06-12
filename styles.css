@@ -1465,8 +1465,7 @@ em {
    =============================== */
 
 /* Blog Hero Section */
-.blog-hero {
-    background: linear-gradient(135deg, #2c5530, #228b22);
+.blog-hero {    
     color: white;
     padding: 6rem 2rem 4rem 2rem;
     text-align: center;
@@ -1481,8 +1480,7 @@ em {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&h=600&fit=crop') center/cover;
-    opacity: 0.1;
+    background: url('./dolomiti-bellunesi.jpg') center/cover;    
     z-index: 1;
 }
 
@@ -1491,6 +1489,11 @@ em {
     z-index: 2;
     max-width: 800px;
     margin: 0 auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 .back-to-home {

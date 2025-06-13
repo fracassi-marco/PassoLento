@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Blocca indicizzazione temporaneamente -->
+<meta name="robots" content="noindex, nofollow">
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "PassoLento",
+    "description": "Guida hiking nelle Dolomiti",
+    "founder": {
+        "@type": "Person",
+        "name": "Marco Fracassi"
+    },
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Trento",
+        "addressRegion": "Trentino Alto Adige",
+        "addressCountry": "IT"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "46.066666",
+        "longitude": "11.116667"
+    },
+    "url": "https://passolento.it",
+    "telephone": "+39-347-1364144",
+    "priceRange": "€",
+    "serviceType": "Hiking Guide and Instructor",
+}
+</script>
+
+<!-- Favicons -->
+<link rel="icon" type="image/x-icon" href="./favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+
+<!-- Preload critical resources -->
+<link rel="preload" href="./dolomiti-bellunesi.jpg" as="image">
+<link rel="preload" href="styles.css" as="style">
+
+<!-- Preconnect to external domains -->
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
+<link rel="stylesheet" href="styles.css">
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+<meta http-equiv="content-language" content="it">
+    
+    <!-- SEO Meta Tags -->
+    <title>Come prepararsi per un'escursione nelle Dolomiti | Blog PassoLento</title>
+    <meta name="description" content="Guida completa per prepararsi alle escursioni nelle Dolomiti: equipaggiamento, abbigliamento e filosofia PassoLento per un trekking consapevole.">
+    <meta name="keywords" content="preparazione escursioni dolomiti, equipaggiamento trekking, abbigliamento montagna, PassoLento preparazione">
+    <meta name="author" content="Marco Fracassi">
+
+    <!-- Open Graph (Facebook/Social) -->
+    <meta property="og:title" content="Come prepararsi per un'escursione nelle Dolomiti | Blog PassoLento">
+    <meta property="og:description" content="Guida completa per prepararsi alle escursioni nelle Dolomiti: equipaggiamento, abbigliamento e filosofia PassoLento per un trekking consapevole.">
+    <meta property="og:image" content="https://passolento.it/dolomiti-bellunesi.jpg">
+    <meta property="og:url" content="https://passolento.it/article-preparazione.html">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="it_IT">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Come prepararsi per un'escursione nelle Dolomiti | Blog PassoLento">
+    <meta name="twitter:description" content="Guida completa per prepararsi alle escursioni nelle Dolomiti: equipaggiamento, abbigliamento e filosofia PassoLento per un trekking consapevole.">
+    <meta name="twitter:image" content="https://passolento.it/dolomiti-bellunesi.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://passolento.it/article-preparazione.html">
+</head>
+
+<body>
+    <!-- Cookie Banner -->
+<div id="cookieBanner" class="cookie-banner">
+    <div class="cookie-content">
+        <div class="cookie-text">
+            🍪 PassoLento utilizza cookie per migliorare la tua esperienza di navigazione.
+            Continuando la navigazione accetti l'uso dei cookie.
+            <a href="./privacy_policy.html">Scopri di più</a>
+        </div>
+        <div class="cookie-buttons">
+            <button class="cookie-btn cookie-accept" onclick="acceptCookies()">Accetta</button>
+            <button class="cookie-btn cookie-decline" onclick="declineCookies()">Rifiuta</button>
+        </div>
+    </div>
+</div>
+    
+    <!-- Navigation -->
+<header>
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-mountain"></i>
+                <span>PassoLento</span>
+            </div>
+            
+            <!-- Hamburger Menu Button -->
+            <button class="nav-toggle" id="nav-toggle" aria-label="Apri menu di navigazione" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <!-- Navigation Menu -->
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="./index.html" class="nav-link" aria-label="Vai alla homepage">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./index.html#about" class="nav-link" aria-label="Scopri chi sono">Chi Sono</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./index.html#services" class="nav-link" aria-label="Vedi i servizi">Servizi</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./index.html#calendar" class="nav-link" aria-label="Prossime escursioni">Prossime Escursioni</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./index.html#philosophy" class="nav-link" aria-label="La mia filosofia">Filosofia</a>
+                </li>
+                <!--li class="nav-item">
+                    <a href="./blog.html" class="nav-link blog-link" aria-label="Leggi il blog">📝 Blog</a>
+                </li-->
+                <li class="nav-item">
+                    <a href="./index.html#contact" class="nav-link" aria-label="Contattami">Contatti</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+    
+    <main>
+        <!-- Article Hero Section -->
+<section class="article-hero">
+    <div class="article-hero-content">
+        <div class="back-to-blog">
+            <a href="./blog.html" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                Torna al Blog
+            </a>
+        </div>
+        
+        <div class="article-category-badge preparazione">
+            <i class="fas fa-backpack"></i>
+            Preparazione
+        </div>
+        
+        <h1>Come prepararsi per un'escursione nelle Dolomiti</h1>
+        
+        <div class="article-meta-hero">
+            <div class="meta-item">
+                <i class="fas fa-calendar-alt"></i>
+                <time datetime="2025-06-10">10 Giugno 2025</time>
+            </div>
+            <div class="meta-item">
+                <i class="fas fa-clock"></i>
+                <span>5 min di lettura</span>
+            </div>
+            <div class="meta-item">
+                <i class="fas fa-user"></i>
+                <span>Marco Fracassi</span>
+            </div>
+        </div>
+        
+        <p class="article-excerpt">
+            Tutto quello che devi sapere per affrontare al meglio i sentieri dolomitici: equipaggiamento essenziale, abbigliamento a strati e preparazione fisica seguendo l'approccio PassoLento.
+        </p>
+    </div>
+</section>
+
+<!-- Article Content -->
+<article class="article-main">
+    <div class="article-container">
+        <!-- Featured Image -->
+        <div class="article-featured-image">
+            <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=1200&h=600&fit=crop&crop=center" 
+                 alt="Equipaggiamento per escursioni nelle Dolomiti" loading="eager">
+            <div class="image-caption">
+                Equipaggiamento essenziale per un'escursione sicura nelle Dolomiti
+            </div>
+        </div>
+
+        <!-- Article Body -->
+        <div class="article-body">
+            <!-- Table of Contents -->
+            <div class="table-of-contents">
+                <h3><i class="fas fa-list"></i> In questo articolo</h3>
+                <ul>
+                    <li><a href="#equipaggiamento-base">Equipaggiamento di base</a></li>
+                    <li><a href="#abbigliamento">Abbigliamento a strati</a></li>
+                    <li><a href="#preparazione-fisica">Preparazione fisica</a></li>
+                    <li><a href="#sicurezza">Sicurezza e orientamento</a></li>
+                    <li><a href="#filosofia-passolento">La filosofia PassoLento</a></li>
+                </ul>
+            </div>
+
+            <!-- Introduction -->
+            <div class="article-intro">
+                <p class="lead">
+                    Le Dolomiti sono tra le montagne più belle del mondo, ma richiedono una preparazione adeguata per essere vissute in sicurezza e con la consapevolezza che caratterizza l'approccio <strong>PassoLento</strong>.
+                </p>
+                
+                <p>In questa guida completa scopriremo insieme tutto ciò che serve per prepararsi al meglio per un'escursione, dalla scelta dell'equipaggiamento alla preparazione mentale, seguendo sempre la filosofia del cammino lento e consapevole.</p>
+            </div>
+
+            <!-- Section 1 -->
+            <section id="equipaggiamento-base" class="article-section">
+                <h2><i class="fas fa-hiking"></i> Equipaggiamento di base</h2>
+                
+                <p>L'equipaggiamento giusto è fondamentale per vivere le Dolomiti in sicurezza. Con <em>PassoLento</em> non cerchiamo la performance estrema, ma la qualità dell'esperienza.</p>
+
+                <div class="highlight-box">
+                    <h4>🎒 Lista essenziale PassoLento</h4>
+                    <p>Questi sono gli elementi che non devono mai mancare nel tuo zaino per un'escursione consapevole:</p>
+                </div>
+
+                <div class="equipment-grid">
+                    <div class="equipment-item">
+                        <div class="equipment-icon">🥾</div>
+                        <h4>Scarpe da trekking</h4>
+                        <p>Scarponi con suola Vibram, impermeabili ma traspiranti. Per le camminate <em>PassoLento</em> privilegia il comfort alla tecnicità estrema.</p>
+                    </div>
+                    
+                    <div class="equipment-item">
+                        <div class="equipment-icon">🎒</div>
+                        <h4>Zaino 25-35 litri</h4>
+                        <p>Capienza giusta per escursioni giornaliere. Scegli modelli con schienale ventilato e cinghie imbottite per il massimo comfort.</p>
+                    </div>
+                    
+                    <div class="equipment-item">
+                        <div class="equipment-icon">🧭</div>
+                        <h4>Orientamento</h4>
+                        <p>Mappa, bussola e GPS. Anche nelle escursioni <em>PassoLento</em> la sicurezza viene sempre prima.</p>
+                    </div>
+                    
+                    <div class="equipment-item">
+                        <div class="equipment-icon">🆘</div>
+                        <h4>Kit di sicurezza</h4>
+                        <p>Fischietto, kit primo soccorso, torcia frontale. Essenziali per ogni escursione responsabile.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2 -->
+            <section id="abbigliamento" class="article-section">
+                <h2><i class="fas fa-tshirt"></i> Abbigliamento a strati</h2>
+                
+                <p>Il sistema a strati è fondamentale in montagna. Con <em>PassoLento</em> impariamo ad ascoltare il nostro corpo e adattare l'abbigliamento di conseguenza.</p>
+
+                <div class="layers-system">
+                    <div class="layer">
+                        <div class="layer-number">1</div>
+                        <div class="layer-content">
+                            <h4>Strato base</h4>
+                            <p>Intimo tecnico in materiali sintetici o lana merino. Deve mantenere la pelle asciutta allontanando l'umidità.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="layer">
+                        <div class="layer-number">2</div>
+                        <div class="layer-content">
+                            <h4>Strato isolante</h4>
+                            <p>Pile o piumino leggero per trattenere il calore corporeo. Facilmente rimovibile durante la camminata.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="layer">
+                        <div class="layer-number">3</div>
+                        <div class="layer-content">
+                            <h4>Strato protettivo</h4>
+                            <p>Giacca impermeabile e antivento. Protezione essenziale dalle intemperie alpine.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3 -->
+            <section id="preparazione-fisica" class="article-section">
+                <h2><i class="fas fa-heart"></i> Preparazione fisica</h2>
+                
+                <p>La preparazione fisica per <em>PassoLento</em> non punta alla performance, ma alla resistenza e alla consapevolezza corporea.</p>
+
+                <div class="training-tips">
+                    <div class="tip">
+                        <h4>🚶‍♂️ Camminate preparatorie</h4>
+                        <p>Inizia con camminate di 1-2 ore su terreno vario, aumentando gradualmente durata e dislivello.</p>
+                    </div>
+                    
+                    <div class="tip">
+                        <h4>🧘‍♀️ Rafforzamento del core</h4>
+                        <p>Esercizi di stabilizzazione per migliorare equilibrio e postura durante la camminata.</p>
+                    </div>
+                    
+                    <div class="tip">
+                        <h4>🫁 Respirazione consapevole</h4>
+                        <p>Pratica quotidiana di tecniche di respirazione per migliorare l'ossigenazione in quota.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Philosophy Section -->
+            <section id="filosofia-passolento" class="article-section philosophy-section">
+                <h2><i class="fas fa-leaf"></i> La filosofia PassoLento nella preparazione</h2>
+                
+                <div class="philosophy-content">
+                    <p>La preparazione secondo <strong>PassoLento</strong> va oltre l'aspetto tecnico: è un momento di connessione con se stessi e con la natura che ci aspetta.</p>
+                    
+                    <blockquote class="passolento-quote">
+                        "Non si tratta di conquistare la montagna, ma di permettere alla montagna di trasformarci. La preparazione è il primo passo di questo viaggio interiore."
+                        <cite>— Marco Fracassi, PassoLento</cite>
+                    </blockquote>
+                    
+                    <p>Ogni escursione <em>PassoLento</em> inizia molto prima di mettere piede sul sentiero: inizia nel momento in cui decidiamo di rallentare e prepararci con consapevolezza.</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Article Footer -->
+        <div class="article-footer">
+            <div class="article-tags">
+                <span class="tag-label">Tag:</span>
+                <span class="tag">#preparazione</span>
+                <span class="tag">#equipaggiamento</span>
+                <span class="tag">#dolomiti</span>
+                <span class="tag">#passolento</span>
+                <span class="tag">#trekking</span>
+            </div>
+            
+            <div class="article-share">
+                <h4>Condividi questo articolo</h4>
+                <div class="share-buttons">
+                    <a href="#" class="share-btn facebook" title="Condividi su Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="share-btn twitter" title="Condividi su Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="share-btn whatsapp" title="Condividi su WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="#" class="share-btn email" title="Condividi via Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+
+<!-- Related Articles -->
+<section class="related-articles">
+    <div class="related-container">
+        <h2>Articoli correlati</h2>
+        <div class="related-grid">
+            <article class="related-article">
+                <div class="related-image">
+                    <img src="https://images.unsplash.com/photo-1486496572940-2bb2341fdbdf?w=300&h=200&fit=crop" alt="Lo zaino perfetto">
+                </div>
+                <div class="related-content">
+                    <h3>Lo zaino perfetto per le escursioni PassoLento</h3>
+                    <p>Come scegliere e preparare lo zaino ideale per le tue avventure nelle Dolomiti.</p>
+                    <a href="#" class="related-link">Leggi l'articolo</a>
+                </div>
+            </article>
+            
+            <article class="related-article">
+                <div class="related-image">
+                    <img src="https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=300&h=200&fit=crop" alt="Nordic Walking">
+                </div>
+                <div class="related-content">
+                    <h3>Nordic Walking: la tecnica per camminare consapevolmente</h3>
+                    <p>Scopri i fondamenti del Nordic Walking applicati alla filosofia PassoLento.</p>
+                    <a href="#" class="related-link">Leggi l'articolo</a>
+                </div>
+            </article>
+            
+            <article class="related-article">
+                <div class="related-image">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=200&fit=crop" alt="Sicurezza">
+                </div>
+                <div class="related-content">
+                    <h3>Leggere il meteo di montagna: guida pratica</h3>
+                    <p>Come interpretare le previsioni meteorologiche delle Dolomiti.</p>
+                    <a href="#" class="related-link">Leggi l'articolo</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="article-cta">
+    <div class="cta-content">
+        <h3>🏔️ Pronto per la tua prossima avventura PassoLento?</h3>
+        <p>Ora che sai come prepararti, è il momento di vivere l'esperienza delle Dolomiti con la filosofia del cammino lento</p>
+        <div class="cta-buttons">
+            <a href="./index.html#calendar" class="cta-btn primary">
+                <i class="fas fa-calendar-alt"></i>
+                Prenota un'escursione
+            </a>
+            <a href="./index.html#contact" class="cta-btn secondary">
+                <i class="fas fa-phone"></i>
+                Contattami
+            </a>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <!-- Footer -->
+<footer>
+    <p>&copy; 2025 PassoLento - Marco Fracassi | Guida e Istruttore Hiking nelle Dolomiti</p>
+    <p>🏔️ Scopri la bellezza del cammino lento e consapevole 🏔️</p>
+    <div class="footer-links">
+        <a href="./privacy_policy.html">Privacy Policy</a> |
+        <a href="mailto:marco@passolento.it">marco@passolento.it</a> |
+        <a href="https://wa.me/393471364144">WhatsApp</a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>

@@ -48,16 +48,16 @@ console.log('🔧 Inizio build...');
 // Template per le pagine
 const templates = {
     index: {
-        title: 'PassoLento - Marco Fracassi | Guida Hiking & Nordic Walking Dolomiti',
-        description: 'Scopri le Dolomiti con PassoLento. Marco Fracassi, guida hiking e nordic walking certificata tra Trento e Rivamonte Agordino. Escursioni consapevoli nelle Dolomiti trentine e bellunesi.',
-        canonical: 'https://tuodominio.com',
+        title: 'PassoLento - Marco Fracassi | Guida Hiking nelle Dolomiti',
+        description: 'Scopri le Dolomiti con PassoLento. Marco Fracassi, guida hiking certificata tra Trento e Rivamonte Agordino. Escursioni consapevoli nelle Dolomiti trentine e bellunesi.',
+        canonical: 'https://passolento.it',
         ogType: 'website',
-        keywords: 'hiking dolomiti, nordic walking trento, guida hiking, escursioni dolomiti, trekking belluno, PassoLento, Marco Fracassi, cammino lento'
+        keywords: 'hiking dolomiti, camminate trento, guida hiking, escursioni dolomiti, trekking belluno, PassoLento, Marco Fracassi, cammino lento'
     },
     blog: {
-        title: 'Blog PassoLento - Guide e Consigli per Hiking e Nordic Walking nelle Dolomiti',
+        title: 'Blog PassoLento - Guide e Consigli per Hiking nelle Dolomiti',
         description: 'Guide pratiche, consigli per l\'escursionismo e articoli sulla filosofia del cammino lento nelle Dolomiti. Scopri tutti gli articoli del blog PassoLento di Marco Fracassi.',
-        canonical: 'https://tuodominio.com/blog.html',
+        canonical: 'https://passolento.it/blog.html',
         ogType: 'website',
         keywords: 'blog hiking dolomiti, guide trekking, consigli nordic walking, PassoLento blog, Marco Fracassi articoli'
     }
@@ -92,7 +92,7 @@ function generatePage(pageName, content, template) {
     <!-- Open Graph (Facebook/Social) -->
     <meta property="og:title" content="${template.title}">
     <meta property="og:description" content="${template.description}">
-    <meta property="og:image" content="https://tuodominio.com/dolomiti-bellunesi.jpg">
+    <meta property="og:image" content="https://passolento.it/dolomiti-bellunesi.jpg">
     <meta property="og:url" content="${template.canonical}">
     <meta property="og:type" content="${template.ogType}">
     <meta property="og:locale" content="it_IT">
@@ -101,7 +101,7 @@ function generatePage(pageName, content, template) {
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="${template.title}">
     <meta name="twitter:description" content="${template.description}">
-    <meta name="twitter:image" content="https://tuodominio.com/dolomiti-bellunesi.jpg">
+    <meta name="twitter:image" content="https://passolento.it/dolomiti-bellunesi.jpg">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="${template.canonical}">
@@ -133,4 +133,14 @@ function generatePage(pageName, content, template) {
 generatePage('index', indexContent, templates.index);
 generatePage('blog', blogContent, templates.blog);
 
-console.log('🎉 Build completato! Generati index.html e blog.html');
+// Genera pagina articolo di esempio
+const articleContent = readTemplate('article-content');
+generatePage('article-preparazione', articleContent, {
+    title: 'Come prepararsi per un\'escursione nelle Dolomiti | Blog PassoLento',
+    description: 'Guida completa per prepararsi alle escursioni nelle Dolomiti: equipaggiamento, abbigliamento e filosofia PassoLento per un trekking consapevole.',
+    canonical: 'https://passolento.it/article-preparazione.html',
+    ogType: 'article',
+    keywords: 'preparazione escursioni dolomiti, equipaggiamento trekking, abbigliamento montagna, PassoLento preparazione'
+});
+
+console.log('🎉 Build completato! Generati index.html, blog.html e article-preparazione.html');

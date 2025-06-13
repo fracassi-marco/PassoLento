@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Sitemap: https://passolento.it/sitemap.xml
+Sitemap: https://passolento.com/sitemap.xml
 
 # Block admin areas if any
 Disallow: /admin/

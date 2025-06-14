@@ -1,0 +1,16 @@
+export default function Footer() {
+  return (
+    <>
+      <footer>
+        <p>&copy; 2025 PassoLento - Marco Fracassi | Guida e Istruttore Hiking nelle Dolomiti</p>
+        <p>🏔️ Scopri la bellezza del cammino lento e consapevole 🏔️</p>
+        <div className="footer-links">
+          <a href="./privacy_policy.html">Privacy Policy</a> |
+          <a href="mailto:marco@passolento.com">marco@passolento.com</a> |
+          <a href="https://wa.me/393471364144">WhatsApp</a>
+        </div>
+      </footer>
+      <script src="script.js"></script>
+    </>
+  );
+}

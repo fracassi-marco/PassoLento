@@ -1,16 +1,8 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import type {Metadata} from "next";
+import {Geist, Geist_Mono} from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Footer from "@/app/components/Footer";
+import CookieBanner from "@/app/components/CookieBanner";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,15 +10,40 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
-}: Readonly<{
+                                     children,
+                                   }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
-      </body>
+    <html lang="it">
+    <head>
+      <meta name="description" content="${template.description}"/>
+      <meta name="keywords" content="${template.keywords}"/>
+      <meta name="author" content="Marco Fracassi"/>
+
+      <meta property="og:title" content="${template.title}"/>
+      <meta property="og:description" content="${template.description}"/>
+      <meta property="og:image" content="https://passolento.com/dolomiti-bellunesi.jpg"/>
+      <meta property="og:url" content="${template.canonical}"/>
+      <meta property="og:type" content="${template.ogType}"/>
+      <meta property="og:locale" content="it_IT"/>
+
+      <meta name="twitter:card" content="summary_large_image"/>
+      <meta name="twitter:title" content="${template.title}"/>
+      <meta name="twitter:description" content="${template.description}"/>
+      <meta name="twitter:image" content="https://passolento.com/dolomiti-bellunesi.jpg"/>
+
+      <link rel="canonical" href="${template.canonical}"/>
+    </head>
+
+    <body>
+      <CookieBanner/>
+
+      <main>
+
+      </main>
+      <Footer/>
+    </body>
     </html>
   );
 }

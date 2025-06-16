@@ -23,7 +23,7 @@ export default function RootLayout({
       <meta httpEquiv="content-language" content="it"/>
       <meta name="robots" content="noindex, nofollow"/>
 
-      <link rel="preload" href="./dolomiti-bellunesi.webp" as="image"/>
+      <link rel="preload" href="/dolomiti-bellunesi.webp" as="image"/>
 
       <link rel="preconnect" href="https://cdnjs.cloudflare.com"/>
       <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com"/>

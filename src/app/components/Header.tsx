@@ -15,16 +15,18 @@ export default function Header() {
       };
 
       fadeInRef.current = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
+        // Usa for...of invece di forEach per performance
+        for (const entry of entries) {
           if (entry.isIntersecting) {
             entry.target.classList.add('visible');
           }
-        });
+        }
       }, observerOptions);
 
-      document.querySelectorAll('.fade-in').forEach(el => {
+      // Usa for...of anche qui
+      for (const el of document.querySelectorAll('.fade-in')) {
         fadeInRef.current?.observe(el);
-      });
+      }
     };
 
     // Initialize navbar scroll behavior
@@ -50,9 +52,9 @@ export default function Header() {
       return () => window.removeEventListener('scroll', handleScroll);
     };
 
-    // Initialize smooth scrolling
     const initSmoothScrolling = () => {
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      // Usa for...of invece di forEach
+      for (const anchor of document.querySelectorAll('a[href^="#"]')) {
         anchor.addEventListener('click', (e) => {
           e.preventDefault();
           const href = (anchor as HTMLAnchorElement).getAttribute('href');
@@ -67,7 +69,7 @@ export default function Header() {
             }
           }
         });
-      });
+      }
     };
 
     // Initialize all functionality

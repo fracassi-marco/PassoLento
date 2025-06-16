@@ -6,7 +6,7 @@ export default function CookieBanner() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const consent = window.localStorage.getItem("count");
+    const consent = window.localStorage.getItem("cookieConsent");
     if (!consent) {
       setTimeout(() => {
         return setIsVisible(true);
@@ -34,7 +34,7 @@ export default function CookieBanner() {
         <div className="cookie-text">
           🍪 PassoLento utilizza cookie per migliorare la tua esperienza di navigazione.
           Continuando la navigazione accetti l'uso dei cookie.
-          <a href="./privacy_policy.html">Scopri di più</a>
+          <a href="/privacy_policy">Scopri di più</a>
         </div>
         <div className="cookie-buttons">
           <button className="cookie-btn cookie-accept" onClick={acceptCookies}>Accetta</button>

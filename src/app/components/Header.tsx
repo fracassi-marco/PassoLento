@@ -27,32 +27,60 @@ export default function Header() {
       });
     };
 
+    // Initialize navbar scroll behavior
+    const initNavbarScroll = () => {
+      let lastScrollTop = 0;
+      const navbar = document.getElementById('navbar');
+
+      const handleScroll = () => {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > 100) {
+          navbar?.classList.add('visible');
+        } else {
+          navbar?.classList.remove('visible');
+        }
+
+        lastScrollTop = scrollTop;
+      };
+
+      window.addEventListener('scroll', handleScroll);
+      
+      // Return cleanup function
+      return () => window.removeEventListener('scroll', handleScroll);
+    };
+
     // Initialize smooth scrolling
     const initSmoothScrolling = () => {
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
+        anchor.addEventListener('click', (e) => {
           e.preventDefault();
-          const target = document.querySelector(this.getAttribute('href')!);
-          if (target) {
-            const offsetTop = target.getBoundingClientRect().top + window.pageYOffset - 80;
-            window.scrollTo({
-              top: offsetTop,
-              behavior: 'smooth'
-            });
+          const href = (anchor as HTMLAnchorElement).getAttribute('href');
+          if (href) {
+            const target = document.querySelector(href);
+            if (target) {
+              const offsetTop = target.getBoundingClientRect().top + window.pageYOffset - 80;
+              window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+              });
+            }
           }
         });
       });
     };
 
-    // Initialize animations and smooth scrolling
+    // Initialize all functionality
     initFadeInAnimations();
+    const cleanupNavbarScroll = initNavbarScroll();
     initSmoothScrolling();
 
-    // Cleanup observer on component unmount
+    // Cleanup function
     return () => {
       if (fadeInRef.current) {
         fadeInRef.current.disconnect();
       }
+      cleanupNavbarScroll();
     };
   }, []);
 
@@ -126,6 +154,17 @@ export default function Header() {
           </ul>
         </div>
       </nav>
+
+      <style jsx>{`
+        #navbar {
+          transform: translateY(-100%);
+          transition: transform 0.3s ease-in-out;
+        }
+
+        #navbar.visible {
+          transform: translateY(0);
+        }
+      `}</style>
     </header>
   );
 }

@@ -3,7 +3,7 @@ import defaultMetadata from "@/app/components/DefaultMetadata";
 export const metadata = defaultMetadata(
   "Informativa sulla Privacy",
   "L'informativa descrive le modalità di trattamento dei dati personali degli utenti che consultano PassoLento, guida hiking",
-  "/privacy_policy",
+  "/privacy-policy",
   ["https://passolento.com/dolomiti-bellunesi.webp"]
 );
 

@@ -2258,3 +2258,62 @@ em {
     justify-content: center;
   }
 }
+
+/************ BEGIN: ICONS ************/
+/* Custom Font Awesome subset - Only WOFF2 for modern browsers */
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/fonts/fa-solid-900.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/fa-brands-400.woff2") format("woff2");
+}
+
+/* Essential Font Awesome base styles */
+.fa, .fas, .fab {
+  font-family: inherit;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Font family assignments */
+.fas {
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
+}
+
+.fab {
+  font-family: "Font Awesome 6 Brands" !important;
+  font-weight: 400 !important;
+}
+
+/* Icon content - using ::before pseudo-elements */
+.fa-mountain::before { content: "\f6fc"; }
+.fa-chevron-down::before { content: "\f078"; }
+.fa-heart::before { content: "\f004"; }
+.fa-leaf::before { content: "\f06c"; }
+.fa-clock::before { content: "\f017"; }
+.fa-route::before { content: "\f4d7"; }
+.fa-map-marker-alt::before { content: "\f3c5"; }
+.fa-phone::before { content: "\f095"; }
+.fa-envelope::before { content: "\f0e0"; }
+.fa-whatsapp::before { content: "\f232"; }
+
+/* Size utilities */
+.fa-sm { font-size: 0.875em; }
+.fa-lg { font-size: 1.33333em; }
+.fa-xl { font-size: 1.5em; }
+.fa-2x { font-size: 2em; }
+/************ END: ICONS ************/

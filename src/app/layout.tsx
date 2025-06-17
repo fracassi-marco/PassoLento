@@ -24,20 +24,6 @@ export default function RootLayout({
       <meta name="robots" content="noindex, nofollow"/>
 
       <link rel="preload" href="/dolomiti-bellunesi.webp" as="image"/>
-
-      <link rel="preconnect" href="https://cdnjs.cloudflare.com"/>
-      <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com"/>
-      <link
-        rel="preload"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        as="style"
-        crossOrigin="anonymous"
-      />
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        crossOrigin="anonymous"
-      />
     </head>
 
     <body>

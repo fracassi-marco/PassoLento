@@ -19,9 +19,37 @@ export default function RootLayout({
     <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <meta name="author" content="Marco Fracassi"/>
-      <meta name="robots" content="noindex, nofollow"/>
+      <meta name="robots" content="index, follow"/>
 
       <link rel="preload" href="/dolomiti-bellunesi.webp" as="image"/>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "PassoLento",
+            "description": "Guida Hiking nelle Dolomiti, per un camminare consapevole",
+            "url": "https://passolento.com",
+            "telephone": "+39-347-1364144",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Trento",
+              "addressRegion": "Trentino Alto Adige",
+              "addressCountry": "IT"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "46.06",
+              "longitude": "11.12"
+            },
+            "serviceArea": {
+              "@type": "Place",
+              "name": "Dolomiti"
+            }
+          })
+        }}
+      />
     </head>
 
     <body>

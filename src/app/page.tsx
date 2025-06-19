@@ -3,7 +3,7 @@ import HomeHero from "./components/HomeHero";
 
 export const metadata = defaultMetadata(
   "Guida Hiking nelle Dolomiti",
-  "Scopri le Dolomiti con PassoLento. Marco Fracassi, guida hiking certificata tra Trento e Rivamonte Agordino. Escursioni consapevoli nelle Dolomiti trentine e bellunesi.",
+  "Scopri le Dolomiti con PassoLento. Marco Fracassi, guida hiking certificata. Escursioni consapevoli nelle Dolomiti trentine e bellunesi.",
   "",
   ["https://passolento.com/dolomiti-bellunesi.webp"]
 );

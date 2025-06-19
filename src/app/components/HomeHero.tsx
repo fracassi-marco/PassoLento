@@ -3,7 +3,7 @@ export default function HomeHero() {
     <section id="home" className="hero">
         <div className="hero-content">
           <div className="hero-brand">
-            <h1>PassoLento</h1>
+            <h1>PassoLento Hiking</h1>
             <div className="brand-divider"></div>
           </div>
           <p className="subtitle">Guida Hiking nelle Dolomiti, per un camminare consapevole</p>

@@ -16,8 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="it">
-    <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <head>      
       <meta name="author" content="Marco Fracassi"/>
       <meta name="robots" content="index, follow"/>
 

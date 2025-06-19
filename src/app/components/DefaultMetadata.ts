@@ -12,6 +12,9 @@ const defaultMetadata = (
     title: fullTitle,
     description,
     metadataBase: new URL(fullUrl),
+    alternates: {
+      canonical: fullUrl,
+    },
     openGraph: {
       title: fullTitle,
       description,

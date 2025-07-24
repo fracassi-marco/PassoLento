@@ -1867,8 +1867,6 @@ em {
 }
 
 .article-intro .lead {
-  font-size: 1.3rem;
-  font-weight: 300;
   color: #2c5530;
   margin-bottom: 2rem;
   line-height: 1.6;
@@ -2154,10 +2152,26 @@ em {
 
 /* CTA Section */
 .article-cta {
-  background: linear-gradient(135deg, #2c5530, #228b22);
+  background: linear-gradient(135deg, #2c5530, #4CAF50);
   color: white;
-  padding: 4rem 2rem;
+  padding: 3rem 2rem 4rem 2rem; /* Aggiunto padding bottom */
   text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem; /* Margine in basso */
+  border-radius: 0; /* Rimossi angoli arrotondati */
+}
+
+.article-cta h3 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.article-cta p {
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cta-content {

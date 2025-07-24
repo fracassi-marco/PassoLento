@@ -335,7 +335,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/*<section id="blog" className="blog fade-in">
+      <section id="blog" className="blog fade-in">
           <h2>Guide e Consigli</h2>
           <div className="blog-intro">
               <p>Scopri guide utili e consigli pratici per vivere al meglio le tue esperienze di trekking e nordic walking nelle Dolomiti con la filosofia <strong>PassoLento</strong></p>
@@ -344,21 +344,21 @@ export default function Home() {
           <div className="blog-grid">
               <article className="blog-post">
                   <div className="blog-image">
-                      <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&h=200&fit=crop&crop=center" alt="Equipaggiamento per escursioni nelle Dolomiti" loading="lazy">
-                      <div className="blog-category">Preparazione</div>
+                      <img src="/blog/1/fontana-1.webp" alt="Fontana guardina in Valchesina a Rivamonte Agordino" loading="lazy" />
+                      <div className="blog-category">Passeggiata</div>
                   </div>
                   <div className="blog-content">
-                      <h3>Come prepararsi per un'escursione nelle Dolomiti</h3>
-                      <p>Tutto quello che devi sapere per affrontare al meglio i sentieri dolomitioi: equipaggiamento essenziale, abbigliamento a strati e preparazione fisica seguendo l'approccio PassoLento.</p>
+                      <h3>Valchesina: La Passeggiata delle Fontane</h3>
+                      <p>Un viaggio contemplativo tra le fontane secolari di Rivamonte Agordino, dove ogni goccia racconta una storia</p>
                       <div className="blog-meta">
-                          <time datetime="2025-06-10">10 Giugno 2025</time>
+                          <time dateTime="2025-07-24">24 Luglio 2025</time>
                           <span className="reading-time">5 min di lettura</span>
                       </div>
-                      <a href="#" className="blog-read-more">Leggi la guida completa</a>
+                      <a href="/blog/valchesina-rivamonte-agordino" className="blog-read-more">Scopri l'escursione</a>
                   </div>
               </article>
 
-              <article className="blog-post">
+              {/* <article className="blog-post">
                   <div className="blog-image">
                       <img src="https://images.unsplash.com/photo-1486496572940-2bb2341fdbdf?w=400&h=250&fit=crop&crop=center" alt="Tecnica Nordic Walking nelle Dolomiti" loading="lazy">
                       <div className="blog-category">Nordic Walking</div>
@@ -404,18 +404,18 @@ export default function Home() {
                       </div>
                       <a href="#" className="blog-read-more">Esplora i sentieri</a>
                   </div>
-              </article>
+              </article> */}
           </div>
 
-          <div className="blog-view-all">
+          {/*<div className="blog-view-all">
               <h3>🌲 Scopri tutti i nostri articoli</h3>
               <p>Approfondisci la filosofia PassoLento con guide dettagliate, consigli pratici e storie dalle Dolomiti</p>
               <a href="./blog.html" className="view-all-btn">
                   <i className="fas fa-book-open" aria-hidden="true"></i>
                   Vedi tutti gli articoli del blog
               </a>
-          </div>
-      </section>*/}
+          </div>*/}
+      </section>
     </>
   );
 }

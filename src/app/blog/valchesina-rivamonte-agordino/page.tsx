@@ -2,11 +2,10 @@ import BlogHero from "@/app/components/BlogHero";
 import defaultMetadata from "@/app/components/DefaultMetadata";
 
 export const metadata = defaultMetadata(
-  "Valchesina: La Passeggiata delle Fontane a Rivamonte Agordino - PassoLento",
+  "Valchesina: La Passeggiata delle Fontane a Rivamonte Agordino",
   "Scopri la magica passeggiata di Valchesina a Rivamonte Agordino. Un'escursione contemplativa tra fontane secolari, alla scoperta della potenza dell'acqua e del passo lento nelle Dolomiti Bellunesi.",
-  //"Valchesina, Rivamonte Agordino, passeggiata fontane, escursioni dolomiti, passo lento, contemplazione",
   "https://passolento.com/blog/valchesina-rivamonte-agordino/",
-  ["https://passolento.com/valchesina-fontane.webp"],
+  ["https://passolento.com//blog/1/fontana-1.webp"],
 );
 
 export default function ValchesinaArticle() {

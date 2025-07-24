@@ -1246,6 +1246,20 @@ em {
    BLOG SECTION - CLEAN VERSION
    =============================== */
 
+/* Blog Grid - 1 colonna su mobile */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  .blog-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
 /* Blog Section */
 .blog {
   background: #f8f9fa;
@@ -1344,15 +1358,49 @@ em {
 }
 
 .blog-read-more {
-  color: #ff6b35;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #4CAF50, #81C784);
+  color: white;
   text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
   font-weight: 600;
   font-size: 0.9rem;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+  border: none;
+  cursor: pointer;
+  text-transform: none;
+  margin: 1rem auto 0 auto;
+  display: block;
+  width: fit-content;
 }
 
 .blog-read-more:hover {
-  color: #228b22;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+  background: linear-gradient(135deg, #45a049, #7bc67e);
+}
+
+.blog-read-more:active {
+  transform: translateY(0);
+}
+
+/* Aggiungi icona se vuoi */
+.blog-read-more::before {
+  content: "\f6fc"; /* icona montagna */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-right: 0.25rem;
+}
+
+/* Per mobile */
+@media (max-width: 768px) {
+  .blog-read-more {
+    padding: 0.6rem 1.25rem;
+    font-size: 0.85rem;
+  }
 }
 
 /* View All Blog Section */
@@ -1587,7 +1635,6 @@ em {
 
 .blog-article {
   background: white;
-  border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
   transition: all 0.3s ease;

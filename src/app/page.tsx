@@ -354,57 +354,24 @@ export default function Home() {
                           <time dateTime="2025-07-24">24 Luglio 2025</time>
                           <span className="reading-time">5 min di lettura</span>
                       </div>
-                      <a href="/blog/valchesina-rivamonte-agordino" className="blog-read-more">Scopri l'escursione</a>
-                  </div>
-              </article>
-
-              {/* <article className="blog-post">
-                  <div className="blog-image">
-                      <img src="https://images.unsplash.com/photo-1486496572940-2bb2341fdbdf?w=400&h=250&fit=crop&crop=center" alt="Tecnica Nordic Walking nelle Dolomiti" loading="lazy">
-                      <div className="blog-category">Nordic Walking</div>
-                  </div>
-                  <div className="blog-content">
-                      <h3>Nordic Walking: la tecnica per camminare consapevolmente</h3>
-                      <p>Scopri i fondamenti del Nordic Walking applicati alla filosofia PassoLento. Come utilizzare correttamente i bastoncini per un'esperienza di camminata meditativa e benefica.</p>
-                      <div className="blog-meta">
-                          <time datetime="2025-06-08">8 Giugno 2025</time>
-                          <span className="reading-time">7 min di lettura</span>
-                      </div>
-                      <a href="#" className="blog-read-more">Scopri la tecnica</a>
+                      <a href="/blog/valchesina-rivamonte-agordino/" className="blog-read-more">Scopri l'escursione</a>
                   </div>
               </article>
 
               <article className="blog-post">
                   <div className="blog-image">
-                      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=200&fit=crop&crop=center" alt="Mindfulness in montagna Dolomiti" loading="lazy">
-                      <div className="blog-category">Mindfulness</div>
+                      <img src="/blog/2/montagna.webp" alt="Val di Fassa" loading="lazy" />
+                      <div className="blog-category">Passeggiata</div>
                   </div>
                   <div className="blog-content">
-                      <h3>Mindfulness in montagna: il cuore di PassoLento</h3>
-                      <p>Come integrare pratiche di consapevolezza durante le escursioni. Tecniche di respirazione, camminata barefoot e momenti di silenzio per connettersi con la natura.</p>
-                      <div className="blog-meta">
-                          <time datetime="2025-06-05">5 Giugno 2025</time>
+                      <h3>Val di Fassa: Da Pera di Fassa a Canazei</h3>
+                      <p>Una passeggiata rigenerante lungo il fiume Avisio, tra le maestose vette delle Dolomiti e fontane di montagna purissime.</p>
+                      <div className="blog-meta">                          
                           <span className="reading-time">6 min di lettura</span>
                       </div>
-                      <a href="#" className="blog-read-more">Approfondisci</a>
+                      <a href="/blog/val-di-fassa-pera-canazei/" className="blog-read-more">Scopri la passeggiata</a>
                   </div>
-              </article>
-
-              <article className="blog-post">
-                  <div className="blog-image">
-                      <img src="https://images.unsplash.com/photo-1486496572940-2bb2341fdbdf?w=400&h=250&fit=crop&crop=center" alt="Sentieri facili nelle Dolomiti per principianti" loading="lazy">
-                      <div className="blog-category">Itinerari</div>
-                  </div>
-                  <div className="blog-content">
-                      <h3>5 sentieri facili nelle Dolomiti per iniziare</h3>
-                      <p>Una selezione di percorsi accessibili perfetti per chi si avvicina al trekking o vuole vivere l'esperienza PassoLento. Itinerari testati e adatti a tutti i livelli.</p>
-                      <div className="blog-meta">
-                          <time datetime="2025-06-03">3 Giugno 2025</time>
-                          <span className="reading-time">8 min di lettura</span>
-                      </div>
-                      <a href="#" className="blog-read-more">Esplora i sentieri</a>
-                  </div>
-              </article> */}
+              </article>              
           </div>
 
           {/*<div className="blog-view-all">

@@ -112,7 +112,7 @@ export default function ValchesinaArticle() {
     <span className="info-value">1 ora e mezza</span>
   </div>
   <div className="info-row">
-    <span className="info-label"><i className="fas fa-route"></i> Difficoltà:</span>
+    <span className="info-label"><i className="fas fa-heart-pulse"></i> Difficoltà:</span>
     <span className="info-value">Facilissima</span>
   </div>
   <div className="info-row">

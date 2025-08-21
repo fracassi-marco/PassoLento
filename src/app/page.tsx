@@ -184,6 +184,9 @@ export default function Home() {
               basate su contributo volontario consapevole.</p>
             <p>Per rimanere aggiornato su tutte le attività di <em>PassoLento</em> e ricevere il calendario
               completo, <a href="#contact">contattami direttamente</a>.</p>
+            <div className="calendar-info">
+              <p>📋 Prima di partecipare, ti consigliamo di leggere il nostro <a href="/regolamento-escursioni" className="regolamento-link">regolamento escursioni</a> per prepararti al meglio all'esperienza PassoLento.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -366,8 +369,9 @@ export default function Home() {
                   <div className="blog-content">
                       <h3>Val di Fassa: Da Pera di Fassa a Canazei</h3>
                       <p>Una passeggiata rigenerante lungo il fiume Avisio, tra le maestose vette delle Dolomiti e fontane di montagna purissime.</p>
-                      <div className="blog-meta">                          
-                          <span className="reading-time">6 min di lettura</span>
+                      <div className="blog-meta">
+                        <time dateTime="2025-08-18">18 Agosto 2025</time>
+                        <span className="reading-time">6 min di lettura</span>
                       </div>
                       <a href="/blog/val-di-fassa-pera-canazei/" className="blog-read-more">Scopri la passeggiata</a>
                   </div>

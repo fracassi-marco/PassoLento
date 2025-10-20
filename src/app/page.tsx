@@ -375,7 +375,23 @@ export default function Home() {
                       </div>
                       <a href="/blog/val-di-fassa-pera-canazei/" className="blog-read-more">Scopri la passeggiata</a>
                   </div>
-              </article>              
+              </article>
+
+              <article className="blog-post">
+                  <div className="blog-image">
+                      <img src="/blog/3/fonte-acqua-zoom.webp" alt="Fonte acqua" loading="lazy" />
+                      <div className="blog-category">Esperienza</div>
+                  </div>
+                  <div className="blog-content">
+                      <h3>La Magia della Fonte del Mattino</h3>
+                      <p>Scopri la bellezza di un gesto semplice che diventa rituale contemplativo per rallentare</p>
+                      <div className="blog-meta">
+                        <time dateTime="2025-08-18">20 Ottobre 2025</time>
+                        <span className="reading-time">5 min di lettura</span>
+                      </div>
+                      <a href="/blog/magia-fonte-mattino/" className="blog-read-more">Scopri di più</a>
+                  </div>
+              </article>
           </div>
 
           {/*<div className="blog-view-all">

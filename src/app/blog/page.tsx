@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import BlogHero from "../components/BlogHero";
+import BlogPostCard from "../components/BlogPostCard";
 import blogPostsData from "@/data/blogPosts.json";
 
 interface BlogPost {
@@ -54,29 +54,7 @@ export default function BlogPage() {
           {/* Grid degli articoli */}
           <div className="blog-grid">
             {filteredPosts.map((post) => (
-              <article key={post.id} className="blog-post">
-                <div className="blog-image">
-                  <img src={post.image} alt={post.title} loading="lazy" />
-                  <div className="blog-category">{post.category}</div>
-                </div>
-                <div className="blog-content">
-                  <h3>{post.title}</h3>
-                  <p>{post.excerpt}</p>
-                  <div className="blog-meta">
-                    <time dateTime={post.date}>
-                      {new Date(post.date).toLocaleDateString('it-IT', {
-                        day: 'numeric',
-                        month: 'long',
-                        year: 'numeric'
-                      })}
-                    </time>
-                    <span className="reading-time">{post.readTime} di lettura</span>
-                  </div>
-                  <Link href={`/blog/${post.slug}/`} className="blog-read-more">
-                    Leggi l'articolo
-                  </Link>
-                </div>
-              </article>
+              <BlogPostCard key={post.id} {...post} />
             ))}
           </div>
 

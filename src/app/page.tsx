@@ -1,5 +1,6 @@
 import defaultMetadata from "@/app/components/DefaultMetadata";
 import HomeHero from "./components/HomeHero";
+import BlogPostCard from "./components/BlogPostCard";
 import blogPosts from "@/data/blogPosts.json";
 
 export const metadata = defaultMetadata(
@@ -347,27 +348,7 @@ export default function Home() {
 
           <div className="blog-grid">
               {blogPosts.map((post) => (
-                <article key={post.id} className="blog-post">
-                    <div className="blog-image">
-                        <img src={post.image} alt={post.title} loading="lazy" />
-                        <div className="blog-category">{post.category}</div>
-                    </div>
-                    <div className="blog-content">
-                        <h3>{post.title}</h3>
-                        <p>{post.excerpt}</p>
-                        <div className="blog-meta">
-                            <time dateTime={post.date}>
-                              {new Date(post.date).toLocaleDateString('it-IT', {
-                                day: 'numeric',
-                                month: 'long',
-                                year: 'numeric'
-                              })}
-                            </time>
-                            <span className="reading-time">{post.readTime} di lettura</span>
-                        </div>
-                        <a href={`/blog/${post.slug}/`} className="blog-read-more">Leggi l'articolo</a>
-                    </div>
-                </article>
+                <BlogPostCard key={post.id} {...post} />
               ))}
           </div>
 

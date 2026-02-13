@@ -394,14 +394,14 @@ export default function Home() {
               </article>
           </div>
 
-          {/*<div className="blog-view-all">
-              <h3>🌲 Scopri tutti i nostri articoli</h3>
+          {<div className="blog-view-all">
+              <h3>🌲 Scopri tutte le Guide e i Consigli</h3>
               <p>Approfondisci la filosofia PassoLento con guide dettagliate, consigli pratici e storie dalle Dolomiti</p>
-              <a href="./blog.html" className="view-all-btn">
+              <a href="./blog/" className="view-all-btn">
                   <i className="fas fa-book-open" aria-hidden="true"></i>
                   Vedi tutti gli articoli del blog
               </a>
-          </div>*/}
+          </div>}
       </section>
     </>
   );

@@ -1,5 +1,6 @@
 import defaultMetadata from "@/app/components/DefaultMetadata";
 import HomeHero from "./components/HomeHero";
+import blogPosts from "@/data/blogPosts.json";
 
 export const metadata = defaultMetadata(
   "Guida Hiking nelle Dolomiti",
@@ -345,53 +346,29 @@ export default function Home() {
           </div>
 
           <div className="blog-grid">
-              <article className="blog-post">
-                  <div className="blog-image">
-                      <img src="/blog/1/fontana-1.webp" alt="Fontana guardina in Valchesina a Rivamonte Agordino" loading="lazy" />
-                      <div className="blog-category">Passeggiata</div>
-                  </div>
-                  <div className="blog-content">
-                      <h3>Valchesina: La Passeggiata delle Fontane</h3>
-                      <p>Un viaggio contemplativo tra le fontane secolari di Rivamonte Agordino, dove ogni goccia racconta una storia</p>
-                      <div className="blog-meta">
-                          <time dateTime="2025-07-24">24 Luglio 2025</time>
-                          <span className="reading-time">5 min di lettura</span>
-                      </div>
-                      <a href="/blog/valchesina-rivamonte-agordino/" className="blog-read-more">Scopri l'escursione</a>
-                  </div>
-              </article>
-
-              <article className="blog-post">
-                  <div className="blog-image">
-                      <img src="/blog/2/montagna.webp" alt="Val di Fassa" loading="lazy" />
-                      <div className="blog-category">Passeggiata</div>
-                  </div>
-                  <div className="blog-content">
-                      <h3>Val di Fassa: Da Pera di Fassa a Canazei</h3>
-                      <p>Una passeggiata rigenerante lungo il fiume Avisio, tra le maestose vette delle Dolomiti e fontane di montagna purissime.</p>
-                      <div className="blog-meta">
-                        <time dateTime="2025-08-18">18 Agosto 2025</time>
-                        <span className="reading-time">6 min di lettura</span>
-                      </div>
-                      <a href="/blog/val-di-fassa-pera-canazei/" className="blog-read-more">Scopri la passeggiata</a>
-                  </div>
-              </article>
-
-              <article className="blog-post">
-                  <div className="blog-image">
-                      <img src="/blog/3/fonte-acqua-zoom.webp" alt="Fonte acqua" loading="lazy" />
-                      <div className="blog-category">Esperienza</div>
-                  </div>
-                  <div className="blog-content">
-                      <h3>La Magia della Fonte del Mattino</h3>
-                      <p>Scopri la bellezza di un gesto semplice che diventa rituale contemplativo per rallentare</p>
-                      <div className="blog-meta">
-                        <time dateTime="2025-08-18">20 Ottobre 2025</time>
-                        <span className="reading-time">5 min di lettura</span>
-                      </div>
-                      <a href="/blog/magia-fonte-mattino/" className="blog-read-more">Scopri di più</a>
-                  </div>
-              </article>
+              {blogPosts.map((post) => (
+                <article key={post.id} className="blog-post">
+                    <div className="blog-image">
+                        <img src={post.image} alt={post.title} loading="lazy" />
+                        <div className="blog-category">{post.category}</div>
+                    </div>
+                    <div className="blog-content">
+                        <h3>{post.title}</h3>
+                        <p>{post.excerpt}</p>
+                        <div className="blog-meta">
+                            <time dateTime={post.date}>
+                              {new Date(post.date).toLocaleDateString('it-IT', {
+                                day: 'numeric',
+                                month: 'long',
+                                year: 'numeric'
+                              })}
+                            </time>
+                            <span className="reading-time">{post.readTime} di lettura</span>
+                        </div>
+                        <a href={`/blog/${post.slug}/`} className="blog-read-more">Leggi l'articolo</a>
+                    </div>
+                </article>
+              ))}
           </div>
 
           {<div className="blog-view-all">

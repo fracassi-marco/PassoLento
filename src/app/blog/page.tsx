@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import BlogHero from "../components/BlogHero";
+import blogPostsData from "@/data/blogPosts.json";
 
 interface BlogPost {
   id: string;
@@ -15,38 +16,7 @@ interface BlogPost {
   slug: string;
 }
 
-const blogPosts: BlogPost[] = [
-  {
-    id: "1",
-    title: "Valchesina: La Passeggiata delle Fontane",
-    excerpt: "Un viaggio contemplativo tra le fontane secolari di Rivamonte Agordino, dove ogni goccia racconta una storia",
-    category: "Escursioni",
-    date: "2025-07-24",
-    readTime: "5 min",
-    image: "/blog/1/fontana-1.webp",
-    slug: "valchesina-rivamonte-agordino"
-  },
-  {
-    id: "2", 
-    title: "Val di Fassa: Da Pera di Fassa a Canazei",
-    excerpt: "Una passeggiata rigenerante lungo il fiume Avisio, tra le maestose vette delle Dolomiti e fontane di montagna purissime",
-    category: "Escursioni",
-    date: "2025-06-15",
-    readTime: "6 min",
-    image: "/blog/2/montagna.webp",
-    slug: "val-di-fassa-pera-canazei"
-  },
-  {
-    id: "3",
-    title: "La Magia della Fonte del Mattino",
-    excerpt: "Quando l'acqua diventa rituale e l'autunno si trasforma in preghiera quotidiana",
-    category: "Riflessioni",
-    date: "2025-10-20",
-    readTime: "4 min", 
-    image: "/blog/3/fonte-acqua-zoom.webp",
-    slug: "magia-fonte-mattino"
-  }
-];
+const blogPosts: BlogPost[] = blogPostsData;
 
 const categories = ["Tutti", "Escursioni", "Riflessioni", "Consigli"];
 

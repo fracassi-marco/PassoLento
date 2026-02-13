@@ -147,9 +147,9 @@ export default function Header() {
             <li className="nav-item">
               <a href="/#philosophy" className="nav-link" aria-label="La mia filosofia" onClick={closeMenu}>Filosofia</a>
             </li>
-            {/*<li class="nav-item">
-                <a href="./blog.html" class="nav-link blog-link" aria-label="Leggi il blog">📝 Blog</a>
-            </li>*/}
+            {<li className="nav-item">
+                <a href="/blog" className="nav-link blog-link" aria-label="Leggi il blog">📝 Blog</a>
+            </li>}
             <li className="nav-item">
               <a href="/#contact" className="nav-link" aria-label="Contattami" onClick={closeMenu}>Contatti</a>
             </li>

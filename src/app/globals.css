@@ -2651,6 +2651,12 @@ em {
 .fa-phone::before { content: "\f095"; }
 .fa-envelope::before { content: "\f0e0"; }
 .fa-whatsapp::before { content: "\f232"; }
+.fa-calendar-alt::before { content: "\f073"; }
+.fa-arrow-left::before { content: "\f060"; }
+.fa-book-open::before { content: "\f518"; }
+.fa-tint::before { content: "\f043"; }
+.fa-seedling::before { content: "\f4d8"; }
+.fa-gift::before { content: "\f06b"; }
 
 /* Size utilities */
 .fa-sm { font-size: 0.875em; }

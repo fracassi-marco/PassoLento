@@ -1,0 +1,48 @@
+[
+  {
+    "id": "1",
+    "day": "23",
+    "month": "Luglio 2025",
+    "date": "2025-07-23",
+    "difficulty": "Pranzo al sacco o in malga",
+    "title": "Cascata di Cavalese - Malga Salanzada",
+    "description": "Un percorso dolce tra i pascoli alpini con la filosofia PassoLento. Camminata consapevole con soste meditative e tratti a piedi nudi sui prati.",
+    "meta": [
+      {
+        "icon": "fa-clock",
+        "text": "10:30 - 15:00"
+      },
+      {
+        "icon": "fa-route",
+        "text": "7 km"
+      },
+      {
+        "icon": "fa-mountain",
+        "text": "+250m dislivello"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "day": "8-10",
+    "month": "Maggio 2026",
+    "date": "2026-05-08",
+    "difficulty": "Cammino di 3 giorni",
+    "title": "Cammino delle Terre Sospese (anello alto)",
+    "description": "Un'esperienza immersiva tra i vigneti terrazzati, i boschi e i sentieri silenziosi della Val di Cembra. Tre giorni per staccare dal rumore quotidiano, riscoprire il passo lento e guardare il mondo (e se stessi) da una prospettiva diversa.",
+    "meta": [
+      {
+        "icon": "fa-calendar-alt",
+        "text": "3 giorni"
+      },
+      {
+        "icon": "fa-route",
+        "text": "54 km"
+      },
+      {
+        "icon": "fa-mountain",
+        "text": "+2500m dislivello"
+      }
+    ]
+  }
+]

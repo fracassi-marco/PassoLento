@@ -3,6 +3,7 @@ import HomeHero from "./components/HomeHero";
 import BlogPostCard from "./components/BlogPostCard";
 import Button from "./components/Button";
 import blogPosts from "@/data/blogPosts.json";
+import events from "@/data/events.json";
 
 export const metadata = defaultMetadata(
   "Guida Hiking nelle Dolomiti",
@@ -96,92 +97,30 @@ export default function Home() {
               Ogni escursione è pensata per celebrare la bellezza del cammino lento e consapevole.</p>
           </div>
           <div className="events-grid">
-            <div className="event-card">
-              <div className="event-date">
-                <div className="event-day">23</div>
-                <div className="event-month">Luglio 2025</div>
-              </div>
-              <div className="event-content">
-                <div className="event-difficulty">Pranzo al sacco o in malga</div>
-                <h3 className="event-title">Cascata di Cavalese - Malga Salanzada</h3>
-                <p className="event-details">Un percorso dolce tra i pascoli alpini con la filosofia
-                  <em>PassoLento</em>. Camminata consapevole con soste meditative e tratti a piedi nudi
-                  sui prati.</p>
-                <div className="event-meta">
-                  <div className="event-meta-item">
-                    <i className="fas fa-clock"></i>
-                    <span>10:30 - 15:00</span>
-                  </div>
-                  <div className="event-meta-item">
-                    <i className="fas fa-route"></i>
-                    <span>7 km</span>
-                  </div>
-                  <div className="event-meta-item">
-                    <i className="fas fa-mountain"></i>
-                    <span>+250m dislivello</span>
-                  </div>
-                </div>
-                <Button href="#contact" variant="primary">
-                  Prenota su PassoLento
-                </Button>
-              </div>
-            </div>
-
-            {/*<div className="event-card">
+            {events.map((event) => (
+              <div key={event.id} className="event-card">
                 <div className="event-date">
-                    <div className="event-day">22</div>
-                    <div className="event-month">Giugno 2025</div>
+                  <div className="event-day">{event.day}</div>
+                  <div className="event-month">{event.month}</div>
                 </div>
                 <div className="event-content">
-                    <div className="event-difficulty">Ritmo Naturale</div>
-                    <h3 className="event-title">Camminata al Lago di Carezza</h3>
-                    <p className="event-details">Sessione Hiking con l'approccio <em>PassoLento</em>
-                        intorno al famoso "Lago Arcobaleno" con tecniche di respirazione consapevole.</p>
-                    <div className="event-meta">
-                        <div className="event-meta-item">
-                            <i className="fas fa-clock"></i>
-                            <span>14:00 - 17:30</span>
-                        </div>
-                        <div className="event-meta-item">
-                            <i className="fas fa-route"></i>
-                            <span>6 km</span>
-                        </div>
-                        <div className="event-meta-item">
-                            <i className="fas fa-mountain"></i>
-                            <span>+150m dislivello</span>
-                        </div>
-                    </div>
-                    <a href="#contact" className="event-book-btn">Prenota su PassoLento</a>
+                  <div className="event-difficulty">{event.difficulty}</div>
+                  <h3 className="event-title">{event.title}</h3>
+                  <p className="event-details">{event.description}</p>
+                  <div className="event-meta">
+                    {event.meta.map((item, index) => (
+                      <div key={index} className="event-meta-item">
+                        <i className={`fas ${item.icon}`}></i>
+                        <span>{item.text}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <Button href="#contact" variant="primary">
+                    Prenota su PassoLento
+                  </Button>
                 </div>
-            </div>*/}
-
-            {/*<div className="event-card">
-                <div className="event-date">
-                    <div className="event-day">29</div>
-                    <div className="event-month">Giugno 2025</div>
-                </div>
-                <div className="event-content">
-                    <div className="event-difficulty">Alba Lenta</div>
-                    <h3 className="event-title">Alba consapevole al Passo Giau</h3>
-                    <p className="event-details">Esperienza unica firmata <em>PassoLento</em> per assistere all'alba
-                        sulle Dolomiti con pratica di mindfulness e camminata barefoot sui prati alpini.</p>
-                    <div className="event-meta">
-                        <div className="event-meta-item">
-                            <i className="fas fa-clock"></i>
-                            <span>5:30 - 10:00</span>
-                        </div>
-                        <div className="event-meta-item">
-                            <i className="fas fa-route"></i>
-                            <span>4 km</span>
-                        </div>
-                        <div className="event-meta-item">
-                            <i className="fas fa-mountain"></i>
-                            <span>+200m dislivello</span>
-                        </div>
-                    </div>
-                    <a href="#contact" className="event-book-btn">Prenota su PassoLento</a>
-                </div>
-            </div>*/}
+              </div>
+            ))}
           </div>
 
           <div className="calendar-note">

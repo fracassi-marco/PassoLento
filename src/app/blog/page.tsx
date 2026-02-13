@@ -18,7 +18,7 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = blogPostsData;
 
-const categories = ["Tutti", "Escursioni", "Riflessioni", "Consigli"];
+const categories = ["Tutti", ...Array.from(new Set(blogPosts.map(post => post.category)))];
 
 export default function BlogPage() {
   const [selectedCategory, setSelectedCategory] = useState("Tutti");

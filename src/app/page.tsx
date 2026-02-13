@@ -97,30 +97,48 @@ export default function Home() {
               Ogni escursione è pensata per celebrare la bellezza del cammino lento e consapevole.</p>
           </div>
           <div className="events-grid">
-            {events.map((event) => (
-              <div key={event.id} className="event-card">
-                <div className="event-date">
-                  <div className="event-day">{event.day}</div>
-                  <div className="event-month">{event.month}</div>
-                </div>
-                <div className="event-content">
-                  <div className="event-difficulty">{event.difficulty}</div>
-                  <h3 className="event-title">{event.title}</h3>
-                  <p className="event-details">{event.description}</p>
-                  <div className="event-meta">
-                    {event.meta.map((item, index) => (
-                      <div key={index} className="event-meta-item">
-                        <i className={`fas ${item.icon}`}></i>
-                        <span>{item.text}</span>
-                      </div>
-                    ))}
+            {events
+              .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+              .slice(0, 3)
+              .map((event) => {
+              const eventDate = new Date(event.date);
+              const today = new Date();
+              today.setHours(0, 0, 0, 0); // Reset time to compare only dates
+              const isPast = eventDate < today;
+              
+              return (
+                <div key={event.id} className={`event-card ${isPast ? 'event-past' : ''}`}>
+                  <div className="event-date">
+                    <div className="event-day">{event.day}</div>
+                    <div className="event-month">{event.month}</div>
                   </div>
-                  <Button href="#contact" variant="primary">
-                    Prenota su PassoLento
-                  </Button>
+                  <div className="event-content">
+                    {isPast && <div className="event-badge-past">Evento concluso</div>}
+                    <div className="event-difficulty">{event.difficulty}</div>
+                    <h3 className="event-title">{event.title}</h3>
+                    <p className="event-details">{event.description}</p>
+                    <div className="event-meta">
+                      {event.meta.map((item, index) => (
+                        <div key={index} className="event-meta-item">
+                          <i className={`fas ${item.icon}`}></i>
+                          <span>{item.text}</span>
+                        </div>
+                      ))}
+                    </div>
+                    {!isPast ? (
+                      <Button href="#contact" variant="primary">
+                        Prenota su PassoLento
+                      </Button>
+                    ) : (
+                      <div className="event-closed">
+                        <i className="fas fa-clock"></i>
+                        <span>Questo evento si è già svolto</span>
+                      </div>
+                    )}
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
           <div className="calendar-note">

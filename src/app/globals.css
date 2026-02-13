@@ -1281,6 +1281,67 @@ a:focus, button:focus {
   box-shadow: 0 5px 15px rgba(34, 139, 34, 0.4);
 }
 
+/* Past Event Styles */
+.event-past {
+  opacity: 0.7;
+  position: relative;
+}
+
+.event-past:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border-color: #999;
+}
+
+.event-past .event-date {
+  background: linear-gradient(135deg, #999, #777);
+}
+
+.event-past .event-date::after {
+  background: linear-gradient(135deg, #999, #777);
+}
+
+.event-past .event-difficulty {
+  background: linear-gradient(135deg, #999, #777);
+}
+
+.event-past .event-meta-item i {
+  color: #999;
+}
+
+.event-badge-past {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #999;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.event-closed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: #f5f5f5;
+  border-radius: 10px;
+  color: #666;
+  font-size: 0.9rem;
+  font-style: italic;
+  border: 1px dashed #ccc;
+}
+
+.event-closed i {
+  color: #999;
+}
+
 .calendar-note {
   text-align: center;
   margin-top: 3rem;

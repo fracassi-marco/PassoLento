@@ -1,6 +1,7 @@
 import defaultMetadata from "@/app/components/DefaultMetadata";
 import HomeHero from "./components/HomeHero";
 import BlogPostCard from "./components/BlogPostCard";
+import Button from "./components/Button";
 import blogPosts from "@/data/blogPosts.json";
 
 export const metadata = defaultMetadata(
@@ -120,7 +121,9 @@ export default function Home() {
                     <span>+250m dislivello</span>
                   </div>
                 </div>
-                <a href="#contact" className="event-book-btn">Prenota su PassoLento</a>
+                <Button href="#contact" variant="primary">
+                  Prenota su PassoLento
+                </Button>
               </div>
             </div>
 
@@ -253,12 +256,14 @@ export default function Home() {
                 <em>PassoLento</em> rispondo sempre entro poche ore, senza fretta ma con attenzione!</p>
             </div>
 
-            <a
+            <Button 
               href="https://wa.me/393471364144?text=Ciao Marco! Ho visitato PassoLento e sono interessato alle tue escursioni nelle Dolomiti"
-              className="whatsapp-cta">
-              <i className="fab fa-whatsapp"></i>
+              variant="primary"
+              icon="fa-whatsapp"
+              className="whatsapp-cta-custom"
+            >
               Prenota via WhatsApp
-            </a>
+            </Button>
 
             {/*<div className="social-links">
                 <a href="#" className="social-link instagram" title="Seguimi su Instagram">
@@ -355,10 +360,14 @@ export default function Home() {
           {<div className="blog-view-all">
               <h3>🌲 Scopri tutte le Guide e i Consigli</h3>
               <p>Approfondisci la filosofia PassoLento con guide dettagliate, consigli pratici e storie dalle Dolomiti</p>
-              <a href="./blog/" className="view-all-btn">
-                  <i className="fas fa-book-open" aria-hidden="true"></i>
-                  Vedi tutti gli articoli del blog
-              </a>
+              <Button 
+                href="./blog/" 
+                variant="primary"
+                size="large"
+                icon="fa-book-open"
+              >
+                Vedi tutti gli articoli del blog
+              </Button>
           </div>}
       </section>
     </>

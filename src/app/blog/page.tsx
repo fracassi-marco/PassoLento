@@ -3,6 +3,7 @@
 import { useState } from "react";
 import BlogHero from "../components/BlogHero";
 import BlogPostCard from "../components/BlogPostCard";
+import Button from "../components/Button";
 import blogPostsData from "@/data/blogPosts.json";
 
 interface BlogPost {
@@ -41,13 +42,14 @@ export default function BlogPage() {
           {/* Filtri */}
           <div className="blog-filters">
             {categories.map((category) => (
-              <button
+              <Button
                 key={category}
-                className={`filter-btn ${selectedCategory === category ? 'active' : ''}`}
+                variant="filter"
+                active={selectedCategory === category}
                 onClick={() => setSelectedCategory(category)}
               >
                 {category}
-              </button>
+              </Button>
             ))}
           </div>
 

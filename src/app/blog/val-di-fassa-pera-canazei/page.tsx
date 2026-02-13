@@ -1,5 +1,6 @@
 import BlogHero from "@/app/components/BlogHero";
 import defaultMetadata from "@/app/components/DefaultMetadata";
+import Button from "@/app/components/Button";
 
 export const metadata = defaultMetadata(
   "Val di Fassa: Passeggiata da Pera di Fassa a Canazei",
@@ -168,10 +169,14 @@ export default function ValDiFassaArticle() {
       <section className="article-cta">
         <h3>Vuoi scoprire le montagne con PassoLento?</h3>
         <p>Unisciti a me in una delle prossime escursioni guidate alla scoperta delle Dolomiti. Insieme esploreremo il significato profondo del camminare lento tra le più belle vette.</p>
-        <a href="https://wa.me/393471364144?text=Ciao Marco! Ho letto l'articolo sulla Val di Fassa e sono interessato alle tue escursioni nelle Dolomiti" className="cta-button">
-            <i className="fas fa-mountain"></i>
-            Prenota la tua escursione
-        </a>
+        <Button 
+          href="https://wa.me/393471364144?text=Ciao Marco! Ho letto l'articolo sulla Val di Fassa e sono interessato alle tue escursioni nelle Dolomiti"
+          variant="neutral"
+          size="large"
+          icon="fa-mountain"
+        >
+          Prenota la tua escursione
+        </Button>
       </section>
     </article>
   );

@@ -1,4 +1,5 @@
 import defaultMetadata from "@/app/components/DefaultMetadata";
+import Button from "@/app/components/Button";
 
 export const metadata = defaultMetadata(
   "Informativa sulla Privacy",
@@ -13,10 +14,9 @@ export default function PrivacyPolicy() {
       <section className="blog-hero">
         <div className="blog-hero-content">
           <div className="back-to-home">
-            <a href="/" className="back-link">
-              <i className="fas fa-arrow-left"></i>
+            <Button href="/" variant="ghost" icon="fa-arrow-left">
               Torna a PassoLento
-            </a>
+            </Button>
           </div>
           <h1>Informativa sulla Privacy</h1>
           <p className="blog-hero-subtitle">PassoLento - Guida Hiking</p>

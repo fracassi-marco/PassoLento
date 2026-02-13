@@ -1,12 +1,17 @@
+import Button from "./Button";
+
 export default function BlogHero({title, subtitle}: {title: string, subtitle: string}) {
   return (
     <section className="blog-hero">
         <div className="blog-hero-content">
           <div className="back-to-home">
-            <a href="/" className="back-link">
-              <i className="fas fa-arrow-left"></i>
+            <Button 
+              href="/" 
+              variant="ghost"
+              icon="fa-arrow-left"
+            >
               Torna a PassoLento
-            </a>
+            </Button>
           </div>
           <h1>{title}</h1>
           <p className="blog-hero-subtitle">{subtitle}</p>

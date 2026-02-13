@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Button from "./Button";
 
 interface BlogPostCardProps {
   id: string;
@@ -40,9 +40,13 @@ export default function BlogPostCard({
           </time>
           <span className="reading-time">{readTime} di lettura</span>
         </div>
-        <Link href={`/blog/${slug}/`} className="blog-read-more">
+        <Button 
+          href={`/blog/${slug}/`} 
+          variant="primary" 
+          icon="fa-mountain"
+        >
           Leggi l'articolo
-        </Link>
+        </Button>
       </div>
     </article>
   );

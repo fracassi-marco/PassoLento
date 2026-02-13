@@ -1,5 +1,6 @@
 import BlogHero from "@/app/components/BlogHero";
 import defaultMetadata from "@/app/components/DefaultMetadata";
+import Button from "@/app/components/Button";
 
 export const metadata = defaultMetadata(
   "Valchesina: La Passeggiata delle Fontane a Rivamonte Agordino",
@@ -144,10 +145,14 @@ export default function ValchesinaArticle() {
       <section className="article-cta">
         <h3>Vuoi vivere questa esperienza?</h3>
         <p>Unisciti a me in una delle prossime escursioni guidate alla scoperta di Valchesina. Insieme esploreremo il significato profondo del camminare lento e della contemplazione.</p>
-        <a href="https://wa.me/393471364144?text=Ciao Marco! Ho visitato PassoLento e sono interessato alle tue escursioni nelle Dolomiti"className="cta-button">
-            <i className="fas fa-mountain"></i>
-            Prenota la tua escursione
-        </a>
+        <Button 
+          href="https://wa.me/393471364144?text=Ciao Marco! Ho visitato PassoLento e sono interessato alle tue escursioni nelle Dolomiti"
+          variant="neutral"
+          size="large"
+          icon="fa-mountain"
+        >
+          Prenota la tua escursione
+        </Button>
       </section>
     </article>
   );

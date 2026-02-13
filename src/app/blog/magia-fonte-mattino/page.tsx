@@ -1,5 +1,6 @@
 import BlogHero from "@/app/components/BlogHero";
 import defaultMetadata from "@/app/components/DefaultMetadata";
+import Button from "@/app/components/Button";
 
 export const metadata = defaultMetadata(
   "La Magia della Fonte del Mattino: Quando l'Acqua Diventa Rituale",
@@ -152,10 +153,14 @@ export default function MagiaFonteMattino() {
       <section className="article-cta">
         <h3>Vuoi scoprire i tuoi rituali della lentezza?</h3>
         <p>Unisciti a me nelle escursioni PassoLento, dove ogni passo è un'occasione per rallentare, ogni sosta un momento di contemplazione, ogni gesto un rituale di riconnessione con la natura.</p>
-        <a href="https://wa.me/393471364144?text=Ciao Marco! Ho letto l'articolo sulla fonte del mattino e sono interessato a scoprire i rituali della lentezza" className="cta-button">
-            <i className="fas fa-tint"></i>
-            Scopri la tua fonte interiore
-        </a>
+        <Button 
+          href="https://wa.me/393471364144?text=Ciao Marco! Ho letto l'articolo sulla fonte del mattino e sono interessato a scoprire i rituali della lentezza"
+          variant="neutral"
+          size="large"
+          icon="fa-tint"
+        >
+          Scopri la tua fonte interiore
+        </Button>
       </section>
     </article>
   );

@@ -309,7 +309,9 @@ export default function Home() {
           </div>
 
           <div className="blog-grid">
-              {blogPosts.map((post) => (
+              {blogPosts
+                .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+                .map((post) => (
                 <BlogPostCard key={post.id} {...post} />
               ))}
           </div>

@@ -55,7 +55,9 @@ export default function BlogPage() {
 
           {/* Grid degli articoli */}
           <div className="blog-grid">
-            {filteredPosts.map((post) => (
+            {filteredPosts
+              .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+              .map((post) => (
               <BlogPostCard key={post.id} {...post} />
             ))}
           </div>

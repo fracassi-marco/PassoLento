@@ -7,6 +7,7 @@
     "difficulty": "Pranzo al sacco o in malga",
     "title": "Cascata di Cavalese - Malga Salanzada",
     "description": "Un percorso dolce tra i pascoli alpini con la filosofia PassoLento. Camminata consapevole con soste meditative e tratti a piedi nudi sui prati.",
+    "image": null,
     "meta": [
       {
         "icon": "fa-clock",
@@ -30,6 +31,7 @@
     "difficulty": "Cammino di 3 giorni",
     "title": "Cammino delle Terre Sospese (anello alto)",
     "description": "Un'esperienza immersiva tra i vigneti terrazzati, i boschi e i sentieri silenziosi della Val di Cembra. Tre giorni per staccare dal rumore quotidiano, riscoprire il passo lento e guardare il mondo (e se stessi) da una prospettiva diversa.",
+    "image": "/events/cammino_terre_sospese.webp",
     "meta": [
       {
         "icon": "fa-calendar-alt",

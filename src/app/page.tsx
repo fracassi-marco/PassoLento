@@ -112,6 +112,11 @@ export default function Home() {
                     <div className="event-day">{event.day}</div>
                     <div className="event-month">{event.month}</div>
                   </div>
+                  {event.image && (
+                    <div className="event-image">
+                      <img src={event.image} alt={event.title} loading="lazy" />
+                    </div>
+                  )}
                   <div className="event-content">
                     {isPast && <div className="event-badge-past">Evento concluso</div>}
                     <div className="event-difficulty">{event.difficulty}</div>

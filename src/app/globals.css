@@ -190,14 +190,23 @@ body {
 /* Header Hero Section */
 .hero {
   height: 100vh;
-  background-size: cover;
-  background: url('/dolomiti-bellunesi.webp') center;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
   position: relative;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
 .hero::before {
@@ -208,13 +217,14 @@ body {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 
 .hero-content {
   z-index: 2;
   max-width: 800px;
   padding: 0 2rem;
-  animation: fadeInUp 1.5s ease-out;
+  animation: heroSlideUp 1s ease-out;
 }
 
 /* Brand-specific styles */
@@ -1034,18 +1044,6 @@ footer p {
 }
 
 /* Critical CSS - Above the fold */
-.hero {
-  height: 100vh;
-  background: url('/dolomiti-bellunesi.webp');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  position: relative;
-}
 
 /* Accessibility improvements */
 a:focus, button:focus {
@@ -1090,6 +1088,15 @@ a:focus, button:focus {
   }
   to {
     opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroSlideUp {
+  from {
+    transform: translateY(20px);
+  }
+  to {
     transform: translateY(0);
   }
 }

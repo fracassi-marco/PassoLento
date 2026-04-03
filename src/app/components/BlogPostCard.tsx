@@ -1,5 +1,6 @@
 import Button from "./Button";
 import LocationTags from "./LocationTags";
+import styles from "./BlogPostCard.module.css";
 
 interface BlogPostCardProps {
   id: string;
@@ -29,16 +30,16 @@ export default function BlogPostCard({
   luogo
 }: BlogPostCardProps) {
   return (
-    <article key={id} className="blog-post">
-      <div className="blog-image">
+    <article key={id} className={styles['blog-post']}>
+      <div className={styles['blog-image']}>
         <img src={image} alt={title} loading="lazy" />
-        <div className="blog-category">{category}</div>
+        <div className={styles['blog-category']}>{category}</div>
       </div>
-      <div className="blog-content">
+      <div className={styles['blog-content']}>
         <h3>{title}</h3>
         <LocationTags regione={regione} provincia={provincia} luogo={luogo} />
         <p>{excerpt}</p>
-        <div className="blog-meta">
+        <div className={styles['blog-meta']}>
           <time dateTime={date}>
             {new Date(date).toLocaleDateString('it-IT', {
               day: 'numeric',
@@ -46,7 +47,7 @@ export default function BlogPostCard({
               year: 'numeric'
             })}
           </time>
-          <span className="reading-time">{readTime} di lettura</span>
+          <span className={styles['reading-time']}>{readTime} di lettura</span>
         </div>
         <Button 
           href={`/blog/${slug}/`} 

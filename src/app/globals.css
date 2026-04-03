@@ -2733,6 +2733,9 @@ em {
 .fa-flag-checkered::before { content: "\f11e"; }
 .fa-sun::before { content: "\f185"; }
 .fa-map::before { content: "\f279"; }
+.fa-map-pin::before { content: "\f276"; }
+.fa-location-dot::before { content: "\f3c5"; }
+.fa-tag::before { content: "\f02b"; }
 
 /* Size utilities */
 .fa-sm { font-size: 0.875em; }

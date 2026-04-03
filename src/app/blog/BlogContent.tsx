@@ -4,6 +4,7 @@ import { useState } from "react";
 import BlogPostCard from "../components/BlogPostCard";
 import Button from "../components/Button";
 import blogPostsData from "@/data/blogPosts.json";
+import styles from "./blog.module.css";
 
 interface BlogPost {
   id: string;
@@ -48,14 +49,14 @@ export default function BlogContent() {
   };
 
   return (
-    <section className="blog-content">
+    <section className={styles['blog-content']}>
       <div style={{width: '100%', maxWidth: 'none', padding: '0 2rem'}}>
         
         {/* Filtri */}
-        <div className="blog-filters-location">
-          <div className="filter-group">
-            <label className="filter-label"><i className="fas fa-tag"></i> Tipo</label>
-            <div className="blog-filters">
+        <div className={styles['blog-filters-location']}>
+          <div className={styles['filter-group']}>
+            <label className={styles['filter-label']}><i className="fas fa-tag"></i> Tipo</label>
+            <div className={styles['blog-filters']}>
               {categories.map((category) => (
                 <Button
                   key={category}
@@ -68,9 +69,9 @@ export default function BlogContent() {
               ))}
             </div>
           </div>
-          <div className="filter-group">
-            <label className="filter-label"><i className="fas fa-map"></i> Regione</label>
-            <div className="blog-filters">
+          <div className={styles['filter-group']}>
+            <label className={styles['filter-label']}><i className="fas fa-map"></i> Regione</label>
+            <div className={styles['blog-filters']}>
               {regioni.map((regione) => (
                 <Button
                   key={regione}
@@ -83,9 +84,9 @@ export default function BlogContent() {
               ))}
             </div>
           </div>
-          <div className="filter-group">
-            <label className="filter-label"><i className="fas fa-map-pin"></i> Provincia</label>
-            <div className="blog-filters">
+          <div className={styles['filter-group']}>
+            <label className={styles['filter-label']}><i className="fas fa-map-pin"></i> Provincia</label>
+            <div className={styles['blog-filters']}>
               {availableProvince.map((prov) => (
                 <Button
                   key={prov}
@@ -101,7 +102,7 @@ export default function BlogContent() {
         </div>
 
         {/* Grid degli articoli */}
-        <div className="blog-grid">
+        <div className={styles['blog-grid']}>
           {filteredPosts
             .slice()
             .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
@@ -112,7 +113,7 @@ export default function BlogContent() {
 
         {/* Se non ci sono risultati */}
         {filteredPosts.length === 0 && (
-          <div className="no-results">
+          <div className={styles['no-results']}>
             <p>Nessun articolo trovato per i filtri selezionati.</p>
           </div>
         )}

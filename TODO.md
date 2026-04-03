@@ -16,9 +16,9 @@ Nessun skip-link per accessibilità — Gli stili .skip-link esistono nel CSS ma
 
 Cookie banner senza semantica dialog — CookieBanner.tsx non ha role="dialog", aria-label, né gestione del focus. Problematico per screen reader.
 
-Metadata mancanti per il blog index — blog/page.tsx non esporta metadata, si affida solo ai default ereditati.
+DONE Metadata mancanti per il blog index — blog/page.tsx non esporta metadata, si affida solo ai default ereditati.
 
-OG image probabilmente rotta — page.tsx:8 punta a un'immagine che potrebbe non esistere in public.
+DONE OG image probabilmente rotta — page.tsx:8 punta a un'immagine che potrebbe non esistere in public.
 
 Anno statico nel footer — Footer.tsx:5 ha l'anno hardcoded. Meglio calcolarlo dinamicamente.
 

@@ -32,7 +32,7 @@ export default function BlogPostCard({
   return (
     <article key={id} className={styles['blog-post']}>
       <div className={styles['blog-image']}>
-        <img src={image} alt={title} loading="lazy" />
+        <img src={image} alt={title} width={800} height={450} loading="lazy" />
         <div className={styles['blog-category']}>{category}</div>
       </div>
       <div className={styles['blog-content']}>

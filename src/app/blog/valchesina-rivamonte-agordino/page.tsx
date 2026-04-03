@@ -35,6 +35,8 @@ export default function ValchesinaArticle() {
         <img
             src="/blog/1/fontana-1.webp"
             alt="La fontana con la sua vasca di pietra antica"
+            width={800}
+            height={450}
                 style={{ width: '100%', height: 'auto' }}
             />
 
@@ -69,6 +71,8 @@ export default function ValchesinaArticle() {
               <img
                 src="/blog/1/fontana-guardiana.webp"
                 alt="La Fontana Guardiana con la sua vasca di legno antico"
+                width={800}
+                height={450}
                     style={{ width: '100%', height: 'auto' }}
               />
               <figcaption>La Fontana Guardiana, prima tappa del nostro viaggio contemplativo</figcaption>
@@ -86,6 +90,8 @@ export default function ValchesinaArticle() {
             <img
             src="/blog/1/fontana-2.webp"
             alt="La fontana con la sua vasca a tre getti"
+            width={800}
+            height={450}
                 style={{ width: '100%', height: 'auto' }}
             />
 
@@ -115,6 +121,8 @@ export default function ValchesinaArticle() {
             <img
             src="/blog/1/fontana-3.webp"
             alt="La fontana con la sedia in legno"
+            width={800}
+            height={450}
                 style={{ width: '100%', height: 'auto' }}
             />
 

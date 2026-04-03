@@ -33,6 +33,8 @@ export default function MagiaFonteMattino() {
           <img
             src="/blog/3/panorama-autunnale.webp"
             alt="Panorama autunnale dalle montagne con alberi dai colori caldi"
+            width={800}
+            height={450}
             style={{ width: '100%', height: 'auto' }}
           />
 
@@ -67,6 +69,8 @@ export default function MagiaFonteMattino() {
               <img
                 src="/blog/3/fonte-acqua.webp"
                 alt="Acqua cristallina che sgorga dalla fonte di montagna"
+                width={800}
+                height={450}
                 style={{ width: '100%', height: 'auto' }}
               />
               <figcaption>Il getto incessante della fonte: una lezione di costanza e generosità</figcaption>
@@ -84,6 +88,8 @@ export default function MagiaFonteMattino() {
             <img
             src="/blog/3/fonte-acqua-zoom.webp"
             alt="Fonte acqua con le foglie cadute"
+            width={800}
+            height={450}
             style={{ width: '100%', height: 'auto' }}
           />
 
@@ -119,6 +125,8 @@ export default function MagiaFonteMattino() {
             <img
             src="/blog/3/montagne-autunno.webp"
             alt="Panorama montano autunnale con colori caldi del foliage"
+            width={800}
+            height={450}
             style={{ width: '100%', height: 'auto' }}
           />
 

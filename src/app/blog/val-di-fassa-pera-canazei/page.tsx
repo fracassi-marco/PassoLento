@@ -35,6 +35,8 @@ export default function ValDiFassaArticle() {
         <img
             src="/blog/2/montagna.webp"
             alt="Panorama delle Dolomiti dalla Val di Fassa"
+            width={800}
+            height={450}
                 style={{ width: '100%', height: 'auto' }}
             />
 
@@ -68,6 +70,8 @@ export default function ValDiFassaArticle() {
             <img
               src="/blog/2/avisio.webp"
               alt="Il sentiero sterrato lungo il fiume Avisio"
+              width={800}
+              height={450}
                   style={{ width: '100%', height: 'auto' }}
             />
             <figcaption>Il sentiero sterrato dell'andata, dove natura e tranquillità si fondono</figcaption>
@@ -84,6 +88,8 @@ export default function ValDiFassaArticle() {
             <img
             src="/blog/2/cascatelle.webp"
             alt="Vista panoramica verso Canazei circondata dalle Dolomiti"
+            width={800}
+            height={450}
                 style={{ width: '100%', height: 'auto' }}
             />
 
@@ -117,6 +123,8 @@ export default function ValDiFassaArticle() {
             <img
             src="/blog/2/fontana.webp"
             alt="Una delle caratteristiche fontane lungo il percorso"
+            width={800}
+            height={450}
                 style={{ width: '100%', height: 'auto' }}
             />
 

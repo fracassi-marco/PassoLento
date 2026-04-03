@@ -61,6 +61,8 @@ export default function CascatePontColDiPra() {
               <img
                 src="/blog/5/fontana-legno.webp"
                 alt="Fontana ricavata da un tronco di legno lungo il sentiero verso le Cascate di Pont"
+                width={800}
+                height={450}
                 style={{ width: '100%', height: 'auto' }}
               />
               <figcaption>Una fontana ricavata dal legno, dove l&apos;acqua scorre senza fretta</figcaption>
@@ -84,6 +86,8 @@ export default function CascatePontColDiPra() {
               <img
                 src="/blog/5/cascata-pont-1.webp"
                 alt="Le Cascate di Pont a Taibon Agordino, l'acqua precipita tra le rocce scolpite"
+                width={800}
+                height={450}
                 style={{ width: '100%', height: 'auto' }}
               />
               <figcaption>Le Cascate di Pont: l&apos;acqua precipita con una forza che senti nella pancia</figcaption>
@@ -124,6 +128,8 @@ export default function CascatePontColDiPra() {
               <img
                 src="/blog/5/cascata-pont-2.webp"
                 alt="Dettaglio della cascata di Pont, l'acqua scorre tra la roccia scolpita"
+                width={800}
+                height={450}
                 style={{ width: '100%', height: 'auto' }}
               />
               <figcaption>L&apos;acqua scolpisce la roccia con pazienza millenaria</figcaption>

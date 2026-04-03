@@ -115,7 +115,7 @@ export default function Home() {
                   </div>
                   {event.image && (
                     <div className="event-image">
-                      <img src={event.image} alt={event.title} loading="lazy" />
+                      <img src={event.image} alt={event.title} width={1024} height={1024} loading="lazy" />
                     </div>
                   )}
                   <div className="event-content">

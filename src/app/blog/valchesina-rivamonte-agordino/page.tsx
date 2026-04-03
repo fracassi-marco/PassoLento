@@ -21,7 +21,7 @@ export default function ValchesinaArticle() {
       {/* Tag località */}
       <section className="article-location">
         <div className="container">
-          <LocationTags regione="Veneto" provincia="Belluno" luogo="Rivamonte Agordino" />
+          <LocationTags regione="Veneto" provincia="Belluno" luogo="Valchesina" />
         </div>
       </section>
 

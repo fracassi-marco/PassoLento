@@ -3123,23 +3123,20 @@ em {
 }
 
 /* Article page location tags */
-.article-location {
-  padding: 0.5rem 0 0 0;
+section.article-location {
+  padding: 0.8rem 2rem 0.5rem 2rem;
+  margin: 0 auto;
+  max-width: 800px;
 }
 
-.article-location .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 2rem;
+section.article-location .container {
+  padding: 0;
+  min-height: unset;
+  box-shadow: none;
 }
 
 .article-location .location-tags {
   justify-content: center;
-}
-
-.article-location .location-tag {
-  font-size: 0.85rem;
-  padding: 0.3rem 0.8rem;
 }
 
 @media (max-width: 768px) {

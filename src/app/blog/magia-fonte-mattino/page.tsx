@@ -16,7 +16,13 @@ export default function MagiaFonteMattino() {
       <BlogHero 
         title="La Magia della Fonte del Mattino" 
         subtitle="Quando l'acqua diventa rituale e l'autunno si trasforma in preghiera quotidiana"
-      /> 
+      />
+
+      <section className="article-location">
+        <div className="container">
+          <LocationTags regione="Veneto" provincia="Belluno" luogo="Rivamonte Agordino" />
+        </div>
+      </section> 
 
       {/* Contenuto dell'articolo */}
       <section className="article-content">

@@ -37,5 +37,18 @@
     "regione": "Veneto",
     "provincia": "Belluno",
     "luogo": "Rivamonte Agordino"
+  },
+  {
+    "id": "4",
+    "title": "Da Col di Prà alle Cascate di Pont",
+    "excerpt": "Una salita lenta tra boschi e montagne fino alle cascate, dove ogni dettaglio — tronchi, rocce, piscine naturali — diventa meraviglia",
+    "category": "Escursioni",
+    "date": "2026-04-03",
+    "readTime": "6 min",
+    "image": "/blog/4/cascata-pont.webp",
+    "slug": "cascate-pont-col-di-pra",
+    "regione": "Veneto",
+    "provincia": "Belluno",
+    "luogo": "Taibon Agordino"
   }
 ]

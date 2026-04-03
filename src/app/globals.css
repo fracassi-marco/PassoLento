@@ -3090,6 +3090,16 @@ em {
   border: 1px solid rgba(0,0,0,0.06);
 }
 
+.blog-filters-location .blog-filters {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border-radius: 0;
+  backdrop-filter: none;
+  box-shadow: none;
+  justify-content: flex-start;
+}
+
 .filter-group {
   display: flex;
   flex-direction: column;

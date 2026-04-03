@@ -59,49 +59,50 @@ export default function BlogPage() {
       <section className="blog-content">
         <div style={{width: '100%', maxWidth: 'none', padding: '0 2rem'}}>
           
-          {/* Filtri categoria */}
-          <div className="blog-filters">
-            {categories.map((category) => (
-              <Button
-                key={category}
-                variant="filter"
-                active={selectedCategory === category}
-                onClick={() => setSelectedCategory(category)}
-              >
-                {category}
-              </Button>
-            ))}
-          </div>
-
-          {/* Filtri località */}
+          {/* Filtri */}
           <div className="blog-filters-location">
             <div className="filter-group">
+              <label className="filter-label"><i className="fas fa-tag"></i> Tipo</label>
+              <div className="blog-filters">
+                {categories.map((category) => (
+                  <Button
+                    key={category}
+                    variant="filter"
+                    active={selectedCategory === category}
+                    onClick={() => setSelectedCategory(category)}
+                  >
+                    {category}
+                  </Button>
+                ))}
+              </div>
+            </div>
+            <div className="filter-group">
               <label className="filter-label"><i className="fas fa-map"></i> Regione</label>
-              <div className="filter-options">
+              <div className="blog-filters">
                 {regioni.map((regione) => (
-                  <button
+                  <Button
                     key={regione}
-                    type="button"
-                    className={`filter-location-btn ${selectedRegione === regione ? 'active' : ''}`}
+                    variant="filter"
+                    active={selectedRegione === regione}
                     onClick={() => handleRegioneChange(regione)}
                   >
                     {regione}
-                  </button>
+                  </Button>
                 ))}
               </div>
             </div>
             <div className="filter-group">
               <label className="filter-label"><i className="fas fa-map-pin"></i> Provincia</label>
-              <div className="filter-options">
+              <div className="blog-filters">
                 {availableProvince.map((prov) => (
-                  <button
+                  <Button
                     key={prov}
-                    type="button"
-                    className={`filter-location-btn ${selectedProvincia === prov ? 'active' : ''}`}
+                    variant="filter"
+                    active={selectedProvincia === prov}
                     onClick={() => setSelectedProvincia(prov)}
                   >
                     {prov}
-                  </button>
+                  </Button>
                 ))}
               </div>
             </div>

@@ -13,7 +13,7 @@ export default function BlogPage() {
   return (
     <div className="blog-page">
       <BlogHero 
-        title="Guide e consigli" 
+        title="Guide e consigli di trekking consapevole" 
         subtitle="Scopri guide utili e consigli pratici per vivere al meglio le tue esperienze di trekking e nordic walking nelle Dolomiti con la filosofia PassoLento"
       />
 

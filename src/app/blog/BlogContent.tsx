@@ -102,6 +102,7 @@ export default function BlogContent() {
         </div>
 
         {/* Grid degli articoli */}
+        <h2 className="sr-only">Articoli</h2>
         <div className={styles['blog-grid']}>
           {filteredPosts
             .slice()

@@ -10,7 +10,7 @@ Sitemap e robots manuali — Il sitemap.xml è statico e rischia di andare fuori
 Blog listing interamente client-side — blog/page.tsx è 'use client' per i filtri, ma tutto il contenuto statico viene idratato inutilmente. Meglio separare i filtri in un piccolo componente client e tenere il resto server-rendered.
 
 Priorità media
-CSS globale molto grande con duplicazioni — globals.css ha selettori duplicati (hero, blog-grid, back-link in più punti). Meglio deduplicare e spostare stili per-route in CSS Modules.
+DONE CSS globale molto grande con duplicazioni — globals.css ha selettori duplicati (hero, blog-grid, back-link in più punti). Meglio deduplicare e spostare stili per-route in CSS Modules.
 
 Nessun skip-link per accessibilità — Gli stili .skip-link esistono nel CSS ma nessun elemento viene renderizzato. Gli utenti da tastiera devono tabbare l'intera navbar.
 

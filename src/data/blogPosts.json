@@ -10,7 +10,16 @@
     "slug": "valchesina-rivamonte-agordino",
     "regione": "Veneto",
     "provincia": "Belluno",
-    "luogo": "Valchesina"
+    "luogo": "Valchesina",
+    "infoEscursione": {
+      "partenza": "Valchesina (Rivamonte Agordino)",
+      "arrivo": "Valchesina (Rivamonte Agordino)",
+      "durata": "1 ora e mezza",
+      "lunghezza": "3 km circa",
+      "dislivello": "80 m circa",
+      "difficolta": "Facilissima",
+      "momentoMigliore": "Primavera ed estate, quando le fontane sono al massimo della portata"
+    }
   },
   {
     "id": "2",
@@ -23,7 +32,16 @@
     "slug": "val-di-fassa-pera-canazei",
     "regione": "Trentino-Alto Adige",
     "provincia": "Trento",
-    "luogo": "Val di Fassa"
+    "luogo": "Val di Fassa",
+    "infoEscursione": {
+      "partenza": "Pera di Fassa",
+      "arrivo": "Pera di Fassa",
+      "durata": "4-5 ore con soste e pranzo",
+      "lunghezza": "20 km andata e ritorno",
+      "dislivello": "Minimo",
+      "difficolta": "Facile ma lunga — adatta a tutti",
+      "momentoMigliore": "Da aprile a ottobre, ideale in estate per le fontane rinfrescanti"
+    }
   },
   {
     "id": "3",
@@ -49,6 +67,15 @@
     "slug": "cascate-pont-col-di-pra",
     "regione": "Veneto",
     "provincia": "Belluno",
-    "luogo": "Taibon Agordino"
+    "luogo": "Taibon Agordino",
+    "infoEscursione": {
+      "partenza": "Col di Prà, Taibon Agordino",
+      "arrivo": "Col di Prà, Taibon Agordino",
+      "durata": "2-3 ore (andata e ritorno, con soste contemplative)",
+      "lunghezza": "7 km circa",
+      "dislivello": "320 m circa",
+      "difficolta": "Facile — adatta a tutti",
+      "momentoMigliore": "Dopo una pioggia, quando la cascata è al massimo della potenza"
+    }
   }
 ]

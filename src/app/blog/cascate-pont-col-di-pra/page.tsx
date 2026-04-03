@@ -1,6 +1,7 @@
 import BlogHero from "@/app/components/BlogHero";
 import defaultMetadata from "@/app/components/DefaultMetadata";
 import Button from "@/app/components/Button";
+import HikingInfo from "@/app/components/HikingInfo";
 import LocationTags from "@/app/components/LocationTags";
 import blogPosts from "@/data/blogPosts.json";
 
@@ -150,32 +151,7 @@ export default function CascatePontColDiPra() {
               Torni a Col di Prà con le gambe un po&apos; stanche e il cuore pieno. Non hai conquistato nessuna vetta, non hai battuto nessun record. Hai fatto qualcosa di molto più raro: hai camminato con <strong>lentezza</strong>, hai guardato con <strong>meraviglia</strong>, hai ascoltato con <strong>il silenzio</strong>.
             </p>
 
-            <div className="article-info-compact">
-              <div className="info-row">
-                <span className="info-label"><i className="fas fa-map-marker-alt"></i> Partenza:</span>
-                <span className="info-value">Col di Prà, Taibon Agordino (BL)</span>
-              </div>
-              <div className="info-row">
-                <span className="info-label"><i className="fas fa-flag-checkered"></i> Arrivo:</span>
-                <span className="info-value">Cascate di Pont</span>
-              </div>
-              <div className="info-row">
-                <span className="info-label"><i className="fas fa-clock"></i> Durata:</span>
-                <span className="info-value">2-3 ore (andata e ritorno, con soste contemplative)</span>
-              </div>
-              <div className="info-row">
-                <span className="info-label"><i className="fas fa-mountain"></i> Difficoltà:</span>
-                <span className="info-value">Facile — adatta a tutti</span>
-              </div>
-              <div className="info-row">
-                <span className="info-label"><i className="fas fa-heart"></i> Momento migliore:</span>
-                <span className="info-value">Dopo una pioggia, quando la cascata è al massimo della potenza</span>
-              </div>
-              <div className="info-row">
-                <span className="info-label"><i className="fas fa-child"></i> Per famiglie:</span>
-                <span className="info-value">Perfetta — i bambini sono i migliori maestri di meraviglia</span>
-              </div>
-            </div>
+            <HikingInfo {...post.infoEscursione!} />
 
           </div>
 

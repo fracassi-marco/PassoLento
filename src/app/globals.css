@@ -2730,6 +2730,9 @@ em {
 .fa-tint::before { content: "\f043"; }
 .fa-seedling::before { content: "\f4d8"; }
 .fa-gift::before { content: "\f06b"; }
+.fa-flag-checkered::before { content: "\f11e"; }
+.fa-sun::before { content: "\f185"; }
+.fa-map::before { content: "\f279"; }
 
 /* Size utilities */
 .fa-sm { font-size: 0.875em; }

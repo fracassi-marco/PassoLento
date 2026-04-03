@@ -1,6 +1,7 @@
 import BlogHero from "@/app/components/BlogHero";
 import defaultMetadata from "@/app/components/DefaultMetadata";
 import Button from "@/app/components/Button";
+import HikingInfo from "@/app/components/HikingInfo";
 import LocationTags from "@/app/components/LocationTags";
 import blogPosts from "@/data/blogPosts.json";
 
@@ -117,37 +118,7 @@ export default function ValchesinaArticle() {
                 style={{ width: '100%', height: 'auto' }}
             />
 
-            <h2>Informazioni Pratiche</h2>
-<div className="article-info-compact">
-  <div className="info-row">
-    <span className="info-label"><i className="fas fa-clock"></i> Durata:</span>
-    <span className="info-value">1 ora e mezza</span>
-  </div>
-  <div className="info-row">
-    <span className="info-label"><i className="fas fa-heart-pulse"></i> Difficoltà:</span>
-    <span className="info-value">Facilissima</span>
-  </div>
-  <div className="info-row">
-    <span className="info-label"><i className="fas fa-map-marker-alt"></i> Partenza:</span>
-    <span className="info-value">Rivamonte Agordino</span>
-  </div>
-  <div className="info-row">
-    <span className="info-label"><i className="fas fa-mountain"></i> Dislivello:</span>
-    <span className="info-value">80m circa</span>
-  </div>
-</div>
-
-            <h2>Quando Andare</h2>
-            <p>
-              La passeggiata di Valchesina è praticabile tutto l'anno, ma ogni stagione offre emozioni diverse:
-            </p>
-            
-            <ul>
-              <li><strong>Primavera:</strong> La natura si risveglia, il ghiaccio si trasforma in acqua</li>
-              <li><strong>Estate:</strong> L'acqua fresca offre ristoro dal caldo</li>
-              <li><strong>Autunno:</strong> I colori del foliage si riflettono nelle vasche</li>
-              <li><strong>Inverno:</strong> Il ghiaccio crea sculture naturali attorno alle fontane</li>
-            </ul>
+            <HikingInfo {...post.infoEscursione!} />
 
           </div>
 

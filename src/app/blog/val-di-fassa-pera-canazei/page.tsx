@@ -1,6 +1,7 @@
 import BlogHero from "@/app/components/BlogHero";
 import defaultMetadata from "@/app/components/DefaultMetadata";
 import Button from "@/app/components/Button";
+import HikingInfo from "@/app/components/HikingInfo";
 import LocationTags from "@/app/components/LocationTags";
 import blogPosts from "@/data/blogPosts.json";
 
@@ -128,41 +129,7 @@ export default function ValDiFassaArticle() {
               La combinazione tra la facilità del percorso e la bellezza dei panorami la rende una delle camminate più gratificanti che si possano fare in Val di Fassa, perfetta per chi vuole immergersi nella natura dolomitica senza affrontare difficoltà tecniche particolari.
             </p>
 
-            <h2>Informazioni Pratiche</h2>
-<div className="article-info-compact">
-  <div className="info-row">
-    <span className="info-label"><i className="fas fa-clock"></i> Durata:</span>
-    <span className="info-value">4-5 ore con soste e pranzo</span>
-  </div>
-  <div className="info-row">
-    <span className="info-label"><i className="fas fa-route"></i> Lunghezza:</span>
-    <span className="info-value">20 km andata e ritorno</span>
-  </div>
-  <div className="info-row">
-    <span className="info-label"><i className="fas fa-map-marker-alt"></i> Partenza:</span>
-    <span className="info-value">Pera di Fassa</span>
-  </div>
-  <div className="info-row">
-    <span className="info-label"><i className="fas fa-heart-pulse"></i> Difficoltà:</span>
-    <span className="info-value">Facile ma lunga - adatta a tutti</span>
-  </div>
-  <div className="info-row">
-    <span className="info-label"><i className="fas fa-mountain"></i> Dislivello:</span>
-    <span className="info-value">Minimo</span>
-  </div>
-</div>
-
-            <h2>Quando Andare</h2>
-            <p>
-              La passeggiata è piacevole da aprile a ottobre, ma ogni stagione offre emozioni diverse:
-            </p>
-            
-            <ul>
-              <li><strong>Primavera:</strong> La natura si risveglia, i prati si colorano di fiori</li>
-              <li><strong>Estate:</strong> Temperature ideali e fontane rinfrescanti</li>
-              <li><strong>Autunno:</strong> I colori del foliage creano atmosfere magiche</li>
-              <li><strong>Inverno:</strong> Paesaggi innevati per gli amanti delle ciaspole</li>
-            </ul>
+            <HikingInfo {...post.infoEscursione!} />
 
             <h3>Cosa Portare</h3>
             <ul className="article-list">

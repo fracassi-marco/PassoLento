@@ -2016,6 +2016,26 @@ em {
   transform: scale(1.05);
 }
 
+.article-body .article-image {
+  height: auto;
+  overflow: visible;
+  margin: 2rem 0;
+  border-radius: 12px;
+}
+
+.article-body .article-image img {
+  height: auto;
+  border-radius: 12px;
+}
+
+.article-body .article-image figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
 .article-category {
   position: absolute;
   top: 1rem;

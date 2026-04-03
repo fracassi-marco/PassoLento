@@ -10,7 +10,7 @@ export const metadata = defaultMetadata(
   "Da Col di Prà alle Cascate di Pont: Meraviglia a Passo Lento",
   "Una passeggiata contemplativa da Col di Prà alle Cascate di Pont a Taibon Agordino. Boschi, montagne, fontane di tronco e la bellezza selvaggia dell'acqua che scolpisce la roccia.",
   "/blog/cascate-pont-col-di-pra/",
-  ["https://passolento.com/blog/4/cascata-pont.webp"],
+  ["https://passolento.com/blog/5/cascata-pont-1.webp"],
 );
 
 export default function CascatePontColDiPra() {
@@ -55,6 +55,16 @@ export default function CascatePontColDiPra() {
             </blockquote>
 
             <h2>La Fontana nel Tronco Cavo</h2>
+
+            <div className="article-image">
+              <img
+                src="/blog/5/fontana-legno.webp"
+                alt="Fontana ricavata da un tronco di legno lungo il sentiero verso le Cascate di Pont"
+                style={{ width: '100%', height: 'auto' }}
+              />
+              <figcaption>Una fontana ricavata dal legno, dove l&apos;acqua scorre senza fretta</figcaption>
+            </div>
+
             <p>
               Poi, lungo il sentiero, succede qualcosa di semplice e poetico: un <strong>rivolo d&apos;acqua</strong> è stato incanalato dentro un tronco cavo, trasformato in fontana. L&apos;acqua esce con un filo sottile e costante, con quel suono cristallino che è impossibile ignorare.
             </p>
@@ -68,6 +78,16 @@ export default function CascatePontColDiPra() {
             </p>
 
             <h2>Lo Sguardo di un Bambino</h2>
+
+            <div className="article-image">
+              <img
+                src="/blog/5/cascata-pont-1.webp"
+                alt="Le Cascate di Pont a Taibon Agordino, l'acqua precipita tra le rocce scolpite"
+                style={{ width: '100%', height: 'auto' }}
+              />
+              <figcaption>Le Cascate di Pont: l&apos;acqua precipita con una forza che senti nella pancia</figcaption>
+            </div>
+
             <p>
               E poi arrivi alle <strong>Cascate di Pont</strong>. E qui bisogna fare una cosa fondamentale: dimenticare di essere adulti. Dimenticare i nomi delle cose, le nozioni, le misurazioni. Bisogna guardare con gli <strong>occhi di un bambino</strong>, con quello stupore primordiale che non chiede spiegazioni ma si lascia semplicemente attraversare dalla meraviglia.
             </p>
@@ -98,6 +118,16 @@ export default function CascatePontColDiPra() {
             </blockquote>
 
             <h2>La Lezione dell&apos;Acqua</h2>
+
+            <div className="article-image">
+              <img
+                src="/blog/5/cascata-pont-2.webp"
+                alt="Dettaglio della cascata di Pont, l'acqua scorre tra la roccia scolpita"
+                style={{ width: '100%', height: 'auto' }}
+              />
+              <figcaption>L&apos;acqua scolpisce la roccia con pazienza millenaria</figcaption>
+            </div>
+
             <p>
               L&apos;acqua delle Cascate di Pont non ha fretta e non ha paura. <strong>Scorre, cade, risale, si insinua, scava, accarezza, rompe</strong>. Fa tutto con la stessa naturalezza, senza scegliere cosa essere. È potente e delicata nello stesso istante. È distruzione e creazione in un unico movimento.
             </p>

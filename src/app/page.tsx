@@ -154,7 +154,7 @@ export default function Home() {
             <p>Per rimanere aggiornato su tutte le attività di <em>PassoLento</em> e ricevere il calendario
               completo, <a href="#contact">contattami direttamente</a>.</p>
             <div className="calendar-info">
-              <p>📋 Prima di partecipare, ti consigliamo di leggere il nostro <a href="/regolamento-escursioni" className="regolamento-link">regolamento escursioni</a> per prepararti al meglio all'esperienza PassoLento.</p>
+              <p>📋 Prima di partecipare, ti consigliamo di leggere il nostro <a href="/regolamento-escursioni/" className="regolamento-link">regolamento escursioni</a> per prepararti al meglio all'esperienza PassoLento.</p>
             </div>
           </div>
         </div>

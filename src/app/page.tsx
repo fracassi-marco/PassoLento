@@ -2,6 +2,7 @@ import defaultMetadata from "@/app/components/DefaultMetadata";
 import HomeHero from "./components/HomeHero";
 import BlogPostCard from "./components/BlogPostCard";
 import Button from "./components/Button";
+import LocationTags from "./components/LocationTags";
 import blogPosts from "@/data/blogPosts.json";
 import events from "@/data/events.json";
 
@@ -120,6 +121,7 @@ export default function Home() {
                   <div className="event-content">
                     {isPast && <div className="event-badge-past">Evento concluso</div>}
                     <div className="event-difficulty">{event.difficulty}</div>
+                    <LocationTags regione={event.regione} provincia={event.provincia} luogo={event.luogo} />
                     <h3 className="event-title">{event.title}</h3>
                     <p className="event-details">{event.description}</p>
                     <div className="event-meta">

@@ -1,4 +1,5 @@
 import Button from "./Button";
+import LocationTags from "./LocationTags";
 
 interface BlogPostCardProps {
   id: string;
@@ -9,6 +10,9 @@ interface BlogPostCardProps {
   readTime: string;
   image: string;
   slug: string;
+  regione?: string | null;
+  provincia?: string | null;
+  luogo?: string | null;
 }
 
 export default function BlogPostCard({
@@ -19,7 +23,10 @@ export default function BlogPostCard({
   date,
   readTime,
   image,
-  slug
+  slug,
+  regione,
+  provincia,
+  luogo
 }: BlogPostCardProps) {
   return (
     <article key={id} className="blog-post">
@@ -29,6 +36,7 @@ export default function BlogPostCard({
       </div>
       <div className="blog-content">
         <h3>{title}</h3>
+        <LocationTags regione={regione} provincia={provincia} luogo={luogo} />
         <p>{excerpt}</p>
         <div className="blog-meta">
           <time dateTime={date}>

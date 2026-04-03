@@ -1,6 +1,7 @@
 import BlogHero from "@/app/components/BlogHero";
 import defaultMetadata from "@/app/components/DefaultMetadata";
 import Button from "@/app/components/Button";
+import LocationTags from "@/app/components/LocationTags";
 
 export const metadata = defaultMetadata(
   "Val di Fassa: Passeggiata da Pera di Fassa a Canazei",
@@ -16,6 +17,13 @@ export default function ValDiFassaArticle() {
         title="Val di Fassa: Da Pera di Fassa a Canazei" 
         subtitle="Una passeggiata rigenerante lungo il fiume Avisio, tra le maestose vette delle Dolomiti e fontane di montagna purissime"
       /> 
+
+      {/* Tag località */}
+      <section className="article-location">
+        <div className="container">
+          <LocationTags regione="Trentino-Alto Adige" provincia="Trento" luogo="Val di Fassa" />
+        </div>
+      </section>
 
       {/* Contenuto dell'articolo */}
       <section className="article-content">

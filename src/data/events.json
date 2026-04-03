@@ -21,7 +21,10 @@
         "icon": "fa-mountain",
         "text": "+250m dislivello"
       }
-    ]
+    ],
+    "regione": "Trentino-Alto Adige",
+    "provincia": "Trento",
+    "luogo": "Cavalese"
   },
   {
     "id": "2",
@@ -45,6 +48,9 @@
         "icon": "fa-mountain",
         "text": "+2500m dislivello"
       }
-    ]
+    ],
+    "regione": "Trentino-Alto Adige",
+    "provincia": "Trento",
+    "luogo": "Val di Cembra"
   }
 ]

@@ -1,6 +1,7 @@
 import BlogHero from "@/app/components/BlogHero";
 import defaultMetadata from "@/app/components/DefaultMetadata";
 import Button from "@/app/components/Button";
+import LocationTags from "@/app/components/LocationTags";
 
 export const metadata = defaultMetadata(
   "La Magia della Fonte del Mattino: Quando l'Acqua Diventa Rituale",

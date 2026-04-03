@@ -15,18 +15,38 @@ interface BlogPost {
   readTime: string;
   image: string;
   slug: string;
+  regione: string | null;
+  provincia: string | null;
+  luogo: string | null;
 }
 
 const blogPosts: BlogPost[] = blogPostsData;
 
 const categories = ["Tutti", ...Array.from(new Set(blogPosts.map(post => post.category)))];
+const regioni = ["Tutte", ...Array.from(new Set(blogPosts.map(post => post.regione).filter((r): r is string => r !== null)))];
+const province = ["Tutte", ...Array.from(new Set(blogPosts.map(post => post.provincia).filter((p): p is string => p !== null)))];
 
 export default function BlogPage() {
   const [selectedCategory, setSelectedCategory] = useState("Tutti");
+  const [selectedRegione, setSelectedRegione] = useState("Tutte");
+  const [selectedProvincia, setSelectedProvincia] = useState("Tutte");
 
-  const filteredPosts = selectedCategory === "Tutti" 
-    ? blogPosts 
-    : blogPosts.filter(post => post.category === selectedCategory);
+  const filteredPosts = blogPosts.filter(post => {
+    const matchCategory = selectedCategory === "Tutti" || post.category === selectedCategory;
+    const matchRegione = selectedRegione === "Tutte" || post.regione === selectedRegione;
+    const matchProvincia = selectedProvincia === "Tutte" || post.provincia === selectedProvincia;
+    return matchCategory && matchRegione && matchProvincia;
+  });
+
+  // Province disponibili in base alla regione selezionata
+  const availableProvince = selectedRegione === "Tutte"
+    ? province
+    : ["Tutte", ...Array.from(new Set(blogPosts.filter(p => p.regione === selectedRegione).map(p => p.provincia).filter((p): p is string => p !== null)))];
+
+  const handleRegioneChange = (regione: string) => {
+    setSelectedRegione(regione);
+    setSelectedProvincia("Tutte");
+  };
 
   return (
     <div className="blog-page">
@@ -39,7 +59,7 @@ export default function BlogPage() {
       <section className="blog-content">
         <div style={{width: '100%', maxWidth: 'none', padding: '0 2rem'}}>
           
-          {/* Filtri */}
+          {/* Filtri categoria */}
           <div className="blog-filters">
             {categories.map((category) => (
               <Button
@@ -51,6 +71,40 @@ export default function BlogPage() {
                 {category}
               </Button>
             ))}
+          </div>
+
+          {/* Filtri località */}
+          <div className="blog-filters-location">
+            <div className="filter-group">
+              <label className="filter-label"><i className="fas fa-map"></i> Regione</label>
+              <div className="filter-options">
+                {regioni.map((regione) => (
+                  <button
+                    key={regione}
+                    type="button"
+                    className={`filter-location-btn ${selectedRegione === regione ? 'active' : ''}`}
+                    onClick={() => handleRegioneChange(regione)}
+                  >
+                    {regione}
+                  </button>
+                ))}
+              </div>
+            </div>
+            <div className="filter-group">
+              <label className="filter-label"><i className="fas fa-map-pin"></i> Provincia</label>
+              <div className="filter-options">
+                {availableProvince.map((prov) => (
+                  <button
+                    key={prov}
+                    type="button"
+                    className={`filter-location-btn ${selectedProvincia === prov ? 'active' : ''}`}
+                    onClick={() => setSelectedProvincia(prov)}
+                  >
+                    {prov}
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
 
           {/* Grid degli articoli */}
@@ -65,7 +119,7 @@ export default function BlogPage() {
           {/* Se non ci sono risultati */}
           {filteredPosts.length === 0 && (
             <div className="no-results">
-              <p>Nessun articolo trovato per la categoria selezionata.</p>
+              <p>Nessun articolo trovato per i filtri selezionati.</p>
             </div>
           )}
 

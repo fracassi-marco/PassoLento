@@ -1,6 +1,7 @@
 import BlogHero from "@/app/components/BlogHero";
 import defaultMetadata from "@/app/components/DefaultMetadata";
 import Button from "@/app/components/Button";
+import LocationTags from "@/app/components/LocationTags";
 
 export const metadata = defaultMetadata(
   "Valchesina: La Passeggiata delle Fontane a Rivamonte Agordino",
@@ -16,6 +17,13 @@ export default function ValchesinaArticle() {
         title="Valchesina: La Passeggiata delle Fontane" 
         subtitle="Un viaggio contemplativo tra le fontane secolari di Rivamonte Agordino, dove ogni goccia racconta una storia"
       /> 
+
+      {/* Tag località */}
+      <section className="article-location">
+        <div className="container">
+          <LocationTags regione="Veneto" provincia="Belluno" luogo="Rivamonte Agordino" />
+        </div>
+      </section>
 
       {/* Contenuto dell'articolo */}
       <section className="article-content">

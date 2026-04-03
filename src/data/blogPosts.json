@@ -7,7 +7,10 @@
     "date": "2025-07-24",
     "readTime": "5 min",
     "image": "/blog/1/fontana-1.webp",
-    "slug": "valchesina-rivamonte-agordino"
+    "slug": "valchesina-rivamonte-agordino",
+    "regione": "Veneto",
+    "provincia": "Belluno",
+    "luogo": "Valchesina"
   },
   {
     "id": "2",
@@ -17,7 +20,10 @@
     "date": "2025-06-15",
     "readTime": "6 min",
     "image": "/blog/2/montagna.webp",
-    "slug": "val-di-fassa-pera-canazei"
+    "slug": "val-di-fassa-pera-canazei",
+    "regione": "Trentino-Alto Adige",
+    "provincia": "Trento",
+    "luogo": "Val di Fassa"
   },
   {
     "id": "3",
@@ -27,6 +33,9 @@
     "date": "2025-10-20",
     "readTime": "4 min",
     "image": "/blog/3/fonte-acqua-zoom.webp",
-    "slug": "magia-fonte-mattino"
+    "slug": "magia-fonte-mattino",
+    "regione": "Veneto",
+    "provincia": "Belluno",
+    "luogo": "Rivamonte Agordino"
   }
 ]

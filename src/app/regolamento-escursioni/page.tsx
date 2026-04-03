@@ -2,8 +2,8 @@ import defaultMetadata from "@/app/components/DefaultMetadata";
 import BlogHero from "../components/BlogHero";
 
 export const metadata = defaultMetadata(
-  "Regolamento Escursioni - PassoLento",
-  "Leggi il regolamento per partecipare alle escursioni di PassoLento. Scopri le regole, i requisiti e le modalità per vivere al meglio l'esperienza del camminare contemplativo.",
+  "Regolamento Escursioni",
+  "Leggi il regolamento per partecipare alle escursioni di PassoLento. Regole, requisiti e modalità per vivere al meglio il camminare contemplativo.",
   "/regolamento-escursioni/",
   ["https://passolento.com/dolomiti-bellunesi.webp"],
 );

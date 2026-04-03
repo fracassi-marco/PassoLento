@@ -8,8 +8,8 @@ import blogPosts from "@/data/blogPosts.json";
 const post = blogPosts.find(p => p.slug === "cascate-pont-col-di-pra")!;
 
 export const metadata = defaultMetadata(
-  "Da Col di Prà alle Cascate di Pont: Meraviglia a Passo Lento",
-  "Una passeggiata contemplativa da Col di Prà alle Cascate di Pont a Taibon Agordino. Boschi, montagne, fontane di tronco e la bellezza selvaggia dell'acqua che scolpisce la roccia.",
+  "Da Col di Prà alle Cascate di Pont",
+  "Passeggiata contemplativa da Col di Prà alle Cascate di Pont a Taibon Agordino. Boschi, montagne, fontane di tronco e l'acqua che scolpisce la roccia.",
   "/blog/cascate-pont-col-di-pra/",
   ["https://passolento.com/blog/5/cascata-pont-1.webp"],
 );

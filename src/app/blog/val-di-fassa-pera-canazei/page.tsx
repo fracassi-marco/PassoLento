@@ -8,8 +8,8 @@ import blogPosts from "@/data/blogPosts.json";
 const post = blogPosts.find(p => p.slug === "val-di-fassa-pera-canazei")!;
 
 export const metadata = defaultMetadata(
-  "Val di Fassa: Passeggiata da Pera di Fassa a Canazei",
-  "Scopri la magica passeggiata lungo il fiume Avisio da Pera di Fassa a Canazei. Un'escursione facile tra panorami dolomitici mozzafiato e fontane di montagna cristalline.",
+  "Val di Fassa: da Pera a Canazei",
+  "Scopri la passeggiata lungo il fiume Avisio da Pera di Fassa a Canazei. Escursione facile tra panorami dolomitici e fontane di montagna cristalline.",
   "/blog/val-di-fassa-pera-canazei/",
   ["https://passolento.com/blog/2/montagna.webp"],
 );

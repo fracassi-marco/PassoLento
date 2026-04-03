@@ -6,7 +6,7 @@ import Header from "./components/Header";
 
 export const metadata: Metadata = {
   title: "PassoLento - Marco Fracassi | Guida Hiking nelle Dolomiti",
-  description: "Scopri le Dolomiti con PassoLento. Marco Fracassi, guida hiking certificata tra Trento e Rivamonte Agordino. Escursioni consapevoli nelle Dolomiti trentine e bellunesi.",
+  description: "Scopri le Dolomiti con PassoLento. Marco Fracassi, guida hiking certificata tra Trento e Rivamonte Agordino. Escursioni consapevoli nelle Dolomiti.",
 };
 
 export default function RootLayout({

@@ -8,8 +8,8 @@ import blogPosts from "@/data/blogPosts.json";
 const post = blogPosts.find(p => p.slug === "valchesina-rivamonte-agordino")!;
 
 export const metadata = defaultMetadata(
-  "Valchesina: La Passeggiata delle Fontane a Rivamonte Agordino",
-  "Scopri la magica passeggiata di Valchesina a Rivamonte Agordino. Un'escursione contemplativa tra fontane secolari, alla scoperta della potenza dell'acqua e del passo lento nelle Dolomiti Bellunesi.",
+  "Valchesina: Passeggiata delle Fontane",
+  "Scopri la passeggiata di Valchesina a Rivamonte Agordino. Escursione contemplativa tra fontane secolari e la potenza dell'acqua nelle Dolomiti Bellunesi.",
   "/blog/valchesina-rivamonte-agordino/",
   ["https://passolento.com/blog/1/fontana-1.webp"],
 );

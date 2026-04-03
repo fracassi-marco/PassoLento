@@ -7,8 +7,8 @@ import blogPosts from "@/data/blogPosts.json";
 const post = blogPosts.find(p => p.slug === "magia-fonte-mattino")!;
 
 export const metadata = defaultMetadata(
-  "La Magia della Fonte del Mattino: Quando l'Acqua Diventa Rituale",
-  "Scopri la bellezza di un gesto semplice che diventa rituale contemplativo: andare alla fonte per riempire le bottiglie, rallentando per assaporare l'autunno e la magia del passo lento.",
+  "La Magia della Fonte del Mattino",
+  "Scopri la bellezza di un gesto semplice che diventa rituale contemplativo: andare alla fonte, rallentando per assaporare l'autunno e la magia del passo lento.",
   "/blog/magia-fonte-mattino/",
   ["https://passolento.com/blog/3/fonte-acqua-zoom.webp"],
 );

@@ -2,6 +2,9 @@ import BlogHero from "@/app/components/BlogHero";
 import defaultMetadata from "@/app/components/DefaultMetadata";
 import Button from "@/app/components/Button";
 import LocationTags from "@/app/components/LocationTags";
+import blogPosts from "@/data/blogPosts.json";
+
+const post = blogPosts.find(p => p.slug === "magia-fonte-mattino")!;
 
 export const metadata = defaultMetadata(
   "La Magia della Fonte del Mattino: Quando l'Acqua Diventa Rituale",
@@ -20,7 +23,7 @@ export default function MagiaFonteMattino() {
 
       <section className="article-location">
         <div className="container">
-          <LocationTags regione="Veneto" provincia="Belluno" luogo="Rivamonte Agordino" />
+          <LocationTags regione={post.regione} provincia={post.provincia} luogo={post.luogo} />
         </div>
       </section> 
 

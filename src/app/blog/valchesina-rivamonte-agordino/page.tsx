@@ -2,6 +2,9 @@ import BlogHero from "@/app/components/BlogHero";
 import defaultMetadata from "@/app/components/DefaultMetadata";
 import Button from "@/app/components/Button";
 import LocationTags from "@/app/components/LocationTags";
+import blogPosts from "@/data/blogPosts.json";
+
+const post = blogPosts.find(p => p.slug === "valchesina-rivamonte-agordino")!;
 
 export const metadata = defaultMetadata(
   "Valchesina: La Passeggiata delle Fontane a Rivamonte Agordino",
@@ -21,7 +24,7 @@ export default function ValchesinaArticle() {
       {/* Tag località */}
       <section className="article-location">
         <div className="container">
-          <LocationTags regione="Veneto" provincia="Belluno" luogo="Valchesina" />
+          <LocationTags regione={post.regione} provincia={post.provincia} luogo={post.luogo} />
         </div>
       </section>
 

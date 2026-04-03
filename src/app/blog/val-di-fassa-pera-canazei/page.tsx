@@ -2,6 +2,9 @@ import BlogHero from "@/app/components/BlogHero";
 import defaultMetadata from "@/app/components/DefaultMetadata";
 import Button from "@/app/components/Button";
 import LocationTags from "@/app/components/LocationTags";
+import blogPosts from "@/data/blogPosts.json";
+
+const post = blogPosts.find(p => p.slug === "val-di-fassa-pera-canazei")!;
 
 export const metadata = defaultMetadata(
   "Val di Fassa: Passeggiata da Pera di Fassa a Canazei",
@@ -21,7 +24,7 @@ export default function ValDiFassaArticle() {
       {/* Tag località */}
       <section className="article-location">
         <div className="container">
-          <LocationTags regione="Trentino-Alto Adige" provincia="Trento" luogo="Val di Fassa" />
+          <LocationTags regione={post.regione} provincia={post.provincia} luogo={post.luogo} />
         </div>
       </section>
 

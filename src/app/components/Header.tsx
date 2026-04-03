@@ -1,89 +1,75 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function Header() {
   const fadeInRef = useRef<IntersectionObserver | null>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
+  // Re-initialize fade-in animations and smooth scrolling on route changes
   useEffect(() => {
-    // Initialize fade-in animations
-    const initFadeInAnimations = () => {
-      const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-      };
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
 
-      fadeInRef.current = new IntersectionObserver((entries) => {
-        // Usa for...of invece di forEach per performance
-        for (const entry of entries) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
+    fadeInRef.current = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      }
+    }, observerOptions);
+
+    for (const el of document.querySelectorAll('.fade-in')) {
+      fadeInRef.current?.observe(el);
+    }
+
+    // Smooth scrolling for anchor links
+    const abortController = new AbortController();
+    for (const anchor of document.querySelectorAll('a[href^="#"]')) {
+      anchor.addEventListener('click', (e) => {
+        e.preventDefault();
+        const href = (anchor as HTMLAnchorElement).getAttribute('href');
+        if (href) {
+          const target = document.querySelector(href);
+          if (target) {
+            const offsetTop = target.getBoundingClientRect().top + window.pageYOffset - 80;
+            window.scrollTo({
+              top: offsetTop,
+              behavior: 'smooth'
+            });
           }
         }
-      }, observerOptions);
+      }, { signal: abortController.signal });
+    }
 
-      // Usa for...of anche qui
-      for (const el of document.querySelectorAll('.fade-in')) {
-        fadeInRef.current?.observe(el);
-      }
-    };
-
-    // Initialize navbar scroll behavior
-    const initNavbarScroll = () => {
-      let lastScrollTop = 0;
-      const navbar = document.getElementById('navbar');
-
-      const handleScroll = () => {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-        if (scrollTop > 100) {
-          navbar?.classList.add('visible');
-        } else {
-          navbar?.classList.remove('visible');
-        }
-
-        lastScrollTop = scrollTop;
-      };
-
-      window.addEventListener('scroll', handleScroll);
-      
-      // Return cleanup function
-      return () => window.removeEventListener('scroll', handleScroll);
-    };
-
-    const initSmoothScrolling = () => {
-      // Usa for...of invece di forEach
-      for (const anchor of document.querySelectorAll('a[href^="#"]')) {
-        anchor.addEventListener('click', (e) => {
-          e.preventDefault();
-          const href = (anchor as HTMLAnchorElement).getAttribute('href');
-          if (href) {
-            const target = document.querySelector(href);
-            if (target) {
-              const offsetTop = target.getBoundingClientRect().top + window.pageYOffset - 80;
-              window.scrollTo({
-                top: offsetTop,
-                behavior: 'smooth'
-              });
-            }
-          }
-        });
-      }
-    };
-
-    // Initialize all functionality
-    initFadeInAnimations();
-    const cleanupNavbarScroll = initNavbarScroll();
-    initSmoothScrolling();
-
-    // Cleanup function
     return () => {
       if (fadeInRef.current) {
         fadeInRef.current.disconnect();
       }
-      cleanupNavbarScroll();
+      abortController.abort();
     };
+  }, [pathname]);
+
+  // Navbar scroll behavior (independent of route)
+  useEffect(() => {
+    const navbar = document.getElementById('navbar');
+
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop > 100) {
+        navbar?.classList.add('visible');
+      } else {
+        navbar?.classList.remove('visible');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const toggleMenu = () => {

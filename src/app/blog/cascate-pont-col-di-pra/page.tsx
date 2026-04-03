@@ -17,8 +17,8 @@ export default function CascatePontColDiPra() {
   return (
     <article className="blog-article">
       <BlogHero 
-        title="Da Col di Prà alle Cascate di Pont" 
-        subtitle="Una salita lenta tra boschi e montagne, dove ogni dettaglio diventa meraviglia"
+        title={post.title} 
+        subtitle={post.excerpt}
       /> 
 
       {/* Tag località */}

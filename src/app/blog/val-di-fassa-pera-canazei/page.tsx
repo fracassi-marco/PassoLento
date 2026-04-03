@@ -17,8 +17,8 @@ export default function ValDiFassaArticle() {
   return (
     <article className="blog-article">
       <BlogHero 
-        title="Val di Fassa: Da Pera di Fassa a Canazei" 
-        subtitle="Una passeggiata rigenerante lungo il fiume Avisio, tra le maestose vette delle Dolomiti e fontane di montagna purissime"
+        title={post.title} 
+        subtitle={post.excerpt}
       /> 
 
       {/* Tag località */}

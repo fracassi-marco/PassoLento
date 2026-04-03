@@ -17,8 +17,8 @@ export default function MagiaFonteMattino() {
   return (
     <article className="blog-article">
       <BlogHero 
-        title="La Magia della Fonte del Mattino" 
-        subtitle="Quando l'acqua diventa rituale e l'autunno si trasforma in preghiera quotidiana"
+        title={post.title} 
+        subtitle={post.excerpt}
       />
 
       <section className="article-location">

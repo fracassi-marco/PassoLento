@@ -17,8 +17,8 @@ export default function ValchesinaArticle() {
   return (
     <article className="blog-article">
       <BlogHero 
-        title="Valchesina: La Passeggiata delle Fontane" 
-        subtitle="Un viaggio contemplativo tra le fontane secolari di Rivamonte Agordino, dove ogni goccia racconta una storia"
+        title={post.title} 
+        subtitle={post.excerpt}
       /> 
 
       {/* Tag località */}

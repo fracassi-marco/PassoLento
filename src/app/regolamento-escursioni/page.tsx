@@ -5,7 +5,7 @@ export const metadata = defaultMetadata(
   "Regolamento Escursioni - PassoLento",
   "Leggi il regolamento per partecipare alle escursioni di PassoLento. Scopri le regole, i requisiti e le modalità per vivere al meglio l'esperienza del camminare contemplativo.",
   "/regolamento-escursioni/",
-  ["https://passolento.com/images/regolamento-hero.webp"],
+  ["https://passolento.com/dolomiti-bellunesi.webp"],
 );
 
 export default function RegolamentoEscursioni() {

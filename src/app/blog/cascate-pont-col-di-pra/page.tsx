@@ -3,6 +3,7 @@ import defaultMetadata from "@/app/components/DefaultMetadata";
 import Button from "@/app/components/Button";
 import HikingInfo from "@/app/components/HikingInfo";
 import LocationTags from "@/app/components/LocationTags";
+import FAQSection from "@/app/components/FAQSection";
 import blogPosts from "@/data/blogPosts.json";
 
 const post = blogPosts.find(p => p.slug === "cascate-pont-col-di-pra")!;
@@ -35,6 +36,32 @@ export default function CascatePontColDiPra() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HowTo",
+            "name": "Come fare l'escursione alle Cascate di Pont da Col di Prà",
+            "description": "Guida passo per passo per l'escursione da Col di Prà alle Cascate di Pont a Taibon Agordino, nelle Dolomiti bellunesi.",
+            "totalTime": "PT3H",
+            "estimatedCost": { "@type": "MonetaryAmount", "currency": "EUR", "value": "0" },
+            "supply": [
+              { "@type": "HowToSupply", "name": "Scarpe da trekking o da camminata robuste" },
+              { "@type": "HowToSupply", "name": "Borraccia" },
+              { "@type": "HowToSupply", "name": "Abbigliamento a strati" },
+              { "@type": "HowToSupply", "name": "Snack o pranzo al sacco" },
+            ],
+            "step": [
+              { "@type": "HowToStep", "position": 1, "name": "Raggiungi Col di Prà", "text": "Raggiungi il parcheggio di Col di Prà a Taibon Agordino (Belluno, Veneto) e imbocca il sentiero segnalato per le Cascate di Pont." },
+              { "@type": "HowToStep", "position": 2, "name": "Salita nel bosco", "text": "Segui il sentiero che sale dolcemente tra faggi e abeti. Il percorso è ben segnalato e non presenta difficoltà tecniche." },
+              { "@type": "HowToStep", "position": 3, "name": "Fontana nel tronco cavo", "text": "A metà percorso trovi una fontana ricavata da un tronco cavo: fermati, riempi la borraccia e goditi il suono dell'acqua." },
+              { "@type": "HowToStep", "position": 4, "name": "Cascate di Pont", "text": "Raggiungi le Cascate di Pont e concediti una lunga sosta contemplativa. Esplora le rocce scolpite dall'acqua, le piscine naturali color smeraldo e i ponti panoramici." },
+              { "@type": "HowToStep", "position": 5, "name": "Ritorno a Col di Prà", "text": "Ridiscendi lungo lo stesso sentiero fino al punto di partenza a Col di Prà." },
+            ],
+          })
+        }}
+      />
       <BlogHero
         title={post.title} 
         subtitle={post.excerpt}
@@ -55,6 +82,9 @@ export default function CascatePontColDiPra() {
           <div className="article-intro">
             <p className="lead">
               Esiste un sentiero, nel cuore dell&apos;Agordino, che non chiede di essere conquistato. Chiede solo di essere <strong>camminato con lentezza</strong>. Da Col di Prà alle Cascate di Pont, a <strong>Taibon Agordino</strong>, il cammino sale dolce tra i boschi, regalando a chi sa rallentare un susseguirsi di piccole meraviglie che preparano l&apos;animo allo spettacolo finale.
+            </p>
+            <p>
+              L&apos;escursione è un <strong>anello di circa 7 km</strong> con <strong>320 m di dislivello</strong>, difficoltà <strong>facile</strong> e completabile in <strong>2-3 ore</strong> incluse le soste. Adatta a tutti, bambini compresi.
             </p>
           </div>
 
@@ -176,6 +206,25 @@ export default function CascatePontColDiPra() {
             </p>
 
             <HikingInfo {...post.infoEscursione!} />
+
+            <FAQSection items={[
+              {
+                question: "Le Cascate di Pont sono adatte ai bambini?",
+                answer: "Sì, l'escursione da Col di Prà alle Cascate di Pont è adatta a tutta la famiglia, bambini inclusi. Il percorso è facile: circa 7 km con 320 m di dislivello, senza difficoltà tecniche, completabile in 2-3 ore."
+              },
+              {
+                question: "Dove si parte per le Cascate di Pont?",
+                answer: "Il punto di partenza è il parcheggio di Col di Prà, a Taibon Agordino, in provincia di Belluno, Veneto. Da lì il sentiero segnalato sale tra i boschi fino alle cascate."
+              },
+              {
+                question: "Quando visitare le Cascate di Pont per vederle al meglio?",
+                answer: "Il momento migliore è dopo una pioggia, quando la cascata è al massimo della sua potenza. In ogni stagione l'escursione è piacevole, ma dopo le precipitazioni lo spettacolo dell'acqua è straordinario."
+              },
+              {
+                question: "Quanto è lungo il sentiero per le Cascate di Pont?",
+                answer: "Il percorso andata e ritorno è di circa 7 km con 320 m di dislivello positivo. Si completa in 2-3 ore tenendo conto delle soste contemplative lungo il percorso."
+              },
+            ]} />
 
             <div className="gpx-download">
               <Button

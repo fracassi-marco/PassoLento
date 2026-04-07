@@ -3,6 +3,7 @@ import defaultMetadata from "@/app/components/DefaultMetadata";
 import Button from "@/app/components/Button";
 import HikingInfo from "@/app/components/HikingInfo";
 import LocationTags from "@/app/components/LocationTags";
+import FAQSection from "@/app/components/FAQSection";
 import blogPosts from "@/data/blogPosts.json";
 
 const post = blogPosts.find(p => p.slug === "valchesina-rivamonte-agordino")!;
@@ -35,6 +36,30 @@ export default function ValchesinaArticle() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HowTo",
+            "name": "Come fare la Passeggiata delle Fontane a Valchesina",
+            "description": "Guida passo per passo per la passeggiata tra le fontane storiche di Valchesina a Rivamonte Agordino, nelle Dolomiti bellunesi.",
+            "totalTime": "PT1H30M",
+            "estimatedCost": { "@type": "MonetaryAmount", "currency": "EUR", "value": "0" },
+            "supply": [
+              { "@type": "HowToSupply", "name": "Scarpe comode da camminata" },
+              { "@type": "HowToSupply", "name": "Borraccia da riempire alle fontane" },
+            ],
+            "step": [
+              { "@type": "HowToStep", "position": 1, "name": "Raggiungi Rivamonte Agordino", "text": "Raggiungi il centro di Rivamonte Agordino, in provincia di Belluno (Veneto). Parcheggia nel paese." },
+              { "@type": "HowToStep", "position": 2, "name": "Imbocca il sentiero per Valchesina", "text": "Prendi la strada di Valchesina che lascia il paese diventando presto sterrata. Costeggia il torrente e incontra le prime fontane storiche." },
+              { "@type": "HowToStep", "position": 3, "name": "Percorri il sentiero delle fontane", "text": "Cammina lentamente lungo i 3 km del percorso, fermandoti ad ogni fontana. Ogni sorgente ha carattere diverso: vasca di legno, pietra, getti multipli." },
+              { "@type": "HowToStep", "position": 4, "name": "Ritorna tra le vie del paese", "text": "Rientra nel centro storico di Rivamonte esplorando le viette dove l'acqua sgorga dalle fontane di pietra con getti multipli." },
+              { "@type": "HowToStep", "position": 5, "name": "Ritorno al punto di partenza", "text": "Completa l'anello tornando al punto di partenza." },
+            ],
+          })
+        }}
+      />
       <BlogHero
         title={post.title} 
         subtitle={post.excerpt}
@@ -62,6 +87,9 @@ export default function ValchesinaArticle() {
           <div className="article-intro">
             <p className="lead">
               Nel cuore delle Dolomiti Bellunesi, a <strong>Rivamonte Agordino</strong>, si nasconde un tesoro che pochi conoscono: la passeggiata di <strong>Valchesina</strong>. Un percorso dove il tempo sembra essersi fermato, dove l'acqua sussurra storie antiche e dove il passo lento diventa meditazione.
+            </p>
+            <p>
+              Un <strong>anello di 3 km</strong> con soli <strong>80 m di dislivello</strong>, difficoltà <strong>facilissima</strong>, completabile in circa <strong>1 ora e mezza</strong>. Adatto a tutti, dai bambini agli anziani.
             </p>
           </div>
 
@@ -145,6 +173,25 @@ export default function ValchesinaArticle() {
             />
 
             <HikingInfo {...post.infoEscursione!} />
+
+            <FAQSection items={[
+              {
+                question: "La Passeggiata delle Fontane a Valchesina è adatta ai bambini?",
+                answer: "Sì, è adatta a tutta la famiglia. Il percorso è facilissimo: solo 3 km con 80 m di dislivello, su sterrato e strade di paese, completabile in circa 1 ora e mezza. Perfetta per bambini e anziani."
+              },
+              {
+                question: "Quando è il momento migliore per visitare Valchesina?",
+                answer: "Il momento migliore è in primavera ed estate, quando le fontane storiche sono al massimo della portata. Il percorso è piacevole in ogni stagione, ma in primavera l'acqua abbonda e il paesaggio è rigoglioso."
+              },
+              {
+                question: "Dove si parcheggia per la passeggiata di Valchesina?",
+                answer: "Si parcheggia nel centro di Rivamonte Agordino, in provincia di Belluno (Veneto). Da lì si raggiunge Valchesina a piedi in pochi minuti, imboccando la strada che diventa presto sentiero sterrato."
+              },
+              {
+                question: "Cosa portare per la passeggiata di Valchesina?",
+                answer: "Non è necessario equipaggiamento tecnico. Bastano scarpe comode da camminata e una borraccia vuota: le fontane storiche lungo il percorso offrono acqua freschissima e purissima."
+              },
+            ]} />
 
           </div>
 

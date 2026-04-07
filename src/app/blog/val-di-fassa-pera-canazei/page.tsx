@@ -3,6 +3,7 @@ import defaultMetadata from "@/app/components/DefaultMetadata";
 import Button from "@/app/components/Button";
 import HikingInfo from "@/app/components/HikingInfo";
 import LocationTags from "@/app/components/LocationTags";
+import FAQSection from "@/app/components/FAQSection";
 import blogPosts from "@/data/blogPosts.json";
 
 const post = blogPosts.find(p => p.slug === "val-di-fassa-pera-canazei")!;
@@ -35,6 +36,32 @@ export default function ValDiFassaArticle() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HowTo",
+            "name": "Come fare la passeggiata da Pera di Fassa a Canazei",
+            "description": "Guida passo per passo per la passeggiata lungo il fiume Avisio da Pera di Fassa a Canazei, nelle Dolomiti trentine.",
+            "totalTime": "PT5H",
+            "estimatedCost": { "@type": "MonetaryAmount", "currency": "EUR", "value": "0" },
+            "supply": [
+              { "@type": "HowToSupply", "name": "Scarpe comode" },
+              { "@type": "HowToSupply", "name": "Borraccia" },
+              { "@type": "HowToSupply", "name": "Crema solare e cappello" },
+              { "@type": "HowToSupply", "name": "Pranzo al sacco o denaro per ristorante a Canazei" },
+            ],
+            "step": [
+              { "@type": "HowToStep", "position": 1, "name": "Raggiungi Pera di Fassa", "text": "Raggiungi il borgo di Pera di Fassa, in Val di Fassa (Trento, Trentino-Alto Adige). Parcheggia nel paese." },
+              { "@type": "HowToStep", "position": 2, "name": "Imbocca il sentiero sterrato lungo l'Avisio", "text": "Imbocca il sentiero sterrato che costeggia il fiume Avisio in direzione Canazei. È ben segnalato e segue l'acqua per tutto il percorso di andata." },
+              { "@type": "HowToStep", "position": 3, "name": "Cammina fino a Canazei con soste alle fontane", "text": "Percorri i 10 km di sentiero sterrato godendo dei panorami sulle Dolomiti — Gruppo del Sella, Sassolungo, Monti Pallidi. Fermati alle fontane di acqua freschissima lungo il percorso." },
+              { "@type": "HowToStep", "position": 4, "name": "Sosta pranzo a Canazei", "text": "Raggiungi Canazei e concediti una pausa pranzo in paese." },
+              { "@type": "HowToStep", "position": 5, "name": "Ritorno a Pera di Fassa", "text": "Torna a Pera di Fassa seguendo in parte la strada asfaltata panoramica che offre prospettive diverse sulla valle." },
+            ],
+          })
+        }}
+      />
       <BlogHero
         title={post.title} 
         subtitle={post.excerpt}
@@ -62,6 +89,9 @@ export default function ValDiFassaArticle() {
           <div className="article-intro">
             <p className="lead">
               La <strong>Val di Fassa</strong> è una delle gemme più preziose delle Dolomiti, e oggi voglio condividere con voi un'esperienza di hiking che mi ha lasciato senza parole: la passeggiata che collega <strong>Pera di Fassa a Canazei</strong>, seguendo il corso del fiume Avisio attraverso un sentiero che regala panorami mozzafiato e momenti di pura serenità.
+            </p>
+            <p>
+              Un percorso di <strong>20 km andata e ritorno</strong> con <strong>dislivello minimo</strong>, difficoltà <strong>facile</strong>, adatto a tutti — famiglie, bambini, principianti. Durata: <strong>4-5 ore</strong> incluse soste e pranzo.
             </p>
           </div>
 
@@ -156,6 +186,25 @@ export default function ValDiFassaArticle() {
             </p>
 
             <HikingInfo {...post.infoEscursione!} />
+
+            <FAQSection items={[
+              {
+                question: "La passeggiata da Pera di Fassa a Canazei è adatta alle famiglie?",
+                answer: "Sì, è adatta a tutti — famiglie con bambini, anziani e principianti. È un percorso facile di 20 km andata e ritorno con dislivello minimo lungo il fiume Avisio. Non richiede equipaggiamento tecnico."
+              },
+              {
+                question: "Quanto tempo ci vuole per andare da Pera di Fassa a Canazei a piedi?",
+                answer: "L'escursione completa dura 4-5 ore, incluse soste e pranzo a Canazei. Il percorso è di circa 20 km andata e ritorno (10 km per senso di marcia)."
+              },
+              {
+                question: "Quando è il momento migliore per la passeggiata in Val di Fassa?",
+                answer: "Da aprile a ottobre. Il periodo ideale è l'estate per godere delle fontane rinfrescanti lungo il percorso e dei panorami sulle Dolomiti — Sassolungo, Gruppo del Sella, Monti Pallidi."
+              },
+              {
+                question: "Dove si parcheggia a Pera di Fassa?",
+                answer: "Pera di Fassa si trova in Val di Fassa, in provincia di Trento (Trentino-Alto Adige). Il paese dispone di parcheggi pubblici dal quale si imbocca il sentiero sterrato lungo l'Avisio."
+              },
+            ]} />
 
             <h3>Cosa Portare</h3>
             <ul className="article-list">

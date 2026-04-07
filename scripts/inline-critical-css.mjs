@@ -2,7 +2,7 @@ import { readdir, readFile, writeFile } from 'fs/promises';
 import { join } from 'path';
 
 const outDir = join(process.cwd(), 'out');
-const nextStaticCss = join(outDir, '_next', 'static', 'css');
+const nextStaticChunks = join(outDir, '_next', 'static', 'chunks');
 
 async function findHtmlFiles(dir) {
   const entries = await readdir(dir, { withFileTypes: true });
@@ -19,11 +19,11 @@ async function findHtmlFiles(dir) {
 }
 
 async function loadCssFiles() {
-  const entries = await readdir(nextStaticCss);
+  const entries = await readdir(nextStaticChunks);
   const cssMap = {};
   for (const entry of entries) {
     if (entry.endsWith('.css')) {
-      cssMap[entry] = await readFile(join(nextStaticCss, entry), 'utf-8');
+      cssMap[entry] = await readFile(join(nextStaticChunks, entry), 'utf-8');
     }
   }
   return cssMap;
@@ -41,7 +41,7 @@ async function run() {
     let inlinedCount = 0;
 
     for (const [cssFile, cssContent] of Object.entries(cssMap)) {
-      const cssPath = `/_next/static/css/${cssFile}`;
+      const cssPath = `/_next/static/chunks/${cssFile}`;
 
       // Sostituisce <link rel="stylesheet" href="...css"> con <style> inline.
       // Il CSS inlinato elimina il blocco al rendering iniziale (FCP/LCP).

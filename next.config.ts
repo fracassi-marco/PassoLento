@@ -16,27 +16,7 @@ const nextConfig: NextConfig = {
     removeConsole: process.env.NODE_ENV === "production",
   },
 
-  // Configurazione Webpack per browser moderni
-  webpack: (config, { dev, isServer }) => {
-    if (!dev && !isServer) {
-      // Target ES2020+ per browser moderni
-      config.target = ["web", "es2020"];
-    }
-    
-    // Ottimizzazioni per bundle moderni
-    config.resolve.fallback = {
-      ...config.resolve.fallback,
-      fs: false,
-      net: false,
-      tls: false,
-    };
-    
-    return config;
-  },
-
-  experimental: {
-    browsersListForSwc: true,
-  },
+  turbopack: {},
 
   // Configurazione per immagini ottimizzate
   images: {

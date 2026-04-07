@@ -86,6 +86,48 @@ function removeRscStylesheetLink(html, cssFile) {
   return { html, removedCount };
 }
 
+/**
+ * Rimuove le istruzioni :HL["path","style"] dal payload RSC negli <script> tag.
+ * React 19 le processa chiamando preinit() durante l'idratazione, che inietta
+ * <link rel="stylesheet"> dinamicamente → browser ri-scarica il CSS → render-blocking.
+ *
+ * Formato nel payload (quotes escaped nel JSON): :HL[\"PATH\",\"style\"]
+ */
+function removeRscHlStyleHint(html, cssFile) {
+  const href = `/_next/static/css/${cssFile}`;
+  let removedCount = 0;
+
+  // Il path può apparire con quotes escaped (dentro JSON string) o non escaped
+  for (const q of ['\\"', '"']) {
+    const prefix = `:HL[${q}${href}${q},${q}`;
+    let idx = 0;
+    while (true) {
+      const start = html.indexOf(prefix, idx);
+      if (start === -1) break;
+
+      // Trova la ] di chiusura dell'array :HL[...]
+      let end = start + prefix.length;
+      let depth = 1;
+      while (end < html.length && depth > 0) {
+        if (html[end] === '[') depth++;
+        if (html[end] === ']') depth--;
+        end++;
+      }
+
+      const element = html.slice(start, end);
+      if (element.includes(`${q}style${q}`)) {
+        html = html.slice(0, start) + html.slice(end);
+        removedCount++;
+        // Non avanzare idx: abbiamo rimosso contenuto
+      } else {
+        idx = end;
+      }
+    }
+  }
+
+  return { html, removedCount };
+}
+
 async function run() {
   const cssMap = await loadCssFiles();
   const htmlFiles = await findHtmlFiles(outDir);
@@ -97,6 +139,7 @@ async function run() {
     let html = await readFile(file, 'utf-8');
     let inlinedCount = 0;
     let rscRemovedCount = 0;
+    let hlRemovedCount = 0;
 
     for (const [cssFile, cssContent] of Object.entries(cssMap)) {
       const cssPath = `/_next/static/css/${cssFile}`;
@@ -120,14 +163,20 @@ async function run() {
 
       // 2. Rimuove i riferimenti stylesheet dal payload RSC
       // React 19 ricrea <link> durante l'idratazione dal payload RSC
-      const result = removeRscStylesheetLink(html, cssFile);
-      html = result.html;
-      rscRemovedCount += result.removedCount;
+      const rscResult = removeRscStylesheetLink(html, cssFile);
+      html = rscResult.html;
+      rscRemovedCount += rscResult.removedCount;
+
+      // 3. Rimuove le istruzioni :HL["path","style"] dal payload RSC
+      // React 19 le processa con preinit() → inietta <link rel="stylesheet"> dinamicamente
+      const hlResult = removeRscHlStyleHint(html, cssFile);
+      html = hlResult.html;
+      hlRemovedCount += hlResult.removedCount;
     }
 
-    if (inlinedCount > 0 || rscRemovedCount > 0) {
+    if (inlinedCount > 0 || rscRemovedCount > 0 || hlRemovedCount > 0) {
       await writeFile(file, html);
-      console.log(`  ✓ ${file.replace(outDir, '')} (${inlinedCount} CSS inlined, ${rscRemovedCount} RSC ref rimossi)`);
+      console.log(`  ✓ ${file.replace(outDir, '')} (${inlinedCount} CSS inlined, ${rscRemovedCount} RSC ref rimossi, ${hlRemovedCount} :HL hint rimossi)`);
     }
   }
 

@@ -14,8 +14,14 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('/dolomiti-bellunesi.webp') center/cover;
+  background: url('/dolomiti-bellunesi-640.webp') center/cover;
   z-index: 1;
+}
+
+@media (min-width: 769px) {
+  .blog-hero::before {
+    background: url('/dolomiti-bellunesi.webp') center/cover;
+  }
 }
 
 .blog-hero-content {

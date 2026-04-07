@@ -4,6 +4,8 @@ export default function HomeHero() {
   return (
     <section id="home" className="hero">
         <img
+          srcSet="/dolomiti-bellunesi-640.webp 640w, /dolomiti-bellunesi.webp 1200w"
+          sizes="100vw"
           src="/dolomiti-bellunesi.webp"
           alt="Panorama delle Dolomiti bellunesi"
           className="hero-bg"

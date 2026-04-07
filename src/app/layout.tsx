@@ -33,7 +33,9 @@ export default function RootLayout({
             "telephone": "+39-347-1364144",
             "address": {
               "@type": "PostalAddress",
+              "streetAddress": "Viale Verona",
               "addressLocality": "Trento",
+              "postalCode": "38122",
               "addressRegion": "Trentino Alto Adige",
               "addressCountry": "IT"
             },

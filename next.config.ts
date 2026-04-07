@@ -34,6 +34,10 @@ const nextConfig: NextConfig = {
     return config;
   },
 
+  experimental: {
+    browsersListForSwc: true,
+  },
+
   // Configurazione per immagini ottimizzate
   images: {
     formats: ['image/webp', 'image/avif'],

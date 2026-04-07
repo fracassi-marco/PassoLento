@@ -56,6 +56,7 @@ export default function Home() {
                 "price": "0",
                 "priceCurrency": "EUR",
                 "availability": "https://schema.org/InStock",
+                "validFrom": new Date().toISOString().split('T')[0],
                 "url": "https://passolento.com/#contact",
                 "description": "Offerta libera consapevole"
               },

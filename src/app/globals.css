@@ -1764,13 +1764,13 @@ em {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('/dolomiti-bellunesi-640.webp') center/cover;
+  background: image-set(url('/dolomiti-bellunesi-640.avif') type('image/avif'), url('/dolomiti-bellunesi-640.webp') type('image/webp')) center/cover;
   z-index: 1;
 }
 
 @media (min-width: 769px) {
   .blog-hero::before {
-    background: url('/dolomiti-bellunesi.webp') center/cover;
+    background: image-set(url('/dolomiti-bellunesi.avif') type('image/avif'), url('/dolomiti-bellunesi.webp') type('image/webp')) center/cover;
   }
 }
 

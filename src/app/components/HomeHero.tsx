@@ -3,17 +3,27 @@ import Button from "./Button";
 export default function HomeHero() {
   return (
     <section id="home" className="hero">
-        <img
-          srcSet="/dolomiti-bellunesi-640.webp 640w, /dolomiti-bellunesi.webp 1200w"
-          sizes="100vw"
-          src="/dolomiti-bellunesi.webp"
-          alt="Panorama delle Dolomiti bellunesi"
-          className="hero-bg"
-          width={1200}
-          height={630}
-          fetchPriority="high"
-          decoding="async"
-        />
+        <picture>
+          <source
+            type="image/avif"
+            srcSet="/dolomiti-bellunesi-640.avif 640w, /dolomiti-bellunesi.avif 1200w"
+            sizes="100vw"
+          />
+          <source
+            type="image/webp"
+            srcSet="/dolomiti-bellunesi-640.webp 640w, /dolomiti-bellunesi.webp 1200w"
+            sizes="100vw"
+          />
+          <img
+            src="/dolomiti-bellunesi.webp"
+            alt="Panorama delle Dolomiti bellunesi"
+            className="hero-bg"
+            width={1200}
+            height={630}
+            fetchPriority="high"
+            decoding="async"
+          />
+        </picture>
         <div className="hero-content">
           <div className="hero-brand">
             <h1>PassoLento Hiking</h1>

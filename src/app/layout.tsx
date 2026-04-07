@@ -20,6 +20,7 @@ export default function RootLayout({
       <meta name="author" content="Marco Fracassi"/>
       <meta name="robots" content="index, follow"/>
 
+      <link rel="preload" href="/dolomiti-bellunesi.avif" as="image" type="image/avif" fetchPriority="high"/>
       <link rel="preload" href="/dolomiti-bellunesi.webp" as="image" fetchPriority="high"/>
       <script
         type="application/ld+json"

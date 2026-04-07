@@ -137,6 +137,11 @@ export default function Header() {
                 <a href="/blog/" className="nav-link blog-link" aria-label="Leggi il blog">📝 Blog</a>
             </li>}
             <li className="nav-item">
+              <a href="/tracce-gpx/" className="nav-link" aria-label="Scarica le tracce GPX" onClick={closeMenu}>
+                <i className="fas fa-map" style={{marginRight: '0.4rem', fontSize: '0.85em'}} aria-hidden="true"></i>Tracce GPX
+              </a>
+            </li>
+            <li className="nav-item">
               <a href="/#contact" className="nav-link" aria-label="Contattami" onClick={closeMenu}>Contatti</a>
             </li>
           </ul>

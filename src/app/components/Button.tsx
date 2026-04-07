@@ -15,6 +15,7 @@ interface ButtonProps {
   className?: string;
   disabled?: boolean;
   active?: boolean; // For filter buttons
+  download?: string | boolean;
 }
 
 export default function Button({
@@ -28,6 +29,7 @@ export default function Button({
   className = "",
   disabled = false,
   active = false,
+  download,
 }: ButtonProps) {
   const baseClasses = "btn";
   const variantClass = `btn-${variant}`;
@@ -48,10 +50,16 @@ export default function Button({
   );
 
   if (href && !disabled) {
-    // Se inizia con http o https, usa un tag <a> normale
-    if (href.startsWith("http")) {
+    // Se ha download oppure inizia con http o https, usa un tag <a> normale
+    if (download || href.startsWith("http")) {
       return (
-        <a href={href} className={classes} target="_blank" rel="noopener noreferrer">
+        <a
+          href={href}
+          className={classes}
+          target={download ? undefined : "_blank"}
+          rel={download ? undefined : "noopener noreferrer"}
+          download={download || undefined}
+        >
           {content}
         </a>
       );

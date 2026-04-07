@@ -159,6 +159,18 @@ export default function CascatePontColDiPra() {
 
             <HikingInfo {...post.infoEscursione!} />
 
+            <div className="gpx-download">
+              <Button
+                href="/gpx/cascate_di_pont.gpx"
+                download="cascate_di_pont.gpx"
+                variant="primary"
+                size="medium"
+                icon="fa-download"
+              >
+                Scarica traccia GPX
+              </Button>
+            </div>
+
           </div>
 
         </div>

@@ -2569,6 +2569,24 @@ em {
   color: #228b22;
 }
 
+/* GPX Download Button */
+.gpx-download {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.gpx-download::before {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 2rem;
+  background: linear-gradient(135deg, #4CAF50, #81C784);
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
 /* CTA Section */
 .article-cta {
   background: linear-gradient(135deg, #2c5530, #4CAF50);

@@ -45,7 +45,9 @@ export default function RootLayout({
             "serviceArea": {
               "@type": "Place",
               "name": "Dolomiti"
-            }
+            },
+            "image": "https://passolento.com/dolomiti-bellunesi.webp",
+            "priceRange": "€"
           })
         }}
       />

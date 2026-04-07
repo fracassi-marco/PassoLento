@@ -27,7 +27,11 @@ export default function Home() {
               "@type": "Event",
               "name": event.title,
               "description": event.description,
+              "image": event.image ? `https://passolento.com${event.image}` : "https://passolento.com/dolomiti-bellunesi.webp",
               "startDate": event.date,
+              "endDate": event.endDate,
+              "eventStatus": "https://schema.org/EventScheduled",
+              "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
               "location": {
                 "@type": "Place",
                 "name": event.luogo,
@@ -41,6 +45,19 @@ export default function Home() {
                 "@type": "Person",
                 "name": "Marco Fracassi",
                 "url": "https://passolento.com"
+              },
+              "performer": {
+                "@type": "Person",
+                "name": "Marco Fracassi",
+                "url": "https://passolento.com"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "EUR",
+                "availability": "https://schema.org/InStock",
+                "url": "https://passolento.com/#contact",
+                "description": "Offerta libera consapevole"
               },
               "url": "https://passolento.com/#calendar"
             })))

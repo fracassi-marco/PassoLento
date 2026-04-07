@@ -1,8 +1,13 @@
 import type {Metadata} from "next";
+import dynamic from "next/dynamic";
 import "./globals.css";
 import Footer from "@/app/components/Footer";
-import CookieBanner from "@/app/components/CookieBanner";
 import Header from "./components/Header";
+
+const CookieBanner = dynamic(() => import("@/app/components/CookieBanner"), {
+  ssr: false,
+  loading: () => null,
+});
 
 export const metadata: Metadata = {
   title: "PassoLento - Marco Fracassi | Guida Hiking nelle Dolomiti",

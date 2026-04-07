@@ -120,12 +120,17 @@ export default function RootLayout({
         });
 
         // Fade-in on scroll
-        var observer = new IntersectionObserver(function(entries) {
+        var fadeObserver = new IntersectionObserver(function(entries) {
           entries.forEach(function(entry) {
             if (entry.isIntersecting) entry.target.classList.add('visible');
           });
         }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-        document.querySelectorAll('.fade-in').forEach(function(el) { observer.observe(el); });
+        function observeFadeIns() {
+          document.querySelectorAll('.fade-in:not(.visible)').forEach(function(el) { fadeObserver.observe(el); });
+        }
+        observeFadeIns();
+        // Re-observe after back/forward navigation (Next.js re-renders DOM elements)
+        new MutationObserver(observeFadeIns).observe(document.body, { childList: true, subtree: true });
       })();
     ` }} />
     </body>

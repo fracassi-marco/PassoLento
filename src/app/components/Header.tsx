@@ -1,14 +1,12 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
-import { usePathname } from 'next/navigation';
 
 export default function Header() {
   const fadeInRef = useRef<IntersectionObserver | null>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const pathname = usePathname();
 
-  // Re-initialize fade-in animations and smooth scrolling on route changes
+  // Initialize fade-in animations and smooth scrolling
   useEffect(() => {
     const observerOptions = {
       threshold: 0.1,
@@ -52,7 +50,7 @@ export default function Header() {
       }
       abortController.abort();
     };
-  }, [pathname]);
+  }, []);
 
   // Navbar scroll behavior (independent of route)
   useEffect(() => {

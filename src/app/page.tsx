@@ -13,9 +13,40 @@ export const metadata = defaultMetadata(
   ["https://passolento.com/dolomiti-bellunesi.webp"]
 );
 
+const upcomingEvents = events.filter(e => new Date(e.date) >= new Date());
+
 export default function Home() {
   return (
     <>
+      {upcomingEvents.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(upcomingEvents.map(event => ({
+              "@context": "https://schema.org",
+              "@type": "Event",
+              "name": event.title,
+              "description": event.description,
+              "startDate": event.date,
+              "location": {
+                "@type": "Place",
+                "name": event.luogo,
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressRegion": event.regione,
+                  "addressCountry": "IT"
+                }
+              },
+              "organizer": {
+                "@type": "Person",
+                "name": "Marco Fracassi",
+                "url": "https://passolento.com"
+              },
+              "url": "https://passolento.com/#calendar"
+            })))
+          }}
+        />
+      )}
       <HomeHero />
 
       <section id="about" className="fade-in">

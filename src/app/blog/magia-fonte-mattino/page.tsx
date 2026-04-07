@@ -16,7 +16,25 @@ export const metadata = defaultMetadata(
 export default function MagiaFonteMattino() {
   return (
     <article className="blog-article">
-      <BlogHero 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": post.title,
+            "description": post.excerpt,
+            "image": `https://passolento.com${post.image}`,
+            "author": { "@type": "Person", "name": "Marco Fracassi", "url": "https://passolento.com" },
+            "publisher": { "@type": "Organization", "name": "PassoLento", "url": "https://passolento.com" },
+            "datePublished": post.date,
+            "dateModified": post.date,
+            "url": `https://passolento.com/blog/${post.slug}/`,
+            "mainEntityOfPage": { "@type": "WebPage", "@id": `https://passolento.com/blog/${post.slug}/` }
+          })
+        }}
+      />
+      <BlogHero
         title={post.title} 
         subtitle={post.excerpt}
       />

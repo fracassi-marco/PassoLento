@@ -1,13 +1,8 @@
 import type {Metadata} from "next";
-import dynamic from "next/dynamic";
 import "./globals.css";
 import Footer from "@/app/components/Footer";
 import Header from "./components/Header";
-
-const CookieBanner = dynamic(() => import("@/app/components/CookieBanner"), {
-  ssr: false,
-  loading: () => null,
-});
+import CookieBannerLazy from "./components/CookieBannerLazy";
 
 export const metadata: Metadata = {
   title: "PassoLento - Marco Fracassi | Guida Hiking nelle Dolomiti",
@@ -62,7 +57,7 @@ export default function RootLayout({
     </head>
 
     <body>
-    <CookieBanner/>
+    <CookieBannerLazy/>
     <Header/>
     <main>
       {children}

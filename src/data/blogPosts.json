@@ -57,6 +57,29 @@
     "luogo": "Rivamonte Agordino"
   },
   {
+    "id": "6",
+    "title": "Giro del Lago di Alleghe: Ogni Passo è Vita",
+    "excerpt": "Un anello di 5 km attorno al lago di Alleghe tra cigni, germani e montagne Dolomitiche: una passeggiata lenta per tutti, bambini e passeggini inclusi",
+    "category": "Escursioni",
+    "date": "2026-04-09",
+    "readTime": "5 min",
+    "image": "/blog/6/lago-e-paese-di-alleghe.webp",
+    "slug": "giro-lago-alleghe",
+    "gpxFile": "giro_lago_alleghe.gpx",
+    "regione": "Veneto",
+    "provincia": "Belluno",
+    "luogo": "Alleghe",
+    "infoEscursione": {
+      "partenza": "Alleghe",
+      "arrivo": "Alleghe",
+      "durata": "1 ora e mezza (con soste contemplative)",
+      "lunghezza": "5.3 km",
+      "dislivello": "84 m",
+      "difficolta": "Facilissima — adatta a tutti, bambini e passeggini",
+      "momentoMigliore": "Primavera e autunno, nelle mezze stagioni con clima mite e cielo nitido"
+    }
+  },
+  {
     "id": "4",
     "title": "Da Col di Prà alle Cascate di Pont",
     "excerpt": "Una salita lenta tra boschi e montagne fino alle cascate, dove ogni dettaglio — tronchi, rocce, piscine naturali — diventa meraviglia",

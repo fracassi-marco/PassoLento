@@ -367,6 +367,7 @@ export default function Home() {
           <div className="blog-grid">
               {blogPosts
                 .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+                .slice(0, 4)
                 .map((post) => (
                 <BlogPostCard key={post.id} {...post} />
               ))}

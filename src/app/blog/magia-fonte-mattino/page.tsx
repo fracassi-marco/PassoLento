@@ -80,7 +80,7 @@ export default function MagiaFonteMattino() {
             </p>
             
             <p>
-              Il suono dell'acqua che riempie la bottiglia è <em>musica</em>. Prima un tonalità acuta quando la bottiglia è vuota, poi gradualmente più grave man mano che si riempie. È un <strong>concerto naturale</strong> che ascolto molte volte, sempre uguale eppure sempre diverso.
+              Il suono dell'acqua che riempie la bottiglia è <em>musica</em>. Prima una tonalità acuta quando la bottiglia è vuota, poi gradualmente più grave man mano che si riempie. È un <strong>concerto naturale</strong> che ascolto molte volte, sempre uguale eppure sempre diverso.
             </p>
 
             <div className="article-image">

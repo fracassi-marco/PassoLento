@@ -158,7 +158,7 @@ export default function GiroLagoAlleghe() {
               <p>Cammina senza fretta lungo la riva e tieni gli occhi sui margini dell&apos;acqua, non solo sul centro del lago. Le tartarughe amano i tronchi sommersi e i sassi esposti al sole. I nidi dei cigni si nascondono tra i canneti. La vita selvatica si svela solo a chi la cerca con pazienza e passo leggero.</p>
             </div>
 
-            <h2>Le Montagne che Rigenera</h2>
+            <h2>Le Montagne che Rigenerano</h2>
 
             <div className="article-image">
               <img

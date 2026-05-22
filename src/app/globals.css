@@ -396,16 +396,12 @@ nav.visible {
 }
 
 /* Blog link special styling */
-.nav-link[href="./blog.html"]::before {
-  margin-right: 0.3rem;
+.blog-link:hover {
+  color: #ff6b35 !important;
 }
 
-.nav-link[href="./blog.html"]:hover {
-  color: #ff6b35;
-}
-
-.nav-link[href="./blog.html"]:hover::after {
-  background: #ff6b35;
+.blog-link:hover::after {
+  background: #ff6b35 !important;
 }
 
 /* Mobile Styles */
@@ -482,24 +478,22 @@ nav.visible {
   }
 }
 
-/* Evidenzia il link del blog nella navigazione */
-nav a[href="./blog.html"] {
-  position: relative;
-}
-
-nav a[href="./blog.html"]:hover {
-  color: #ff6b35; /* Colore diverso per il blog */
-}
-
-nav a[href="./blog.html"]:hover::after {
-  background: #ff6b35; /* Linea arancione per il blog */
-}
-
 /* Sections */
 section {
   padding: 4rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+/* Full-bleed sections: sfondo a larghezza piena su schermi larghi */
+section#about,
+section.services,
+section.philosophy,
+section.contact,
+section.blog {
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 h2 {
@@ -548,7 +542,8 @@ h2::after {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 3rem;
-  margin-bottom: 3rem;
+  margin: 0 auto 3rem auto;
+  max-width: 1200px;
 }
 
 .about-card {
@@ -593,6 +588,8 @@ h2::after {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .service-card {
@@ -661,7 +658,9 @@ h2::after {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  align-items: start; /* Cambiato da center a start */
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .contact-text {
@@ -1379,6 +1378,23 @@ a:focus, button:focus {
   text-decoration: underline;
 }
 
+.calendar-info {
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(34, 139, 34, 0.15);
+}
+
+.regolamento-link {
+  color: #228b22;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.regolamento-link:hover {
+  text-decoration: underline;
+  color: #2c5530;
+}
+
 /* Enfatizza il brand nelle sezioni */
 em {
   color: #228b22;
@@ -1507,20 +1523,6 @@ em {
    BLOG SECTION - CLEAN VERSION
    =============================== */
 
-/* Blog Grid - 1 colonna su mobile */
-.blog-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-bottom: 3rem;
-}
-
-@media (max-width: 768px) {
-  .blog-grid {
-    grid-template-columns: 1fr !important;
-  }
-}
-
 /* Blog Section */
 .blog {
   background: #f8f9fa;
@@ -1531,7 +1533,14 @@ em {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  margin-bottom: 3rem;
+  margin: 0 auto 3rem auto;
+  max-width: 1200px;
+}
+
+@media (max-width: 768px) {
+  .blog-grid {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 .blog-post {
@@ -1671,7 +1680,8 @@ em {
   border-radius: 20px;
   padding: 3rem 2rem;
   text-align: center;
-  margin-top: 3rem;
+  margin: 3rem auto 0 auto;
+  max-width: 1200px;
   position: relative;
   overflow: hidden;
 }

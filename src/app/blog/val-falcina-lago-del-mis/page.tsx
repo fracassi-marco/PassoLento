@@ -96,7 +96,7 @@ export default function ValFalcinaLagoDelMis() {
               Prima di partire, concediti cinque minuti sulle rive del Lago del Mis. Non è una perdita di tempo: è un&apos;investimento. L&apos;acqua riflette il cielo e le montagne con una precisione che sembra impossibile, un doppio universo capovolto ai tuoi piedi. I colori cambiano con l&apos;ora, con le nuvole, con la luce: dal <strong>grigio-ardesia dei giorni coperti</strong> al <strong>turchese brillante dei giorni di sole</strong>.
             </p>
             <p>
-              Il silenzio qui non è assenza di suoni. È presenza di qualcosa che non ha nome — il respiro della montagna, forse, o il suono della lentezza che si fa spazio tra i pensieri veloci che hai portato con te.
+              Il silenzio qui non è assenza di suoni. È presenza di qualcosa che non ha nome - il respiro della montagna, forse, o il suono della lentezza che si fa spazio tra i pensieri veloci che hai portato con te.
             </p>
 
             <blockquote className="article-quote">
@@ -114,7 +114,7 @@ export default function ValFalcinaLagoDelMis() {
               <figcaption>Le acque turchesi del Lago del Mis: il punto di partenza che è già una meraviglia</figcaption>
             </div>
 
-            <h2>La Salita Comincia Subito — e Non Mente</h2>
+            <h2>La Salita Comincia Subito - e Non Mente</h2>
             <p>
               Il sentiero per la Val Falcina non fa finta di essere facile. Parte, e sale. Da subito, con una franchezza quasi commovente. Non ci sono i primi cento metri piani per scaldarsi, non c&apos;è un ingresso graduale: il bosco ti accoglie e il terreno sale, e tu devi decidere immediatamente che tipo di camminatore vuoi essere oggi.
             </p>
@@ -140,13 +140,13 @@ export default function ValFalcinaLagoDelMis() {
 
             <h2>Il Sentiero Come Pratica di Mindfulness</h2>
             <p>
-              C&apos;è un fenomeno strano che accade dopo qualche minuto su questo sentiero: i pensieri smettono di fare rumore. Non perché tu abbia fatto qualcosa di speciale — è il sentiero che li ha silenziati.
+              C&apos;è un fenomeno strano che accade dopo qualche minuto su questo sentiero: i pensieri smettono di fare rumore. Non perché tu abbia fatto qualcosa di speciale - è il sentiero che li ha silenziati.
             </p>
             <p>
-              Ogni gradone richiede che tu guardi dove metti il piede. Ogni radice è una domanda che il bosco ti pone: <em>sei qui? stai guardando? sei presente?</em> Non c&apos;è spazio per i pensieri parassiti — quelli che rimasterano conversazioni vecchie, che pianificano il futuro, che giudicano il passato. Il sentiero li spazza via con la semplicità di un fatto fisico: <strong>se non guardi dove metti i piedi, inciampi</strong>.
+              Ogni gradone richiede che tu guardi dove metti il piede. Ogni radice è una domanda che il bosco ti pone: <em>sei qui? stai guardando? sei presente?</em> Non c&apos;è spazio per i pensieri parassiti - quelli che rimasterano conversazioni vecchie, che pianificano il futuro, che giudicano il passato. Il sentiero li spazza via con la semplicità di un fatto fisico: <strong>se non guardi dove metti i piedi, inciampi</strong>.
             </p>
             <p>
-              È una forma di meditazione camminata che non ha bisogno di istruzioni. Il corpo capisce da solo. L&apos;attenzione va tutta al terreno, e la mente — finalmente — si riposa.
+              È una forma di meditazione camminata che non ha bisogno di istruzioni. Il corpo capisce da solo. L&apos;attenzione va tutta al terreno, e la mente - finalmente - si riposa.
             </p>
 
             <blockquote className="article-quote">
@@ -174,13 +174,13 @@ export default function ValFalcinaLagoDelMis() {
 
             <h2>Le Piscine Naturali: Dove l&apos;Acqua Sparisce</h2>
             <p>
-              E poi — dopo la salita, dopo i gradoni, dopo il silenzio conquistato passo dopo passo — arrivi alle <strong>piscine naturali della Val Falcina</strong>. E qui succede qualcosa che è difficile descrivere senza sembrare esagerati: l&apos;acqua è così limpida che <strong>quasi non si vede</strong>.
+              E poi - dopo la salita, dopo i gradoni, dopo il silenzio conquistato passo dopo passo - arrivi alle <strong>piscine naturali della Val Falcina</strong>. E qui succede qualcosa che è difficile descrivere senza sembrare esagerati: l&apos;acqua è così limpida che <strong>quasi non si vede</strong>.
             </p>
             <p>
-              Non è un&apos;esagerazione. È un fatto ottico che il cervello fatica ad accettare. Vedi il fondo, ogni singolo sasso, ogni granello di sabbia, il disegno delle correnti leggere. Ma l&apos;acqua — lo strato che separa l&apos;aria dal fondo — sembra semplicemente assente. Come se qualcuno avesse tolto il mezzo e lasciato solo la realtà sotto.
+              Non è un&apos;esagerazione. È un fatto ottico che il cervello fatica ad accettare. Vedi il fondo, ogni singolo sasso, ogni granello di sabbia, il disegno delle correnti leggere. Ma l&apos;acqua - lo strato che separa l&apos;aria dal fondo - sembra semplicemente assente. Come se qualcuno avesse tolto il mezzo e lasciato solo la realtà sotto.
             </p>
             <p>
-              Per attraversare alcuni passaggi bisogna <strong>guadare il torrente</strong>: saltando di roccia in roccia se ti senti agile, bagnandoti i piedi se preferisci la via diretta. Quel momento — il freddo improvviso dell&apos;acqua di montagna che avvolge le caviglie — è uno dei più vivi dell&apos;intera escursione. Non è disagio. È <strong>presenza totale</strong>. Non puoi essere altrove quando l&apos;acqua glaciale ti ricorda con precisione dove sei.
+              Per attraversare alcuni passaggi bisogna <strong>guadare il torrente</strong>: saltando di roccia in roccia se ti senti agile, bagnandoti i piedi se preferisci la via diretta. Quel momento - il freddo improvviso dell&apos;acqua di montagna che avvolge le caviglie - è uno dei più vivi dell&apos;intera escursione. Non è disagio. È <strong>presenza totale</strong>. Non puoi essere altrove quando l&apos;acqua glaciale ti ricorda con precisione dove sei.
             </p>
 
             <div className="article-tip">
@@ -199,12 +199,12 @@ export default function ValFalcinaLagoDelMis() {
               <figcaption>La piscina naturale più profonda: un verde turchese che non sembra reale</figcaption>
             </div>
 
-            <h2>Stupore e Meraviglia — Senza Istruzioni</h2>
+            <h2>Stupore e Meraviglia - Senza Istruzioni</h2>
             <p>
               La cosa più bella delle piscine della Val Falcina è che non richiedono di essere spiegate. Non hai bisogno di sapere la portata del torrente, la composizione geologica delle rocce, la temperatura esatta dell&apos;acqua. Hai solo bisogno di <strong>stare lì e guardare</strong>.
             </p>
             <p>
-              Il fresco dell&apos;acqua che senti nella mano immersa. Il suono del torrente che si fa largo tra le rocce con una logica tutta sua. Il colore dell&apos;acqua che cambia con la profondità — dal trasparente quasi-niente dei fondali bassi al <strong>verde profondo</strong> dove il torrente si allarga in vasca. Le rocce levigate dall&apos;acqua, morbide al tatto come osso, con quella superficie che non assomiglia a nient&apos;altro.
+              Il fresco dell&apos;acqua che senti nella mano immersa. Il suono del torrente che si fa largo tra le rocce con una logica tutta sua. Il colore dell&apos;acqua che cambia con la profondità - dal trasparente quasi-niente dei fondali bassi al <strong>verde profondo</strong> dove il torrente si allarga in vasca. Le rocce levigate dall&apos;acqua, morbide al tatto come osso, con quella superficie che non assomiglia a nient&apos;altro.
             </p>
             <p>
               È stupore. È meraviglia. Non serve altro.
@@ -223,10 +223,10 @@ export default function ValFalcinaLagoDelMis() {
 
             <h2>Il Lago che Entra nella Valle</h2>
             <p>
-              Verso la fine del percorso, il paesaggio cambia ancora una volta. Il Lago del Mis non è più lontano sotto di te — comincia a <strong>entrare nella valle</strong>, creando insenature e rientranze dove l&apos;acqua si fa più calma, più raccolta, diversa dalla grande distesa aperta.
+              Verso la fine del percorso, il paesaggio cambia ancora una volta. Il Lago del Mis non è più lontano sotto di te - comincia a <strong>entrare nella valle</strong>, creando insenature e rientranze dove l&apos;acqua si fa più calma, più raccolta, diversa dalla grande distesa aperta.
             </p>
             <p>
-              I colori qui diventano turchesi — uno di quei colori che hai visto nelle foto e che pensavi fossero filtri o esagerazioni, e che invece sono <strong>esattamente così</strong>, esattamente quella tinta impossibile tra il blu e il verde che nessuna tavolozza ha mai replicato davvero. La luce balla sull&apos;acqua tra le pareti della valle e crea un effetto che non dimentichi.
+              I colori qui diventano turchesi - uno di quei colori che hai visto nelle foto e che pensavi fossero filtri o esagerazioni, e che invece sono <strong>esattamente così</strong>, esattamente quella tinta impossibile tra il blu e il verde che nessuna tavolozza ha mai replicato davvero. La luce balla sull&apos;acqua tra le pareti della valle e crea un effetto che non dimentichi.
             </p>
 
             <blockquote className="article-quote">
@@ -235,10 +235,10 @@ export default function ValFalcinaLagoDelMis() {
 
             <h2>Il Finale: Meritarsi il Sole sulla Spiaggia</h2>
             <p>
-              Il ritorno alle rive del lago ha il sapore delle cose guadagnate. Le gambe sanno di aver lavorato. La testa è silenziosa nel modo buono — non vuota, ma pulita. E il lago è lì, esattamente com&apos;era quando sei partito, ad aspettarti come un vecchio amico che non ha bisogno di parole.
+              Il ritorno alle rive del lago ha il sapore delle cose guadagnate. Le gambe sanno di aver lavorato. La testa è silenziosa nel modo buono - non vuota, ma pulita. E il lago è lì, esattamente com&apos;era quando sei partito, ad aspettarti come un vecchio amico che non ha bisogno di parole.
             </p>
             <p>
-              Il bar del lago è il posto giusto per chiudere la giornata. Un tavolo all&apos;aperto, un bicchiere o qualcosa di caldo, il sole che scalda le spalle. Le montagne che circondano il lago — quelle stesse montagne che hai visto dall&apos;alto, da dentro, da sotto — adesso sono intorno a te come un abbraccio largo. Le guardi con gli occhi di chi le ha percorse, e sono più tue di quando sei arrivato.
+              Il bar del lago è il posto giusto per chiudere la giornata. Un tavolo all&apos;aperto, un bicchiere o qualcosa di caldo, il sole che scalda le spalle. Le montagne che circondano il lago - quelle stesse montagne che hai visto dall&apos;alto, da dentro, da sotto - adesso sono intorno a te come un abbraccio largo. Le guardi con gli occhi di chi le ha percorse, e sono più tue di quando sei arrivato.
             </p>
             <p>
               È quello che fa un buon cammino: non ti porta in un posto diverso. Ti riporta a te stesso.

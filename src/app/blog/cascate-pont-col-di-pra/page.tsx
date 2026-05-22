@@ -163,7 +163,7 @@ export default function CascatePontColDiPra() {
             </p>
 
             <p>
-              I <strong>ponti</strong> — quelli costruiti dall&apos;uomo — ti regalano prospettive vertiginose: guardare la cascata dal basso, sentirne lo spruzzo sulla faccia; osservarla dall&apos;alto, dove l&apos;acqua sembra muoversi al rallentatore prima del grande salto.
+              I <strong>ponti</strong> - quelli costruiti dall&apos;uomo - ti regalano prospettive vertiginose: guardare la cascata dal basso, sentirne lo spruzzo sulla faccia; osservarla dall&apos;alto, dove l&apos;acqua sembra muoversi al rallentatore prima del grande salto.
             </p>
 
             <blockquote className="article-quote">

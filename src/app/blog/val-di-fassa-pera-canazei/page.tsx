@@ -55,7 +55,7 @@ export default function ValDiFassaArticle() {
             "step": [
               { "@type": "HowToStep", "position": 1, "name": "Raggiungi Pera di Fassa", "text": "Raggiungi il borgo di Pera di Fassa, in Val di Fassa (Trento, Trentino-Alto Adige). Parcheggia nel paese." },
               { "@type": "HowToStep", "position": 2, "name": "Imbocca il sentiero sterrato lungo l'Avisio", "text": "Imbocca il sentiero sterrato che costeggia il fiume Avisio in direzione Canazei. È ben segnalato e segue l'acqua per tutto il percorso di andata." },
-              { "@type": "HowToStep", "position": 3, "name": "Cammina fino a Canazei con soste alle fontane", "text": "Percorri i 10 km di sentiero sterrato godendo dei panorami sulle Dolomiti — Gruppo del Sella, Sassolungo, Monti Pallidi. Fermati alle fontane di acqua freschissima lungo il percorso." },
+              { "@type": "HowToStep", "position": 3, "name": "Cammina fino a Canazei con soste alle fontane", "text": "Percorri i 10 km di sentiero sterrato godendo dei panorami sulle Dolomiti - Gruppo del Sella, Sassolungo, Monti Pallidi. Fermati alle fontane di acqua freschissima lungo il percorso." },
               { "@type": "HowToStep", "position": 4, "name": "Sosta pranzo a Canazei", "text": "Raggiungi Canazei e concediti una pausa pranzo in paese." },
               { "@type": "HowToStep", "position": 5, "name": "Ritorno a Pera di Fassa", "text": "Torna a Pera di Fassa seguendo in parte la strada asfaltata panoramica che offre prospettive diverse sulla valle." },
             ],
@@ -91,7 +91,7 @@ export default function ValDiFassaArticle() {
               La <strong>Val di Fassa</strong> è una delle gemme più preziose delle Dolomiti, e oggi voglio condividere con voi un'esperienza di hiking che mi ha lasciato senza parole: la passeggiata che collega <strong>Pera di Fassa a Canazei</strong>, seguendo il corso del fiume Avisio attraverso un sentiero che regala panorami mozzafiato e momenti di pura serenità.
             </p>
             <p>
-              Un percorso di <strong>20 km andata e ritorno</strong> con <strong>dislivello minimo</strong>, difficoltà <strong>facile</strong>, adatto a tutti — famiglie, bambini, principianti. Durata: <strong>4-5 ore</strong> incluse soste e pranzo.
+              Un percorso di <strong>20 km andata e ritorno</strong> con <strong>dislivello minimo</strong>, difficoltà <strong>facile</strong>, adatto a tutti - famiglie, bambini, principianti. Durata: <strong>4-5 ore</strong> incluse soste e pranzo.
             </p>
           </div>
 
@@ -190,7 +190,7 @@ export default function ValDiFassaArticle() {
             <FAQSection items={[
               {
                 question: "La passeggiata da Pera di Fassa a Canazei è adatta alle famiglie?",
-                answer: "Sì, è adatta a tutti — famiglie con bambini, anziani e principianti. È un percorso facile di 20 km andata e ritorno con dislivello minimo lungo il fiume Avisio. Non richiede equipaggiamento tecnico."
+                answer: "Sì, è adatta a tutti - famiglie con bambini, anziani e principianti. È un percorso facile di 20 km andata e ritorno con dislivello minimo lungo il fiume Avisio. Non richiede equipaggiamento tecnico."
               },
               {
                 question: "Quanto tempo ci vuole per andare da Pera di Fassa a Canazei a piedi?",
@@ -198,7 +198,7 @@ export default function ValDiFassaArticle() {
               },
               {
                 question: "Quando è il momento migliore per la passeggiata in Val di Fassa?",
-                answer: "Da aprile a ottobre. Il periodo ideale è l'estate per godere delle fontane rinfrescanti lungo il percorso e dei panorami sulle Dolomiti — Sassolungo, Gruppo del Sella, Monti Pallidi."
+                answer: "Da aprile a ottobre. Il periodo ideale è l'estate per godere delle fontane rinfrescanti lungo il percorso e dei panorami sulle Dolomiti - Sassolungo, Gruppo del Sella, Monti Pallidi."
               },
               {
                 question: "Dove si parcheggia a Pera di Fassa?",

@@ -62,7 +62,7 @@ export default function TracceGpxPage() {
               Ogni traccia GPX è stata registrata direttamente sul campo durante le escursioni PassoLento
               tra le <strong>Dolomiti bellunesi</strong> e il <strong>Veneto</strong>. Puoi caricare i file
               su Garmin, Komoot, Wikiloc, OsmAnd o qualsiasi altra app di navigazione escursionistica prima
-              di partire — così il sentiero ti accompagna anche quando non c&apos;è segnale.
+              di partire - così il sentiero ti accompagna anche quando non c&apos;è segnale.
             </p>
           </div>
 

@@ -39,7 +39,7 @@
       "durata": "4-5 ore con soste e pranzo",
       "lunghezza": "20 km andata e ritorno",
       "dislivello": "Minimo",
-      "difficolta": "Facile ma lunga — adatta a tutti",
+      "difficolta": "Facile ma lunga - adatta a tutti",
       "momentoMigliore": "Da aprile a ottobre, ideale in estate per le fontane rinfrescanti"
     }
   },
@@ -75,7 +75,7 @@
       "durata": "1 ora e mezza (con soste contemplative)",
       "lunghezza": "5.3 km",
       "dislivello": "84 m",
-      "difficolta": "Facilissima — adatta a tutti, bambini e passeggini",
+      "difficolta": "Facilissima - adatta a tutti, bambini e passeggini",
       "momentoMigliore": "Primavera e autunno, nelle mezze stagioni con clima mite e cielo nitido"
     }
   },
@@ -98,14 +98,14 @@
       "durata": "1 ora e 45 minuti (con soste)",
       "lunghezza": "4.5 km circa",
       "dislivello": "350 m circa",
-      "difficolta": "Media — sentiero irregolare con gradoni",
+      "difficolta": "Media - sentiero irregolare con gradoni",
       "momentoMigliore": "Estate e inizio autunno, quando le piscine naturali sono accessibili e l'acqua è al massimo della trasparenza"
     }
   },
   {
     "id": "4",
     "title": "Da Col di Prà alle Cascate di Pont",
-    "excerpt": "Una salita lenta tra boschi e montagne fino alle cascate, dove ogni dettaglio — tronchi, rocce, piscine naturali — diventa meraviglia",
+    "excerpt": "Una salita lenta tra boschi e montagne fino alle cascate, dove ogni dettaglio - tronchi, rocce, piscine naturali - diventa meraviglia",
     "category": "Escursioni",
     "date": "2026-04-03",
     "readTime": "6 min",
@@ -121,7 +121,7 @@
       "durata": "2-3 ore (andata e ritorno, con soste contemplative)",
       "lunghezza": "7 km circa",
       "dislivello": "320 m circa",
-      "difficolta": "Facile — adatta a tutti",
+      "difficolta": "Facile - adatta a tutti",
       "momentoMigliore": "Dopo una pioggia, quando la cascata è al massimo della potenza"
     }
   }

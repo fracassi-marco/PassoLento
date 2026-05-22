@@ -82,7 +82,7 @@ export default function GiroLagoAlleghe() {
               Ci sono luoghi che non chiedono di essere conquistati. Chiedono solo di essere <strong>percorsi con lentezza</strong>, con gli occhi spalancati e il respiro calmo. Il <strong>lago di Alleghe</strong>, a 960 metri tra le Dolomiti bellunesi, è uno di questi luoghi. Un&apos;acqua ferma che riflette le montagne, una riva che custodisce la vita selvatica, un sentiero che gira attorno a tutto questo come se volesse abbracciarlo.
             </p>
             <p>
-              Il <strong>giro del lago</strong> è un anello di <strong>5,3 km</strong> con soli <strong>84 m di dislivello</strong>, percorribile in <strong>circa un&apos;ora e mezza</strong>. Facilissimo, adatto a tutti — bambini, anziani, passeggini. Non è una sfida: è un invito.
+              Il <strong>giro del lago</strong> è un anello di <strong>5,3 km</strong> con soli <strong>84 m di dislivello</strong>, percorribile in <strong>circa un&apos;ora e mezza</strong>. Facilissimo, adatto a tutti - bambini, anziani, passeggini. Non è una sfida: è un invito.
             </p>
           </div>
 
@@ -91,7 +91,7 @@ export default function GiroLagoAlleghe() {
 
             <h2>Il Lago Nato da una Frana</h2>
             <p>
-              Il lago di Alleghe non è sempre stato qui. Nacque nel <strong>1771</strong>, quando un enorme distacco di roccia dal Monte Piz sbarrò il corso del torrente Cordevole, creando questo specchio d&apos;acqua di quasi due chilometri. La natura può distruggere e creare nello stesso istante — e il lago di Alleghe ne è una testimonianza silenziosa e bellissima.
+              Il lago di Alleghe non è sempre stato qui. Nacque nel <strong>1771</strong>, quando un enorme distacco di roccia dal Monte Piz sbarrò il corso del torrente Cordevole, creando questo specchio d&apos;acqua di quasi due chilometri. La natura può distruggere e creare nello stesso istante - e il lago di Alleghe ne è una testimonianza silenziosa e bellissima.
             </p>
             <p>
               Camminare attorno ad esso significa percorrere i bordi di una <strong>ferita trasformata in bellezza</strong>. L&apos;acqua ha coperto tutto con la sua calma. Le montagne si sono abituate al nuovo riflesso. E la vita ha colonizzato ogni riva, ogni canneto, ogni angolo tranquillo.
@@ -115,15 +115,15 @@ export default function GiroLagoAlleghe() {
             </div>
 
             <p>
-              Non fai molti passi prima che qualcosa catturi il tuo sguardo. Laggiù, sulla superficie piatta del lago, uno o due <strong>cigni bianchi </strong> si muovono con quella grazia lenta che sembra quasi arrogante — sanno di essere belli e non hanno fretta di dimostrarlo. Pescano con movimenti misurati, immergendo il collo nell&apos;acqua scura, poi tornando su con la stessa compostezza.
+              Non fai molti passi prima che qualcosa catturi il tuo sguardo. Laggiù, sulla superficie piatta del lago, uno o due <strong>cigni bianchi </strong> si muovono con quella grazia lenta che sembra quasi arrogante - sanno di essere belli e non hanno fretta di dimostrarlo. Pescano con movimenti misurati, immergendo il collo nell&apos;acqua scura, poi tornando su con la stessa compostezza.
             </p>
             <p>
-              Più vicini alla riva, tra i ciuffi di vegetazione acquatica, i <strong>germani reali </strong> sono tutto il contrario: vocianti, agitati, splendidamente caotici. Sguazzano, si inseguono, si scrollano l&apos;acqua di dosso in piccole esplosioni di gocce luminose. Guardare i germani è come guardare la gioia allo stato puro — non si preoccupano di niente, se non di essere completamente dentro all&apos;acqua, al momento, alla vita.
+              Più vicini alla riva, tra i ciuffi di vegetazione acquatica, i <strong>germani reali </strong> sono tutto il contrario: vocianti, agitati, splendidamente caotici. Sguazzano, si inseguono, si scrollano l&apos;acqua di dosso in piccole esplosioni di gocce luminose. Guardare i germani è come guardare la gioia allo stato puro - non si preoccupano di niente, se non di essere completamente dentro all&apos;acqua, al momento, alla vita.
             </p>
 
             <h2>Il Nido che Cova il Futuro</h2>
             <p>
-              Poi, se sei lento abbastanza — e solo se sei lento abbastanza — potresti vedere qualcosa di raro. Un <strong>nido di cigno</strong>, costruito ai bordi della riva tra i canneti, con una sagoma bianca e immobile sopra. Un cigno in cova.
+              Poi, se sei lento abbastanza - e solo se sei lento abbastanza - potresti vedere qualcosa di raro. Un <strong>nido di cigno</strong>, costruito ai bordi della riva tra i canneti, con una sagoma bianca e immobile sopra. Un cigno in cova.
             </p>
             <p>
               Fermarsi davanti a questa scena è una forma di privilegio. La natura non la mostra a chi corre. La mostra a chi cammina piano, a chi tiene gli occhi bassi e il rumore dentro. Dentro a quel nido c&apos;è del tempo futuro, delle vite che non esistono ancora. E il cigno le scalda con tutto il proprio corpo, <strong>paziente come il lago, immobile come le montagne</strong>.
@@ -147,7 +147,7 @@ export default function GiroLagoAlleghe() {
             </div>
 
             <p>
-              A tratti, camminando lungo la riva, un <strong>piccolo tuffo</strong> rompe il silenzio. Un tonfo soffice, quasi timido — e già non c&apos;è più niente. Solo cerchi concentrici sull&apos;acqua che si allargano e svaniscono. Sono le <strong>tartarughe</strong>, appostate al sole su un sasso o su un tronco, che all&apos;avvicinarsi dei passi si lasciano scivolare nell&apos;acqua con quella eleganza discreta che le appartiene da milioni di anni.
+              A tratti, camminando lungo la riva, un <strong>piccolo tuffo</strong> rompe il silenzio. Un tonfo soffice, quasi timido - e già non c&apos;è più niente. Solo cerchi concentrici sull&apos;acqua che si allargano e svaniscono. Sono le <strong>tartarughe</strong>, appostate al sole su un sasso o su un tronco, che all&apos;avvicinarsi dei passi si lasciano scivolare nell&apos;acqua con quella eleganza discreta che le appartiene da milioni di anni.
             </p>
             <p>
               Le tartarughe non aspettano di capire chi sei. Sentono le vibrazioni del terreno e si fidano dell&apos;istinto. C&apos;è qualcosa di profondamente onesto in questo: <strong>niente pretese, niente complicazioni</strong>. Un sole su cui scaldarsi, un lago in cui rifugiarsi. Il resto non serve.
@@ -172,13 +172,13 @@ export default function GiroLagoAlleghe() {
             </div>
 
             <p>
-              E poi ci sono loro: le <strong>montagne</strong>. Attorno al lago di Alleghe le Dolomiti sono ovunque — alte, verticali, impassibili. Il <strong>Monte Civetta</strong> a ovest con la sua parete di tremila metri, le cime che chiudono la valle a nord e a est. Alzare lo sguardo non è un gesto volontario: è automatico, inevitabile. Le montagne chiamano e gli occhi rispondono.
+              E poi ci sono loro: le <strong>montagne</strong>. Attorno al lago di Alleghe le Dolomiti sono ovunque - alte, verticali, impassibili. Il <strong>Monte Civetta</strong> a ovest con la sua parete di tremila metri, le cime che chiudono la valle a nord e a est. Alzare lo sguardo non è un gesto volontario: è automatico, inevitabile. Le montagne chiamano e gli occhi rispondono.
             </p>
             <p>
-              Ogni angolo dell&apos;anello regala una prospettiva diversa. Le vette cambiano forma a seconda di dove ti trovi, il lago le riflette capovolte quando il vento tace. Ci sono momenti in cui ti fermi — non perché sei stanco, ma perché <strong>la bellezza è troppa da consumare camminando</strong>. Hai bisogno di stare fermo, di respirare, di lasciare che quel paesaggio entri dentro fino in fondo.
+              Ogni angolo dell&apos;anello regala una prospettiva diversa. Le vette cambiano forma a seconda di dove ti trovi, il lago le riflette capovolte quando il vento tace. Ci sono momenti in cui ti fermi - non perché sei stanco, ma perché <strong>la bellezza è troppa da consumare camminando</strong>. Hai bisogno di stare fermo, di respirare, di lasciare che quel paesaggio entri dentro fino in fondo.
             </p>
             <p>
-              Nelle <strong>mezze stagioni</strong> — aprile, maggio, settembre, ottobre — il cielo è spesso nitidissimo. L&apos;aria pulita dopo l&apos;inverno o il fresco dell&apos;autunno rende le montagne straordinariamente nitide: ogni parete, ogni canalone, ogni cresta si staglia contro il cielo come un disegno. E il lago è quasi sempre tranquillo, senza motoscafi, senza folla, senza rumori che coprano il canto degli uccelli.
+              Nelle <strong>mezze stagioni</strong> - aprile, maggio, settembre, ottobre - il cielo è spesso nitidissimo. L&apos;aria pulita dopo l&apos;inverno o il fresco dell&apos;autunno rende le montagne straordinariamente nitide: ogni parete, ogni canalone, ogni cresta si staglia contro il cielo come un disegno. E il lago è quasi sempre tranquillo, senza motoscafi, senza folla, senza rumori che coprano il canto degli uccelli.
             </p>
 
             <h2>Un Passo, Una Vita</h2>
@@ -186,10 +186,10 @@ export default function GiroLagoAlleghe() {
               Quando torni ad Alleghe dopo aver completato l&apos;anello, non senti la stanchezza di chi ha percorso una distanza. Senti qualcosa di diverso: una <strong>leggerezza strana</strong>, come se il lago ti avesse restituito qualcosa che non sapevi di aver perso. Un&apos;ora e mezza di passi lenti, di occhi aperti, di respiri profondi.
             </p>
             <p>
-              Il giro del lago di Alleghe non è un&apos;impresa. Non ha graduatorie, non ha medaglie, non misura niente. È semplicemente <strong>un modo di stare al mondo per un&apos;ora e mezza</strong> — accanto all&apos;acqua, sotto le montagne, in mezzo alla vita che scorre senza aspettare nessuno.
+              Il giro del lago di Alleghe non è un&apos;impresa. Non ha graduatorie, non ha medaglie, non misura niente. È semplicemente <strong>un modo di stare al mondo per un&apos;ora e mezza</strong> - accanto all&apos;acqua, sotto le montagne, in mezzo alla vita che scorre senza aspettare nessuno.
             </p>
             <p>
-              Ogni passo su questa riva è un ricordo che si forma da solo. Ogni sguardo verso le cime è una piccola guarigione. Ogni cigno, ogni germano, ogni tuffo di tartaruga è un promemoria che il mondo è pieno di cose belle — <strong>ma solo se cammini abbastanza piano da vederle</strong>.
+              Ogni passo su questa riva è un ricordo che si forma da solo. Ogni sguardo verso le cime è una piccola guarigione. Ogni cigno, ogni germano, ogni tuffo di tartaruga è un promemoria che il mondo è pieno di cose belle - <strong>ma solo se cammini abbastanza piano da vederle</strong>.
             </p>
 
             <HikingInfo {...post.infoEscursione!} />
@@ -217,7 +217,7 @@ export default function GiroLagoAlleghe() {
               },
               {
                 question: "Quando è il momento migliore per il giro del lago di Alleghe?",
-                answer: "Le mezze stagioni — primavera (aprile-maggio) e autunno (settembre-ottobre) — sono il momento ideale: meno turisti, clima mite, cielo nitido per vedere le Dolomiti in tutto il loro splendore. In primavera si possono osservare i nidi degli uccelli acquatici."
+                answer: "Le mezze stagioni - primavera (aprile-maggio) e autunno (settembre-ottobre) - sono il momento ideale: meno turisti, clima mite, cielo nitido per vedere le Dolomiti in tutto il loro splendore. In primavera si possono osservare i nidi degli uccelli acquatici."
               },
               {
                 question: "Si possono vedere animali selvatici durante il giro del lago?",

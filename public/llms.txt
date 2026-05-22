@@ -1,4 +1,4 @@
-# PassoLento — Guida Escursionistica nelle Dolomiti
+# PassoLento - Guida Escursionistica nelle Dolomiti
 
 > Marco Fracassi, guida escursionistica nelle Dolomiti bellunesi e trentine. Escursioni lente e consapevoli tra Veneto e Trentino-Alto Adige.
 
@@ -10,10 +10,10 @@ Marco Fracassi è una guida escursionistica con esperienza nelle Dolomiti, speci
 
 ### Guide Escursionistiche
 
-- [Valchesina: La Passeggiata delle Fontane](https://passolento.com/blog/valchesina-rivamonte-agordino/) — Percorso di 3 km, dislivello 80 m, difficoltà facilissima. Rivamonte Agordino (Belluno, Veneto).
-- [Val di Fassa: Da Pera di Fassa a Canazei](https://passolento.com/blog/val-di-fassa-pera-canazei/) — Percorso di 20 km A/R, dislivello minimo, difficoltà facile. Val di Fassa (Trento, Trentino-Alto Adige).
-- [Da Col di Prà alle Cascate di Pont](https://passolento.com/blog/cascate-pont-col-di-pra/) — Percorso di 7 km, dislivello 320 m, difficoltà facile. Taibon Agordino (Belluno, Veneto).
-- [La Magia della Fonte del Mattino](https://passolento.com/blog/magia-fonte-mattino/) — Riflessione sul turismo lento e la contemplazione.
+- [Valchesina: La Passeggiata delle Fontane](https://passolento.com/blog/valchesina-rivamonte-agordino/) - Percorso di 3 km, dislivello 80 m, difficoltà facilissima. Rivamonte Agordino (Belluno, Veneto).
+- [Val di Fassa: Da Pera di Fassa a Canazei](https://passolento.com/blog/val-di-fassa-pera-canazei/) - Percorso di 20 km A/R, dislivello minimo, difficoltà facile. Val di Fassa (Trento, Trentino-Alto Adige).
+- [Da Col di Prà alle Cascate di Pont](https://passolento.com/blog/cascate-pont-col-di-pra/) - Percorso di 7 km, dislivello 320 m, difficoltà facile. Taibon Agordino (Belluno, Veneto).
+- [La Magia della Fonte del Mattino](https://passolento.com/blog/magia-fonte-mattino/) - Riflessione sul turismo lento e la contemplazione.
 
 ### Tracce GPX
 
@@ -25,7 +25,7 @@ Calendario eventi e prenotazioni escursioni di gruppo: [passolento.com](https://
 
 ## Area geografica
 
-Dolomiti Bellunesi e Dolomiti Trentine — Veneto e Trentino-Alto Adige, Italia.
+Dolomiti Bellunesi e Dolomiti Trentine - Veneto e Trentino-Alto Adige, Italia.
 
 ## Contatto
 

@@ -80,6 +80,29 @@
     }
   },
   {
+    "id": "7",
+    "title": "Val Falcina dal Lago del Mis: Piscine Naturali e Meraviglia",
+    "excerpt": "Un sentiero irregolare e meditativo tra gradoni e boschi, con piscine naturali dall'acqua invisibile e scorci turchesi dove il lago entra nella valle",
+    "category": "Escursioni",
+    "date": "2026-04-13",
+    "readTime": "6 min",
+    "image": "/blog/7/lago-del-mis-insenatura.webp",
+    "slug": "val-falcina-lago-del-mis",
+    "gpxFile": "escursione_val_falcina.gpx",
+    "regione": "Veneto",
+    "provincia": "Belluno",
+    "luogo": "Lago del Mis",
+    "infoEscursione": {
+      "partenza": "Lago del Mis, Sospirolo (BL)",
+      "arrivo": "Lago del Mis, Sospirolo (BL)",
+      "durata": "1 ora e 45 minuti (con soste)",
+      "lunghezza": "4.5 km circa",
+      "dislivello": "350 m circa",
+      "difficolta": "Media — sentiero irregolare con gradoni",
+      "momentoMigliore": "Estate e inizio autunno, quando le piscine naturali sono accessibili e l'acqua è al massimo della trasparenza"
+    }
+  },
+  {
     "id": "4",
     "title": "Da Col di Prà alle Cascate di Pont",
     "excerpt": "Una salita lenta tra boschi e montagne fino alle cascate, dove ogni dettaglio — tronchi, rocce, piscine naturali — diventa meraviglia",

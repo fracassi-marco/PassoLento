@@ -11,7 +11,9 @@ export const metadata = defaultMetadata(
   ["https://passolento.com/dolomiti-bellunesi.webp"],
 );
 
-const postsWithGpx = blogPosts.filter(p => p.gpxFile);
+const postsWithGpx = blogPosts
+  .filter(p => p.gpxFile)
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
 const schemaData = {
   "@context": "https://schema.org",

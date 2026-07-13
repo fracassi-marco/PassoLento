@@ -103,6 +103,29 @@
     }
   },
   {
+    "id": "8",
+    "title": "Dal Passo Duran al Rifugio Carestiato: Boschi, Ghiaioni e un Altro Pianeta",
+    "excerpt": "Una salita breve e intensa tra boschetti, radici e ghiaioni lunari, tra mucche al pascolo e cavalli liberi, fino a un panorama a 360 gradi e a un pranzo condiviso al Rifugio Carestiato",
+    "category": "Escursioni",
+    "date": "2026-07-13",
+    "readTime": "6 min",
+    "image": "/blog/8/panorama-carestiato.webp",
+    "slug": "passo-duran-rifugio-carestiato",
+    "gpxFile": "passo_duran_rigugio_carestiato.gpx",
+    "regione": "Veneto",
+    "provincia": "Belluno",
+    "luogo": "Passo Duran",
+    "infoEscursione": {
+      "partenza": "Passo Duran",
+      "arrivo": "Rifugio Carestiato",
+      "durata": "1 ora e mezza (andata e ritorno, con soste)",
+      "lunghezza": "5.6 km andata e ritorno",
+      "dislivello": "340 m circa",
+      "difficolta": "Facile - salita breve ma con tratti su radici e ghiaione",
+      "momentoMigliore": "Estate, quando le mucche sono in alpeggio e il rifugio è aperto"
+    }
+  },
+  {
     "id": "4",
     "title": "Da Col di Prà alle Cascate di Pont",
     "excerpt": "Una salita lenta tra boschi e montagne fino alle cascate, dove ogni dettaglio - tronchi, rocce, piscine naturali - diventa meraviglia",

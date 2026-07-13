@@ -2034,6 +2034,8 @@ em {
 
 .article-body .article-image img {
   height: auto;
+  max-height: 600px;
+  object-fit: cover;
   border-radius: 12px;
 }
 

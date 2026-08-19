@@ -1166,6 +1166,12 @@ a:focus, button:focus {
   overflow: hidden;
 }
 
+@media (max-width: 700px) {
+  .calendar {
+    padding: 2rem 1rem 3rem;
+  }
+}
+
 .calendar-content {
   position: relative;
   z-index: 2;
@@ -1548,18 +1554,18 @@ em {
   padding: 4rem 2rem;
 }
 
-.blog-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  margin: 0 auto 3rem auto;
-  max-width: 1200px;
+@media (max-width: 700px) {
+  .blog {
+    padding: 2rem 1rem 3rem;
+  }
 }
 
-@media (max-width: 768px) {
-  .blog-grid {
-    grid-template-columns: 1fr !important;
-  }
+.blog-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 auto 3rem auto;
+  max-width: 860px;
 }
 
 .blog-post {

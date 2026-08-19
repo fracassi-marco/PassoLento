@@ -50,7 +50,11 @@ export default function RootLayout({
               "name": "Dolomiti"
             },
             "image": "https://passolento.com/dolomiti-bellunesi.webp",
-            "priceRange": "€"
+            "priceRange": "€",
+            "sameAs": [
+              "https://www.komoot.com/user/645771041343",
+              "https://www.facebook.com/profile.php?id=61577747603882&locale=it_IT"
+            ]
           })
         }}
       />

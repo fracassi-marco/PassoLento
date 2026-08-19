@@ -1,7 +1,20 @@
 /* Blog Content / Blog List Page */
 .blog-content {
-  padding: 2rem;
   background: #f8f9fa;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.blog-inner {
+  width: 100%;
+  padding: 2rem;
+}
+
+@media (max-width: 700px) {
+  .blog-inner {
+    padding: 1rem;
+  }
 }
 
 /* Blog Filters Location */
@@ -52,17 +65,14 @@
 
 /* Blog Grid */
 .blog-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
-  margin-bottom: 3rem;
+  max-width: 860px;
+  margin: 0 auto 3rem;
 }
 
 @media (max-width: 768px) {
-  .blog-grid {
-    grid-template-columns: 1fr !important;
-  }
-
   .blog-filters-location {
     flex-direction: column;
     gap: 0.8rem;

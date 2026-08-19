@@ -1,6 +1,7 @@
 /* Blog Post Card */
 .blog-post {
-  display: block;
+  display: grid;
+  grid-template-columns: 320px 1fr;
   background: white;
   border-radius: 15px;
   overflow: hidden;
@@ -17,7 +18,8 @@
 
 .blog-image {
   position: relative;
-  height: 200px;
+  height: 100%;
+  min-height: 240px;
   overflow: hidden;
 }
 
@@ -46,14 +48,17 @@
 }
 
 .blog-content {
-  padding: 1.5rem;
+  padding: 1.75rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .blog-content h3 {
   color: #2c5530;
   margin-bottom: 1rem;
-  font-size: 1.2rem;
-  line-height: 1.4;
+  font-size: 1.35rem;
+  line-height: 1.35;
 }
 
 .blog-content p {
@@ -65,13 +70,13 @@
 
 .blog-meta {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 1rem;
   font-size: 0.9rem;
   color: #888;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.75rem;
 }
 
 .blog-meta time {
@@ -87,5 +92,29 @@
 }
 
 .blog-cta {
-  text-align: center;
+  text-align: left;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .blog-post {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-image {
+    min-height: 200px;
+    height: 200px;
+  }
+
+  .blog-content {
+    padding: 1.25rem 1.25rem 1.5rem;
+  }
+
+  .blog-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .blog-cta {
+    text-align: center;
+  }
 }

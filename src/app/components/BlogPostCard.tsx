@@ -32,7 +32,7 @@ export default function BlogPostCard({
   return (
     <Link key={id} href={`/blog/${slug}/`} className={styles['blog-post']}>
       <div className={styles['blog-image']}>
-        <img src={image} alt={title} width={800} height={450} loading="lazy" />
+        <img src={image} alt={title} width={480} height={320} loading="lazy" />
         <div className={styles['blog-category']}>{category}</div>
       </div>
       <div className={styles['blog-content']}>

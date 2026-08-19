@@ -50,7 +50,7 @@ export default function BlogContent() {
 
   return (
     <section className={styles['blog-content']}>
-      <div style={{width: '100%', maxWidth: 'none', padding: '0 2rem'}}>
+      <div className={styles['blog-inner']}>
         
         {/* Filtri */}
         <div className={styles['blog-filters-location']}>

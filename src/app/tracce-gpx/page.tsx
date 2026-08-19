@@ -1,6 +1,7 @@
 import defaultMetadata from "@/app/components/DefaultMetadata";
 import Button from "@/app/components/Button";
 import BlogHero from "@/app/components/BlogHero";
+import Breadcrumbs from "@/app/components/Breadcrumbs";
 import blogPosts from "@/data/blogPosts.json";
 import styles from "./page.module.css";
 
@@ -53,6 +54,8 @@ export default function TracceGpxPage() {
         title="Tracce GPX Escursioni nelle Dolomiti"
         subtitle="Scarica i file GPS delle escursioni e caricali sul tuo dispositivo. Ogni traccia è stata registrata sul campo, passo dopo passo."
       />
+
+      <Breadcrumbs items={[{ name: "Tracce GPX", url: "/tracce-gpx/" }]} />
 
       <section className={styles.content}>
         <div className={styles.container}>

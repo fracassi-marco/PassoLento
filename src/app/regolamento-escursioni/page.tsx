@@ -1,5 +1,6 @@
 import defaultMetadata from "@/app/components/DefaultMetadata";
 import BlogHero from "../components/BlogHero";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 export const metadata = defaultMetadata(
   "Regolamento Escursioni",
@@ -15,6 +16,8 @@ export default function RegolamentoEscursioni() {
         title="Regolamento Escursioni"
         subtitle="Le regole per vivere al meglio l'esperienza del passo lento in sicurezza e rispetto della natura"
       />
+
+      <Breadcrumbs items={[{ name: "Regolamento Escursioni", url: "/regolamento-escursioni/" }]} />
 
       {/* Contenuto principale */}
       <section className="regolamento-content">

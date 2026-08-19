@@ -1,4 +1,5 @@
 import BlogHero from "@/app/components/BlogHero";
+import Breadcrumbs from "@/app/components/Breadcrumbs";
 import defaultMetadata from "@/app/components/DefaultMetadata";
 import Button from "@/app/components/Button";
 import HikingInfo from "@/app/components/HikingInfo";
@@ -27,7 +28,7 @@ export default function ValFalcinaLagoDelMis() {
             "headline": post.title,
             "description": post.excerpt,
             "image": `https://passolento.com${post.image}`,
-            "author": { "@type": "Person", "name": "Marco Fracassi", "url": "https://passolento.com" },
+            "author": { "@type": "Person", "name": "Marco Fracassi", "url": "https://passolento.com", "sameAs": ["https://www.komoot.com/user/645771041343", "https://www.facebook.com/profile.php?id=61577747603882&locale=it_IT"] },
             "publisher": { "@type": "Organization", "name": "PassoLento", "url": "https://passolento.com" },
             "datePublished": post.date,
             "dateModified": post.date,
@@ -68,6 +69,8 @@ export default function ValFalcinaLagoDelMis() {
         subtitle={post.excerpt}
       />
 
+
+      <Breadcrumbs items={[{ name: "Blog", url: "/blog/" }, { name: post.title, url: `/blog/${post.slug}/` }]} />
       {/* Tag località */}
       <section className="article-location">
         <div className="container">

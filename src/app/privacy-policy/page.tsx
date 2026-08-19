@@ -1,5 +1,6 @@
 import defaultMetadata from "@/app/components/DefaultMetadata";
 import BlogHero from "@/app/components/BlogHero";
+import Breadcrumbs from "@/app/components/Breadcrumbs";
 import styles from "./privacy.module.css";
 
 export const metadata = defaultMetadata(
@@ -16,6 +17,8 @@ export default function PrivacyPolicy() {
         title="Informativa sulla Privacy"
         subtitle="PassoLento - Guida Hiking"
       />
+
+      <Breadcrumbs items={[{ name: "Privacy Policy", url: "/privacy-policy/" }]} />
 
       <section className={styles['privacy-section']}>
         <h2 className={styles['privacy-h2']}>1. Introduzione</h2>

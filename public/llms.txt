@@ -6,22 +6,32 @@
 
 Marco Fracassi è una guida escursionistica con esperienza nelle Dolomiti, specializzato nel turismo lento e nella scoperta consapevole della montagna. PassoLento promuove escursioni guidate a passo d'uomo, dove la contemplazione vale quanto la destinazione.
 
+Profili: [Komoot](https://www.komoot.com/user/645771041343) - [Facebook](https://www.facebook.com/profile.php?id=61577747603882&locale=it_IT)
+
 ## Contenuti disponibili
 
 ### Guide Escursionistiche
 
-- [Valchesina: La Passeggiata delle Fontane](https://passolento.com/blog/valchesina-rivamonte-agordino/) - Percorso di 3 km, dislivello 80 m, difficoltà facilissima. Rivamonte Agordino (Belluno, Veneto).
-- [Val di Fassa: Da Pera di Fassa a Canazei](https://passolento.com/blog/val-di-fassa-pera-canazei/) - Percorso di 20 km A/R, dislivello minimo, difficoltà facile. Val di Fassa (Trento, Trentino-Alto Adige).
-- [Da Col di Prà alle Cascate di Pont](https://passolento.com/blog/cascate-pont-col-di-pra/) - Percorso di 7 km, dislivello 320 m, difficoltà facile. Taibon Agordino (Belluno, Veneto).
-- [La Magia della Fonte del Mattino](https://passolento.com/blog/magia-fonte-mattino/) - Riflessione sul turismo lento e la contemplazione.
+- [Val di Fassa: Da Pera di Fassa a Canazei](https://passolento.com/blog/val-di-fassa-pera-canazei/) - Percorso di 20 km andata e ritorno, dislivello Minimo, difficoltà facile ma lunga - adatta a tutti. Val di Fassa, Trento, Trentino-Alto Adige.
+- [Valchesina: La Passeggiata delle Fontane](https://passolento.com/blog/valchesina-rivamonte-agordino/) - Percorso di 3 km circa, dislivello 80 m circa, difficoltà facilissima. Valchesina, Belluno, Veneto.
+- [Da Col di Prà alle Cascate di Pont](https://passolento.com/blog/cascate-pont-col-di-pra/) - Percorso di 7 km circa, dislivello 320 m circa, difficoltà facile - adatta a tutti. Taibon Agordino, Belluno, Veneto.
+- [Giro del Lago di Alleghe: Ogni Passo è Vita](https://passolento.com/blog/giro-lago-alleghe/) - Percorso di 5.3 km, dislivello 84 m, difficoltà facilissima - adatta a tutti, bambini e passeggini. Alleghe, Belluno, Veneto.
+- [Val Falcina dal Lago del Mis: Piscine Naturali e Meraviglia](https://passolento.com/blog/val-falcina-lago-del-mis/) - Percorso di 4.5 km circa, dislivello 350 m circa, difficoltà media - sentiero irregolare con gradoni. Lago del Mis, Belluno, Veneto.
+- [Dal Passo Duran al Rifugio Carestiato: Boschi, Ghiaioni e un Altro Pianeta](https://passolento.com/blog/passo-duran-rifugio-carestiato/) - Percorso di 5.6 km andata e ritorno, dislivello 340 m circa, difficoltà facile - salita breve ma con tratti su radici e ghiaione. Passo Duran, Belluno, Veneto.
+- [Da Frassenè al Rifugio Scarpa: una Passeggiata che Ferma il Tempo](https://passolento.com/blog/frassene-rifugio-scarpa/) - Percorso di 11.4 km ad anello (variante di ritorno per Malga Luna), dislivello 790 m circa, difficoltà media. Frassenè, Belluno, Veneto.
+
+### Riflessioni
+
+- [La Magia della Fonte del Mattino](https://passolento.com/blog/magia-fonte-mattino/) - Quando l'acqua diventa rituale e l'autunno si trasforma in preghiera quotidiana.
+- [Aspettare l'Ultimo: Quando Fermarsi Diventa un Regalo](https://passolento.com/blog/aspettare-e-rallentare/) - Quando si cammina in gruppo, aspettare chi resta indietro è un atto conscio e volontario per rallentare: costoso, perché spezza il passo, ma prezioso, perché apre gli occhi sulle persone e sul paesaggio.
 
 ### Tracce GPX
 
-Tracce GPS scaricabili per le escursioni documentate: [passolento.com/tracce-gpx/](https://passolento.com/tracce-gpx/)
+Tracce GPS scaricabili per le escursioni documentate: [https://passolento.com/tracce-gpx/](https://passolento.com/tracce-gpx/)
 
 ### Escursioni Guidate
 
-Calendario eventi e prenotazioni escursioni di gruppo: [passolento.com](https://passolento.com)
+Calendario eventi e prenotazioni escursioni di gruppo: [https://passolento.com](https://passolento.com)
 
 ## Area geografica
 
@@ -29,4 +39,4 @@ Dolomiti Bellunesi e Dolomiti Trentine - Veneto e Trentino-Alto Adige, Italia.
 
 ## Contatto
 
-Per informazioni su escursioni guidate: passolento.com
+Per informazioni su escursioni guidate: https://passolento.com

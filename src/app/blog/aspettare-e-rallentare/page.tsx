@@ -1,4 +1,5 @@
 import BlogHero from "@/app/components/BlogHero";
+import Breadcrumbs from "@/app/components/Breadcrumbs";
 import defaultMetadata from "@/app/components/DefaultMetadata";
 import Button from "@/app/components/Button";
 import LocationTags from "@/app/components/LocationTags";
@@ -25,7 +26,7 @@ export default function AspettareERallentare() {
             "headline": post.title,
             "description": post.excerpt,
             "image": "https://passolento.com/blog/9/vista-dolomiti.webp",
-            "author": { "@type": "Person", "name": "Marco Fracassi", "url": "https://passolento.com" },
+            "author": { "@type": "Person", "name": "Marco Fracassi", "url": "https://passolento.com", "sameAs": ["https://www.komoot.com/user/645771041343", "https://www.facebook.com/profile.php?id=61577747603882&locale=it_IT"] },
             "publisher": { "@type": "Organization", "name": "PassoLento", "url": "https://passolento.com" },
             "datePublished": post.date,
             "dateModified": post.date,
@@ -39,6 +40,8 @@ export default function AspettareERallentare() {
         subtitle={post.excerpt}
       />
 
+
+      <Breadcrumbs items={[{ name: "Blog", url: "/blog/" }, { name: post.title, url: `/blog/${post.slug}/` }]} />
       <section className="article-location">
         <div className="container">
           <LocationTags regione={post.regione} provincia={post.provincia} luogo={post.luogo} />

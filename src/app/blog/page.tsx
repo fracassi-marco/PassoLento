@@ -1,5 +1,6 @@
 import defaultMetadata from "@/app/components/DefaultMetadata";
 import BlogHero from "../components/BlogHero";
+import Breadcrumbs from "@/app/components/Breadcrumbs";
 import BlogContent from "./BlogContent";
 
 export const metadata = defaultMetadata(
@@ -16,6 +17,8 @@ export default function BlogPage() {
         title="Guide e consigli di trekking consapevole" 
         subtitle="Scopri guide utili e consigli pratici per vivere al meglio le tue esperienze di trekking e nordic walking nelle Dolomiti con la filosofia PassoLento"
       />
+
+      <Breadcrumbs items={[{ name: "Blog", url: "/blog/" }]} />
 
       <BlogContent />
 

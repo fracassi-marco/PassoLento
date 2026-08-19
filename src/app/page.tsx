@@ -44,12 +44,14 @@ export default function Home() {
               "organizer": {
                 "@type": "Person",
                 "name": "Marco Fracassi",
-                "url": "https://passolento.com"
+                "url": "https://passolento.com",
+                "sameAs": ["https://www.komoot.com/user/645771041343", "https://www.facebook.com/profile.php?id=61577747603882&locale=it_IT"]
               },
               "performer": {
                 "@type": "Person",
                 "name": "Marco Fracassi",
-                "url": "https://passolento.com"
+                "url": "https://passolento.com",
+                "sameAs": ["https://www.komoot.com/user/645771041343", "https://www.facebook.com/profile.php?id=61577747603882&locale=it_IT"]
               },
               "offers": {
                 "@type": "Offer",

@@ -2810,6 +2810,14 @@ em {
 .fa-map-pin::before { content: "\f276"; }
 .fa-location-dot::before { content: "\f3c5"; }
 .fa-tag::before { content: "\f02b"; }
+.fa-download::before { content: "\f019"; }
+.fa-arrow-right::before { content: "\f061"; }
+.fa-info-circle::before { content: "\f05a"; }
+.fa-people-group::before { content: "\e533"; }
+.fa-water::before { content: "\f773"; }
+.fa-instagram::before { content: "\f16d"; }
+.fa-facebook-f::before { content: "\f39e"; }
+.fa-telegram-plane::before { content: "\f2c6"; }
 
 /* Size utilities */
 .fa-sm { font-size: 0.875em; }

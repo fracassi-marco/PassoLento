@@ -139,6 +139,29 @@
     "luogo": null
   },
   {
+    "id": "10",
+    "title": "Da Frassenè al Rifugio Scarpa: una Passeggiata che Ferma il Tempo",
+    "excerpt": "Un anello tra i resti della vecchia seggiovia monoposto della \"piccola Cortina\", una vecchia malga abbandonata e il Monte Agner, con ritorno per Malga Luna tra acqua di fonte e boschi rigogliosi",
+    "category": "Escursioni",
+    "date": "2026-08-19",
+    "readTime": "7 min",
+    "image": "/blog/10/malga-vecchia.webp",
+    "slug": "frassene-rifugio-scarpa",
+    "gpxFile": "frassene_rifugio_scarpa.gpx",
+    "regione": "Veneto",
+    "provincia": "Belluno",
+    "luogo": "Frassenè",
+    "infoEscursione": {
+      "partenza": "Frassenè (La Valle Agordina)",
+      "arrivo": "Rifugio Scarpa",
+      "durata": "Circa 5 ore, pranzo al sacco incluso",
+      "lunghezza": "11.4 km ad anello (variante di ritorno per Malga Luna)",
+      "dislivello": "790 m circa",
+      "difficolta": "Media",
+      "momentoMigliore": "Estate, quando il rifugio è aperto e i pascoli sono verdi"
+    }
+  },
+  {
     "id": "4",
     "title": "Da Col di Prà alle Cascate di Pont",
     "excerpt": "Una salita lenta tra boschi e montagne fino alle cascate, dove ogni dettaglio - tronchi, rocce, piscine naturali - diventa meraviglia",

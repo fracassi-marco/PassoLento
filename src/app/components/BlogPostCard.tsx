@@ -1,4 +1,4 @@
-import Button from "./Button";
+import Link from "next/link";
 import LocationTags from "./LocationTags";
 import styles from "./BlogPostCard.module.css";
 
@@ -30,7 +30,7 @@ export default function BlogPostCard({
   luogo
 }: BlogPostCardProps) {
   return (
-    <article key={id} className={styles['blog-post']}>
+    <Link key={id} href={`/blog/${slug}/`} className={styles['blog-post']}>
       <div className={styles['blog-image']}>
         <img src={image} alt={title} width={800} height={450} loading="lazy" />
         <div className={styles['blog-category']}>{category}</div>
@@ -49,14 +49,13 @@ export default function BlogPostCard({
           </time>
           <span className={styles['reading-time']}>{readTime} di lettura</span>
         </div>
-        <Button 
-          href={`/blog/${slug}/`} 
-          variant="primary" 
-          icon="fa-mountain"
-        >
-          Leggi l'articolo
-        </Button>
+        <div className={styles['blog-cta']}>
+          <span className="btn btn-primary btn-medium" aria-hidden="true">
+            <i className="fas fa-mountain" aria-hidden="true"></i>
+            <span>Leggi l'articolo</span>
+          </span>
+        </div>
       </div>
-    </article>
+    </Link>
   );
 }

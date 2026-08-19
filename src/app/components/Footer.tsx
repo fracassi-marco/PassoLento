@@ -6,6 +6,7 @@ export default function Footer() {
         <p>🏔️ Scopri la bellezza del cammino lento e consapevole 🏔️</p>
         <div className="footer-links">
           <a href="/privacy-policy/">Privacy Policy</a> |
+          <a href="/regolamento-escursioni/">Regolamento Escursioni</a> |
           <a href="mailto:marco@passolento.com">marco@passolento.com</a> |
           <a href="https://wa.me/393471364144">WhatsApp</a>
         </div>

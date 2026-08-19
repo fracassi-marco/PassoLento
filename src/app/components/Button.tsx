@@ -4,6 +4,9 @@ import { ReactNode } from "react";
 type ButtonVariant = "primary" | "neutral" | "ghost" | "filter";
 type ButtonSize = "small" | "medium" | "large";
 
+// Icone Font Awesome che esistono solo nello stile "brands" (fab), non "solid" (fas)
+const BRAND_ICONS = new Set(["fa-whatsapp", "fa-instagram", "fa-facebook-f", "fa-telegram-plane"]);
+
 interface ButtonProps {
   children: ReactNode;
   variant?: ButtonVariant;
@@ -38,7 +41,7 @@ export default function Button({
   const classes = `${baseClasses} ${variantClass} ${sizeClass} ${activeClass} ${className}`.trim();
 
   const iconElement = icon && (
-    <i className={`fas ${icon}`} aria-hidden="true"></i>
+    <i className={`${BRAND_ICONS.has(icon) ? "fab" : "fas"} ${icon}`} aria-hidden="true"></i>
   );
 
   const content = (

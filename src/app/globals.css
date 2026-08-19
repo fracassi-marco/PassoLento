@@ -18,11 +18,20 @@
   border: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: #333;
   overflow-x: hidden;
+}
+
+/* Offset per l'header fisso quando si naviga verso un'ancora */
+section[id] {
+  scroll-margin-top: 80px;
 }
 
 /* ===============================

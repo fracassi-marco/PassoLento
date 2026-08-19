@@ -105,16 +105,15 @@ export default function RootLayout({
           }
         });
 
-        // Smooth scroll for anchor links
+        // Smooth scroll for anchor links (gestito via CSS scroll-behavior + scroll-margin-top,
+        // qui serve solo per aggiornare l'URL senza jump e senza leggere geometria via JS)
         document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
           anchor.addEventListener('click', function(e) {
-            e.preventDefault();
             var href = anchor.getAttribute('href');
-            if (href) {
-              var target = document.querySelector(href);
-              if (target) {
-                window.scrollTo({ top: target.getBoundingClientRect().top + window.pageYOffset - 80, behavior: 'smooth' });
-              }
+            if (href && document.querySelector(href)) {
+              e.preventDefault();
+              history.pushState(null, '', href);
+              document.querySelector(href).scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
           });
         });
@@ -129,8 +128,18 @@ export default function RootLayout({
           document.querySelectorAll('.fade-in:not(.visible)').forEach(function(el) { fadeObserver.observe(el); });
         }
         observeFadeIns();
-        // Re-observe after back/forward navigation (Next.js re-renders DOM elements)
-        new MutationObserver(observeFadeIns).observe(document.body, { childList: true, subtree: true });
+        // Re-observe after back/forward navigation (Next.js re-renders DOM elements),
+        // raggruppando le chiamate con requestAnimationFrame per evitare layout thrashing
+        // durante l'idratazione (quando il DOM muta molte volte in rapida successione)
+        var observeFadeInsRaf = null;
+        function scheduleObserveFadeIns() {
+          if (observeFadeInsRaf) return;
+          observeFadeInsRaf = requestAnimationFrame(function() {
+            observeFadeInsRaf = null;
+            observeFadeIns();
+          });
+        }
+        new MutationObserver(scheduleObserveFadeIns).observe(document.body, { childList: true, subtree: true });
       })();
     ` }} />
     </body>

@@ -44,6 +44,11 @@ export default function Header() {
               </a>
             </li>
             <li className="nav-item">
+              <a href="/escursioni-agordino/" className="nav-link" aria-label="Escursioni in Agordino">
+                <i className="fas fa-location-dot" style={{marginRight: '0.4rem', fontSize: '0.85em'}} aria-hidden="true"></i>Agordino
+              </a>
+            </li>
+            <li className="nav-item">
               <a href="/#contact" className="nav-link" aria-label="Contattami">Contatti</a>
             </li>
           </ul>

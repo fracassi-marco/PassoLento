@@ -82,8 +82,10 @@ export default function Home() {
           <div className="about-card">
             <h3><i className="fas fa-mountain"></i> La Mia Passione</h3>
             <p>Sono Marco, praticante di Nordic Walking e guida hiking abilitata. Vivo tra Trento e
-              Rivamonte Agordino, immerso nella bellezza delle Dolomiti trentine e bellunesi che amo
-              condividere attraverso <em>PassoLento</em>.</p>
+              Rivamonte Agordino, nel cuore dell&apos;<strong>Agordino</strong> e della <strong>Conca
+              Agordina</strong> attorno ad <strong>Agordo</strong>, immerso nella bellezza delle Dolomiti
+              trentine e bellunesi che amo condividere attraverso <em>PassoLento</em>. Scopri le mie{" "}
+              <a href="/escursioni-agordino/">escursioni in Agordino</a>.</p>
           </div>
           <div className="about-card">
             <h3><i className="fas fa-heart"></i> La Mia Missione</h3>

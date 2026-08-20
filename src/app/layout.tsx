@@ -45,10 +45,36 @@ export default function RootLayout({
               "latitude": "46.06",
               "longitude": "11.12"
             },
-            "serviceArea": {
-              "@type": "Place",
-              "name": "Dolomiti"
-            },
+            "serviceArea": [
+              {
+                "@type": "Place",
+                "name": "Dolomiti"
+              },
+              {
+                "@type": "Place",
+                "name": "Agordo"
+              },
+              {
+                "@type": "Place",
+                "name": "Agordino"
+              },
+              {
+                "@type": "Place",
+                "name": "Conca Agordina"
+              },
+              {
+                "@type": "Place",
+                "name": "Rivamonte Agordino"
+              }
+            ],
+            "areaServed": [
+              "Agordo",
+              "Agordino",
+              "Conca Agordina",
+              "Rivamonte Agordino",
+              "Dolomiti Bellunesi",
+              "Trentino Alto Adige"
+            ],
             "image": "https://passolento.com/dolomiti-bellunesi.webp",
             "priceRange": "€",
             "sameAs": [

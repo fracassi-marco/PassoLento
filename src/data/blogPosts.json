@@ -183,5 +183,18 @@
       "difficolta": "Facile - adatta a tutti",
       "momentoMigliore": "Dopo una pioggia, quando la cascata è al massimo della potenza"
     }
+  },
+  {
+    "id": "11",
+    "title": "Agordo: la Conca Agordina che le Guide Turistiche Dimenticano",
+    "excerpt": "Nel cuore delle Dolomiti Bellunesi, Agordo e la sua conca regalano panorami da cartolina senza il prezzo dell'affollamento delle mete più celebri",
+    "category": "Riflessioni",
+    "date": "2025-11-18",
+    "readTime": "5 min",
+    "image": "/blog/11/agordo-borgo.webp",
+    "slug": "agordo-conca-agordina",
+    "regione": "Veneto",
+    "provincia": "Belluno",
+    "luogo": "Agordo"
   }
 ]

@@ -15,6 +15,7 @@ export const metadata = defaultMetadata(
 
 // Escursioni PassoLento che si svolgono nella zona dell'Agordino / Conca Agordina
 const AGORDINO_SLUGS = [
+  "agordo-conca-agordina",
   "valchesina-rivamonte-agordino",
   "magia-fonte-mattino",
   "frassene-rifugio-scarpa",

@@ -17,6 +17,7 @@ export const metadata = defaultMetadata(
 const AGORDINO_SLUGS = [
   "agordo-conca-agordina",
   "valchesina-rivamonte-agordino",
+  "rivamonte-forcella-aurine",
   "magia-fonte-mattino",
   "frassene-rifugio-scarpa",
   "cascate-pont-col-di-pra",

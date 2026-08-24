@@ -196,5 +196,28 @@
     "regione": "Veneto",
     "provincia": "Belluno",
     "luogo": "Agordo"
+  },
+  {
+    "id": "12",
+    "title": "Da Rivamonte Agordino a Forcella Aurine: Nordic Walking a Ritmo Serrato",
+    "excerpt": "Non sempre il passo è lento: un'escursione di nordic walking a ritmo sostenuto tra boschi feriti da Vaia, fontane perse nel tempo e baite secolari, da Rivamonte Agordino a Forcella Aurine",
+    "category": "Escursioni",
+    "date": "2026-08-24",
+    "readTime": "6 min",
+    "image": "/blog/12/panorama-forcella-aurine.webp",
+    "slug": "rivamonte-forcella-aurine",
+    "regione": "Veneto",
+    "provincia": "Belluno",
+    "luogo": "Rivamonte Agordino",
+    "gpxFile": "rivamonte_forcella_aurine.gpx",
+    "infoEscursione": {
+      "partenza": "Rivamonte Agordino (950 m)",
+      "arrivo": "Forcella Aurine (1300 m)",
+      "durata": "2 ore e un quarto, a ritmo sostenuto",
+      "lunghezza": "12,3 km",
+      "dislivello": "poco meno di 400 m",
+      "difficolta": "Media, per il ritmo più che per il dislivello",
+      "momentoMigliore": "Primavera, estate e autunno, fuori dai periodi di neve e ghiaccio"
+    }
   }
 ]
